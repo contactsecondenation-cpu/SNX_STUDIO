@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#02060b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SNX Studio" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/app-icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/app-icons/icon-192.png" />
+    <meta
+      name="description"
+      content="SNX Studio — Choisissez un univers et essayez-le directement dans votre Studio."
+    />
+    <title>SNX Studio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2302060b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%239acaff'%3ESNX%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/core.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/views.css" />
+    <script defer src="app.bundle.js"></script>
+  </head>
+  <body>
+    <div id="page-backdrop" aria-hidden="true"></div>
+    <button class="skip-link" id="skip-content">Aller au contenu</button>
+    <div id="shell" data-protected>
+      <header id="app-header"></header>
+      <main id="view-root" tabindex="-1"></main>
+    </div>
+    <div id="announcer" role="status" aria-live="polite"></div>
+    <noscript>Activez JavaScript pour ouvrir SNX Studio.</noscript>
+  </body>
+</html>

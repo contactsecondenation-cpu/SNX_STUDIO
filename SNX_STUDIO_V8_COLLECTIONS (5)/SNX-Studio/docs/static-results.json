@@ -1,0 +1,36 @@
+{
+  "type": "Static validation, no visual rendering",
+  "executedAt": "2026-09-19T20:35:07.975Z",
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Four canonical screens, fourteen real theme packs (plus any personal themes)",
+      "status": "PASS"
+    },
+    {
+      "name": "All resources and thumbnails resolve locally",
+      "status": "PASS"
+    },
+    {
+      "name": "Catalog truthful, IDs unique, default icons belong to each theme",
+      "status": "PASS"
+    },
+    {
+      "name": "No source reference screenshot used as interface",
+      "status": "PASS"
+    },
+    {
+      "name": "All HTML and CSS resource links are local and present",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic current bundle",
+      "status": "PASS"
+    }
+  ]
+}

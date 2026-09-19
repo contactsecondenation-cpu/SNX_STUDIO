@@ -1,0 +1,19 @@
+{
+  "name": "snx-studio-core",
+  "version": "7.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SNX Studio — neuf collections, aperçu des icônes et widgets par thème",
+  "scripts": {
+    "build": "python scripts/build.py",
+    "test": "node tests/static.mjs && node tests/dom.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "format": "prettier --write src styles index.html tests package.json",
+    "test:features": "node tests/features.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "playwright": "1.62.1",
+    "prettier": "3.6.2"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "assets/scene/goldtoon-cover.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "2396fba6cad4167b986b6a4149a39a90caa948547fb63e1f068113e184519ddf",
+    "source": "built-in imagegen",
+    "usage": "Collection editorial cover"
+  },
+  {
+    "file": "assets/scene/home-portrait.png",
+    "dimensions": [
+      941,
+      1672
+    ],
+    "sha256": "abd3e420ae65502a5395cba3875dc36e2a641bd120080f66be74c9e744ff8456",
+    "source": "built-in imagegen",
+    "usage": "Homepage"
+  },
+  {
+    "file": "assets/scene/home-wide.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "1ac8daa323ff1276ea6f627c59879c91dbd839f64ba6da52d1454048b13109ef",
+    "source": "built-in imagegen",
+    "usage": "Homepage"
+  },
+  {
+    "file": "assets/scene/inferno-cover.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "c249e603ea12255e2bda76aa52acc0dfdb1304e3137d5f4b1173d1eb05841169",
+    "source": "built-in imagegen",
+    "usage": "Collection editorial cover"
+  }
+]

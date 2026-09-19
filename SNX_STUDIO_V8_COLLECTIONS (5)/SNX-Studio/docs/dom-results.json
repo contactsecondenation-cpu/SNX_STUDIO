@@ -1,0 +1,248 @@
+{
+  "type": "jsdom integration, not rendering",
+  "executedAt": "2026-09-15T00:09:46.828Z",
+  "passed": 60,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Home: one Enter button, gradient brand text",
+      "status": "PASS"
+    },
+    {
+      "name": "Collections: nine cards, no repeated cat, no buttons inside cards",
+      "status": "PASS"
+    },
+    {
+      "name": "galaxy: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "galaxy: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "galaxy: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "galaxy: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "galaxy: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "inferno: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "inferno: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "inferno: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "inferno: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "inferno: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "stranger: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "stranger: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "stranger: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "stranger: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "stranger: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "goldtoon: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "goldtoon: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "goldtoon: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "goldtoon: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "goldtoon: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "liquid: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "liquid: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "liquid: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "liquid: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "liquid: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "quiet: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "quiet: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "quiet: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "quiet: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "quiet: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "aurora: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "aurora: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "aurora: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "aurora: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "aurora: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "liquigv2: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "liquigv2: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "liquigv2: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "liquigv2: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "liquigv2: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "mousetoon: three categories and own assets",
+      "status": "PASS"
+    },
+    {
+      "name": "mousetoon: enlarge icon then apply to selected phone slot",
+      "status": "PASS"
+    },
+    {
+      "name": "mousetoon: widget previews apply and remove",
+      "status": "PASS"
+    },
+    {
+      "name": "mousetoon: wallpaper changes without new window",
+      "status": "PASS"
+    },
+    {
+      "name": "mousetoon: leaving and returning restores wallpaper and icons",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard tabs use Arrow, Home, End and one tab stop",
+      "status": "PASS"
+    },
+    {
+      "name": "Context menu, drag, middle click and double click blocked on protected visuals",
+      "status": "PASS"
+    },
+    {
+      "name": "Purchase drawer remains in Studio and payment cannot be simulated",
+      "status": "PASS"
+    },
+    {
+      "name": "Email editing, Ctrl+A, validation and no email persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape closes purchase and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "Back and Forward close/reopen purchase within Studio",
+      "status": "PASS"
+    },
+    {
+      "name": "Fifty rapid route cycles keep one view",
+      "status": "PASS"
+    },
+    {
+      "name": "Denied storage safely falls back",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed storage safely falls back",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid selection safely falls back",
+      "status": "PASS"
+    },
+    {
+      "name": "Non-native dialog fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown theme safely canonicalized",
+      "status": "PASS"
+    },
+    {
+      "name": "No DOM runtime errors",
+      "status": "PASS"
+    }
+  ]
+}
