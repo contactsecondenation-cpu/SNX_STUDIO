@@ -47,7 +47,7 @@ function boot(){
    store.set({theme:next.theme});
    const view=modules[next.route](ctx);root.replaceChildren(view);
    document.body.dataset.route=next.route;
-   document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#0b1730");
+   document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#241a30");
    header.replaceChildren();
    if(next.route!=="home")header.append(node(`<div class="header-inner"><button class="brand" data-nav="home" aria-label="SNX Studio — Accueil">SNX <span>Studio</span></button><div class="header-actions">${next.route==="studio"?'<button class="back-button" data-nav="collections">← Collections</button>':""}</div></div>`));
    document.title=next.route==="studio"?ctx.theme().name+" — SNX Studio":"SNX Studio — "+(titles[next.route]||"Accueil");
@@ -145,7 +145,13 @@ function getThemesById(){return cache.byId;}
 const routes=[{id:"home",label:"Accueil"},{id:"collections",label:"Collections"},{id:"studio",label:"Studio"},{id:"mine",label:"Pour moi"}];
 const money=n=>new Intl.NumberFormat("fr-FR",{style:"currency",currency:"EUR"}).format(n);
 const formats=[{id:"small",name:"Small"},{id:"medium",name:"Medium"},{id:"large",name:"Large"}];
-const commerce={mode:"demo",methods:[{id:"card",name:"Carte bancaire"},{id:"wero",name:"Wero"}],contactEmail:null};
+const commerce={
+ mode:"demo",
+ contactEmail:"[votre-email@exemple.fr]",
+ etsyUrl:"[lien de votre boutique Etsy]",
+ legalOwner:"[Votre nom / activité]",
+ legalAddress:"[Ville, France]"
+};
 
 Object.assign(exports,{refreshThemes,getThemes,getThemesById,routes,money,formats,commerce});
 },
@@ -10914,7 +10920,7 @@ Object.assign(exports,{createRouter});
 },
 "src/components/dialogs.js":(require,exports)=>{
 const {node,escapeHTML,bind} = require("src/core/dom.js");
-const {money,commerce,formats} = require("src/data/catalog.js");
+const {money,commerce} = require("src/data/catalog.js");
 /** A single accessible transient dialog. Focus returns to the opening control. */
 function createDialogs(ctx){
  let active=null;
@@ -10948,36 +10954,55 @@ function createDialogs(ctx){
   else{el.setAttribute("open","");el.setAttribute("role","dialog");el.setAttribute("aria-modal","true");document.querySelector("#shell").inert=true;}
   document.body.classList.add("modal-open");el.querySelector(".close-dialog").focus();return el;
  }
+ function legalBody(){
+  return `<div class="legal-details"><details open><summary>SAV / Contact</summary><p>Une question sur un pack ou son installation ? Écrivez à ${escapeHTML(commerce.contactEmail)}, ou via la messagerie de notre boutique Etsy. Réponse sous 24h en semaine.</p></details><details><summary>Commandes &amp; CGV</summary><p>Les commandes s’effectuent exclusivement sur notre boutique Etsy : ${escapeHTML(commerce.etsyUrl)}. Ce site est une démonstration interactive, gratuite et sans paiement ; les conditions générales de vente applicables sont celles affichées sur chaque fiche produit Etsy.</p></details><details><summary>Mentions légales</summary><p>Site édité par ${escapeHTML(commerce.legalOwner)}, ${escapeHTML(commerce.legalAddress)}. Contact : ${escapeHTML(commerce.contactEmail)}.<br>Hébergement : GitHub Pages — GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p></details><details><summary>Politique de confidentialité</summary><p>Ce site ne collecte ni ne transmet aucune donnée personnelle : vos choix de thème restent stockés uniquement sur votre appareil (mémoire locale du navigateur), rien n’est envoyé à un serveur. Les commandes, paiements et données associées sont gérés directement par Etsy, selon sa propre politique de confidentialité.</p></details></div>`;
+ }
+ function legal(){
+  return open("Informations légales",legalBody(),"legal");
+ }
  function checkout(){
   const t=ctx.theme();
-  const body=`<div class="pack-preview"><img data-protected src="${t.wallpapers[0].thumb||t.cover}" alt="Aperçu ${escapeHTML(t.name)}" draggable="false"><div><h3>${escapeHTML(t.name)}</h3><strong>${t.price===null?"Prix à définir":money(t.price)}</strong>${t.price!==null?'<small>Prix de démonstration</small>':""}</div></div><div class="demo-note"><strong>Démonstration — aucun paiement disponible</strong><p>Aucune commande ni donnée bancaire ne sera transmise.</p></div><div class="pack-content"><h3>Contenu disponible à l’essai</h3><ul><li>${t.wallpapers.length} visuel${t.wallpapers.length>1?"s":""} de fond d’écran</li>${t.icons.length?`<li>${t.icons.length} icônes du thème</li>`:'<li>Icônes du thème : à fournir</li>'}<li>${t.widgets.length?t.widgets.length+" aperçus de widgets (web ou images)":"Aucun widget standard dans les fichiers reçus"}</li></ul><p><strong>1 widget personnalisé offert par achat.</strong><br>Création à partir des éléments fournis par le client.</p></div><form id="checkout-form"><fieldset><legend>Taille du widget offert</legend><div class="radio-row">${formats.map((f,i)=>`<label><input type="radio" name="gift-size" value="${f.id}" ${i===0?"checked":""}> ${f.name}</label>`).join("")}</div></fieldset><label for="order-email">Votre email</label><input id="order-email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required><p class="hint">Pour la commande, la livraison et le support. Aucun compte requis.</p><fieldset><legend>Moyen de paiement prévu</legend><div class="radio-row">${commerce.methods.map((m,i)=>`<label><input type="radio" name="payment" value="${m.id}" ${i===0?"checked":""}> ${m.name}</label>`).join("")}</div></fieldset><label class="terms-check"><input type="checkbox" name="terms" required> <span>J’accepte les conditions générales de vente.</span></label><button class="primary pay-button" type="submit" disabled>Paiement indisponible</button></form><div class="legal-details"><details><summary>SAV / Contact</summary><p>${commerce.contactEmail?escapeHTML(commerce.contactEmail):"Le contact du vendeur sera renseigné avant l’ouverture des ventes."}</p></details><details><summary>CGV</summary><p>Démonstration non marchande. Les CGV définitives, les modalités de livraison et les conditions de personnalisation restent à renseigner avant toute vente.</p></details><details><summary>Mentions légales</summary><p>L’identité et les coordonnées de l’éditeur ainsi que les informations d’hébergement restent à renseigner avant publication commerciale.</p></details><details><summary>Politique de confidentialité</summary><p>Cette démonstration conserve uniquement vos choix de thèmes sur votre appareil. L’email saisi reste dans ce formulaire et n’est pas envoyé ni enregistré. La politique du service commercial reste à compléter avant son ouverture.</p></details></div>`;
-  const el=open("Obtenir le pack",body,"purchase");
-  el.querySelector("form").addEventListener("submit",e=>e.preventDefault(),{signal:active.controller.signal});
+  const body=`<div class="pack-preview"><img data-protected src="${t.wallpapers[0].thumb||t.cover}" alt="Aperçu ${escapeHTML(t.name)}" draggable="false"><div><h3>${escapeHTML(t.name)}</h3><strong>${t.price===null?"Prix à définir":money(t.price)}</strong>${t.price!==null?'<small>Prix indicatif — le prix ferme est sur Etsy</small>':""}</div></div><div class="demo-note"><strong>Aperçu interactif</strong><p>Ce Studio permet d’essayer le thème sur un téléphone virtuel. La commande se fait sur notre boutique Etsy.</p></div><div class="pack-content"><h3>Contenu du pack</h3><ul><li>${t.wallpapers.length} visuel${t.wallpapers.length>1?"s":""} de fond d’écran</li>${t.icons.length?`<li>${t.icons.length} icônes du thème</li>`:'<li>Icônes du thème : à fournir</li>'}<li>${t.widgets.length?t.widgets.length+" aperçus de widgets (web ou images)":"Aucun widget standard dans les fichiers reçus"}</li></ul><p><strong>Guide d’installation détaillé inclus</strong><br>Icônes et fonds prêts à poser via l’app Raccourcis, sans jailbreak.</p></div><a class="primary pay-button" href="${escapeHTML(commerce.etsyUrl)}" target="_blank" rel="noopener">Voir ce pack sur Etsy →</a>${legalBody()}`;
+  return open("Obtenir le pack",body,"purchase");
  }
  function iconPreview(icon,onApply){
   const el=open(icon.name,`<div class="icon-detail"><img src="${icon.src}" alt="${escapeHTML(icon.name)} — aperçu agrandi" draggable="false" data-protected><button class="primary apply-icon" type="button">Appliquer au téléphone</button></div>`,"icon");
   el.querySelector(".apply-icon").addEventListener("click",()=>{onApply();close();},{signal:active.controller.signal});
  }
- return {close,checkout,iconPreview,isOpen:()=>!!active,isPurchase:()=>active?.kind==="purchase"};
+ return {close,checkout,iconPreview,legal,isOpen:()=>!!active,isPurchase:()=>active?.kind==="purchase"};
 }
 
 Object.assign(exports,{createDialogs});
 },
 "src/views/home.js":(require,exports)=>{
 const {node} = require("src/core/dom.js");
-function mount(){return node(`<section class="home-view" data-view="home"><picture class="hero-art" data-protected><source media="(max-width:700px), (orientation:portrait)" srcset="assets/scene/home-portrait.webp"><img src="assets/scene/home-wide.webp" alt="Un grand félin sous un arbre, face au lac, aux montagnes et au cosmos." draggable="false"></picture><div class="home-copy"><h1>SNX <span>Studio</span></h1><p>One collection. One universe.</p><button class="primary enter" data-nav="collections">Entrer</button></div></section>`);}
+function mount(ctx){
+ const view=node(`<section class="home-view" data-view="home"><picture class="hero-art" data-protected><source media="(max-width:700px), (orientation:portrait)" srcset="assets/scene/home-portrait.webp"><img src="assets/scene/home-wide.webp" alt="Un grand félin sous un arbre, face au lac, aux montagnes et au cosmos." draggable="false"></picture><div class="home-copy"><h1>SNX <span>Studio</span></h1><p>One collection. One universe.</p><button class="primary enter" data-nav="collections">Entrer</button></div><button class="home-legal-link" type="button">Contact &amp; mentions légales</button></section>`);
+ view.querySelector(".home-legal-link").addEventListener("click",()=>ctx.dialogs.legal(),{signal:ctx.signal});
+ return view;
+}
 
 Object.assign(exports,{mount});
 },
 "src/views/collections.js":(require,exports)=>{
 const {node,escapeHTML} = require("src/core/dom.js");
 const {getThemes} = require("src/data/catalog.js");
-function mount(){
+const DEFAULT_TINT="#241a30";
+function mount(ctx){
  const themes=getThemes().filter(t=>!t.unlisted);
- return node(`<section class="collections-view" data-view="collections"><div class="collections-heading"><p class="eyebrow">Collections</p><h1>Des univers à votre image.</h1></div><div class="collections-grid">${themes.map((t,i)=>{
+ const totalIcons=themes.reduce((n,t)=>n+t.icons.length,0);
+ const view=node(`<section class="collections-view" data-view="collections"><div class="collections-heading"><p class="eyebrow">Collections</p><h1>Des univers à votre image.</h1><p class="collections-count">${themes.length} univers disponibles · ${totalIcons} icônes prêtes à l’emploi</p></div><div class="collections-grid">${themes.map((t,i)=>{
   const badge=[t.defaultIcons[1],t.defaultIcons[8],t.defaultIcons[10]].filter(Boolean).map(id=>t.icons.find(ic=>ic.id===id)).filter(Boolean).slice(0,3);
   return `<button class="collection-tile" data-nav="studio" data-theme="${t.id}" style="--accent:${t.colors.accent};--theme-base:${t.colors.base};--i:${i}" aria-label="Essayer ${escapeHTML(t.name)}"><img class="tile-cover" src="${t.cover}" alt="" draggable="false" data-protected loading="${i<6?"eager":"lazy"}" decoding="async"><span class="tile-scrim" aria-hidden="true"></span>${t.custom?'<span class="custom-badge">Personnel</span>':""}${badge.length?`<span class="tile-icon-badge" aria-hidden="true">${badge.map(i=>`<img src="${i.src}" alt="" draggable="false" loading="lazy" decoding="async">`).join("")}</span>`:""}<span class="tile-caption"><strong>${escapeHTML(t.name)}</strong><span>${t.wallpapers.length} fond${t.wallpapers.length>1?"s":""} · ${t.icons.length} icônes</span></span></button>`;
  }).join("")}</div></section>`);
+ for(const tile of view.querySelectorAll(".collection-tile")){
+  const tint=tile.style.getPropertyValue("--accent");
+  tile.addEventListener("pointerenter",()=>document.documentElement.style.setProperty("--page-tint",tint),{signal:ctx?.signal});
+  tile.addEventListener("focus",()=>document.documentElement.style.setProperty("--page-tint",tint),{signal:ctx?.signal});
+ }
+ view.addEventListener("pointerleave",()=>document.documentElement.style.setProperty("--page-tint",DEFAULT_TINT));
+ ctx?.signal?.addEventListener("abort",()=>document.documentElement.style.setProperty("--page-tint",DEFAULT_TINT),{once:true});
+ return view;
 }
 
 Object.assign(exports,{mount});

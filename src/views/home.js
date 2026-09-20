@@ -1,2 +1,6 @@
 import {node} from "../core/dom.js";
-export function mount(){return node(`<section class="home-view" data-view="home"><picture class="hero-art" data-protected><source media="(max-width:700px), (orientation:portrait)" srcset="assets/scene/home-portrait.webp"><img src="assets/scene/home-wide.webp" alt="Un grand félin sous un arbre, face au lac, aux montagnes et au cosmos." draggable="false"></picture><div class="home-copy"><h1>SNX <span>Studio</span></h1><p>One collection. One universe.</p><button class="primary enter" data-nav="collections">Entrer</button></div></section>`);}
+export function mount(ctx){
+ const view=node(`<section class="home-view" data-view="home"><picture class="hero-art" data-protected><source media="(max-width:700px), (orientation:portrait)" srcset="assets/scene/home-portrait.webp"><img src="assets/scene/home-wide.webp" alt="Un grand félin sous un arbre, face au lac, aux montagnes et au cosmos." draggable="false"></picture><div class="home-copy"><h1>SNX <span>Studio</span></h1><p>One collection. One universe.</p><button class="primary enter" data-nav="collections">Entrer</button></div><button class="home-legal-link" type="button">Contact &amp; mentions légales</button></section>`);
+ view.querySelector(".home-legal-link").addEventListener("click",()=>ctx.dialogs.legal(),{signal:ctx.signal});
+ return view;
+}

@@ -31,7 +31,7 @@ export function boot(){
    store.set({theme:next.theme});
    const view=modules[next.route](ctx);root.replaceChildren(view);
    document.body.dataset.route=next.route;
-   document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#0b1730");
+   document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#241a30");
    header.replaceChildren();
    if(next.route!=="home")header.append(node(`<div class="header-inner"><button class="brand" data-nav="home" aria-label="SNX Studio — Accueil">SNX <span>Studio</span></button><div class="header-actions">${next.route==="studio"?'<button class="back-button" data-nav="collections">← Collections</button>':""}</div></div>`));
    document.title=next.route==="studio"?ctx.theme().name+" — SNX Studio":"SNX Studio — "+(titles[next.route]||"Accueil");
