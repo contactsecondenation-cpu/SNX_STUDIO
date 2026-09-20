@@ -1,11 +1,11 @@
 {
   "type": "Static validation, no visual rendering",
-  "executedAt": "2026-09-19T20:35:07.975Z",
+  "executedAt": "2026-09-19T16:26:56.441Z",
   "passed": 7,
   "failed": 0,
   "results": [
     {
-      "name": "Four canonical screens, fourteen real theme packs (plus any personal themes)",
+      "name": "Four canonical screens, nine real theme packs (plus any personal themes)",
       "status": "PASS"
     },
     {
