@@ -6355,5 +6355,4346 @@ export const themes = [
     "metadata": {
       "sourceArchive": "MouseToon icons et fond.zip"
     }
+  },
+  {
+    "id": "brume",
+    "slug": "brume",
+    "name": "Brume",
+    "colors": {
+      "accent": "#bcd0c3",
+      "base": "#232b30"
+    },
+    "description": "Un univers doux et brumeux : sauge, lavande et bleu de brume.",
+    "cover": "assets/packs/brume/cover.webp",
+    "wallpapers": [
+      {
+        "id": "brume-cover",
+        "name": "Lac de brume",
+        "src": "assets/packs/brume/cover.webp",
+        "thumb": "assets/packs/brume/cover-thumb.webp",
+        "width": 850,
+        "height": 1850,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "brume-wall-01",
+        "name": "Voile de sauge",
+        "src": "assets/packs/brume/wallpapers/wall-01.webp",
+        "thumb": "assets/packs/brume/wallpapers/wall-01-thumb.webp",
+        "width": 853,
+        "height": 1844,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "brume-wall-02",
+        "name": "Aube lavande",
+        "src": "assets/packs/brume/wallpapers/wall-02.webp",
+        "thumb": "assets/packs/brume/wallpapers/wall-02-thumb.webp",
+        "width": 853,
+        "height": 1844,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "brume-wall-03",
+        "name": "Forêt silencieuse",
+        "src": "assets/packs/brume/wallpapers/wall-03.webp",
+        "thumb": "assets/packs/brume/wallpapers/wall-03-thumb.webp",
+        "width": 851,
+        "height": 1849,
+        "fit": "contain",
+        "tone": "dark"
+      }
+    ],
+    "icons": [
+      {
+        "id": "brume-icon-00",
+        "name": "App Store",
+        "src": "assets/packs/brume/icon-00.webp",
+        "thumb": "assets/packs/brume/thumb-00.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-01",
+        "name": "Appareil photo",
+        "src": "assets/packs/brume/icon-01.webp",
+        "thumb": "assets/packs/brume/thumb-01.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-02",
+        "name": "Calculatrice",
+        "src": "assets/packs/brume/icon-02.webp",
+        "thumb": "assets/packs/brume/thumb-02.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-03",
+        "name": "Calendrier",
+        "src": "assets/packs/brume/icon-03.webp",
+        "thumb": "assets/packs/brume/thumb-03.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-04",
+        "name": "Contacts",
+        "src": "assets/packs/brume/icon-04.webp",
+        "thumb": "assets/packs/brume/thumb-04.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-05",
+        "name": "FaceTime",
+        "src": "assets/packs/brume/icon-05.webp",
+        "thumb": "assets/packs/brume/thumb-05.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-06",
+        "name": "Fichiers",
+        "src": "assets/packs/brume/icon-06.webp",
+        "thumb": "assets/packs/brume/thumb-06.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-07",
+        "name": "Horloge",
+        "src": "assets/packs/brume/icon-07.webp",
+        "thumb": "assets/packs/brume/thumb-07.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-08",
+        "name": "Localiser",
+        "src": "assets/packs/brume/icon-08.webp",
+        "thumb": "assets/packs/brume/thumb-08.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-09",
+        "name": "Mail",
+        "src": "assets/packs/brume/icon-09.webp",
+        "thumb": "assets/packs/brume/thumb-09.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-10",
+        "name": "Messages",
+        "src": "assets/packs/brume/icon-10.webp",
+        "thumb": "assets/packs/brume/thumb-10.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-11",
+        "name": "Météo",
+        "src": "assets/packs/brume/icon-11.webp",
+        "thumb": "assets/packs/brume/thumb-11.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-12",
+        "name": "Notes",
+        "src": "assets/packs/brume/icon-12.webp",
+        "thumb": "assets/packs/brume/thumb-12.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-13",
+        "name": "Photos",
+        "src": "assets/packs/brume/icon-13.webp",
+        "thumb": "assets/packs/brume/thumb-13.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-14",
+        "name": "Plans",
+        "src": "assets/packs/brume/icon-14.webp",
+        "thumb": "assets/packs/brume/thumb-14.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-15",
+        "name": "Rappels",
+        "src": "assets/packs/brume/icon-15.webp",
+        "thumb": "assets/packs/brume/thumb-15.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-16",
+        "name": "Réglages",
+        "src": "assets/packs/brume/icon-16.webp",
+        "thumb": "assets/packs/brume/thumb-16.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-17",
+        "name": "Safari",
+        "src": "assets/packs/brume/icon-17.webp",
+        "thumb": "assets/packs/brume/thumb-17.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-18",
+        "name": "Téléphone",
+        "src": "assets/packs/brume/icon-18.webp",
+        "thumb": "assets/packs/brume/thumb-18.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-19",
+        "name": "Wallet",
+        "src": "assets/packs/brume/icon-19.webp",
+        "thumb": "assets/packs/brume/thumb-19.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-20",
+        "name": "Apple Games",
+        "src": "assets/packs/brume/icon-20.webp",
+        "thumb": "assets/packs/brume/thumb-20.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-21",
+        "name": "Apple Music",
+        "src": "assets/packs/brume/icon-21.webp",
+        "thumb": "assets/packs/brume/thumb-21.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-22",
+        "name": "Apple Store",
+        "src": "assets/packs/brume/icon-22.webp",
+        "thumb": "assets/packs/brume/thumb-22.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-23",
+        "name": "Apple TV",
+        "src": "assets/packs/brume/icon-23.webp",
+        "thumb": "assets/packs/brume/thumb-23.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-24",
+        "name": "Dictaphone",
+        "src": "assets/packs/brume/icon-24.webp",
+        "thumb": "assets/packs/brume/thumb-24.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-25",
+        "name": "Forme",
+        "src": "assets/packs/brume/icon-25.webp",
+        "thumb": "assets/packs/brume/thumb-25.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-26",
+        "name": "Journal",
+        "src": "assets/packs/brume/icon-26.webp",
+        "thumb": "assets/packs/brume/thumb-26.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-27",
+        "name": "Keynote",
+        "src": "assets/packs/brume/icon-27.webp",
+        "thumb": "assets/packs/brume/thumb-27.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-28",
+        "name": "Livres",
+        "src": "assets/packs/brume/icon-28.webp",
+        "thumb": "assets/packs/brume/thumb-28.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-29",
+        "name": "Maison",
+        "src": "assets/packs/brume/icon-29.webp",
+        "thumb": "assets/packs/brume/thumb-29.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-30",
+        "name": "Mesures",
+        "src": "assets/packs/brume/icon-30.webp",
+        "thumb": "assets/packs/brume/thumb-30.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-31",
+        "name": "Mots de passe",
+        "src": "assets/packs/brume/icon-31.webp",
+        "thumb": "assets/packs/brume/thumb-31.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-32",
+        "name": "Numbers",
+        "src": "assets/packs/brume/icon-32.webp",
+        "thumb": "assets/packs/brume/thumb-32.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-33",
+        "name": "Pages",
+        "src": "assets/packs/brume/icon-33.webp",
+        "thumb": "assets/packs/brume/thumb-33.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-34",
+        "name": "Podcasts",
+        "src": "assets/packs/brume/icon-34.webp",
+        "thumb": "assets/packs/brume/thumb-34.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-35",
+        "name": "Raccourcis",
+        "src": "assets/packs/brume/icon-35.webp",
+        "thumb": "assets/packs/brume/thumb-35.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-36",
+        "name": "Santé",
+        "src": "assets/packs/brume/icon-36.webp",
+        "thumb": "assets/packs/brume/thumb-36.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-37",
+        "name": "Traduire",
+        "src": "assets/packs/brume/icon-37.webp",
+        "thumb": "assets/packs/brume/thumb-37.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-38",
+        "name": "Watch",
+        "src": "assets/packs/brume/icon-38.webp",
+        "thumb": "assets/packs/brume/thumb-38.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-39",
+        "name": "iTunes Store",
+        "src": "assets/packs/brume/icon-39.webp",
+        "thumb": "assets/packs/brume/thumb-39.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-40",
+        "name": "ChatGPT",
+        "src": "assets/packs/brume/icon-40.webp",
+        "thumb": "assets/packs/brume/thumb-40.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-41",
+        "name": "Discord",
+        "src": "assets/packs/brume/icon-41.webp",
+        "thumb": "assets/packs/brume/thumb-41.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-42",
+        "name": "Facebook",
+        "src": "assets/packs/brume/icon-42.webp",
+        "thumb": "assets/packs/brume/thumb-42.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-43",
+        "name": "Gemini",
+        "src": "assets/packs/brume/icon-43.webp",
+        "thumb": "assets/packs/brume/thumb-43.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-44",
+        "name": "Gmail",
+        "src": "assets/packs/brume/icon-44.webp",
+        "thumb": "assets/packs/brume/thumb-44.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-45",
+        "name": "Google Meet",
+        "src": "assets/packs/brume/icon-45.webp",
+        "thumb": "assets/packs/brume/thumb-45.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-46",
+        "name": "Instagram",
+        "src": "assets/packs/brume/icon-46.webp",
+        "thumb": "assets/packs/brume/thumb-46.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-47",
+        "name": "Messenger",
+        "src": "assets/packs/brume/icon-47.webp",
+        "thumb": "assets/packs/brume/thumb-47.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-48",
+        "name": "Microsoft Teams",
+        "src": "assets/packs/brume/icon-48.webp",
+        "thumb": "assets/packs/brume/thumb-48.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-49",
+        "name": "Outlook",
+        "src": "assets/packs/brume/icon-49.webp",
+        "thumb": "assets/packs/brume/thumb-49.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-50",
+        "name": "Pinterest",
+        "src": "assets/packs/brume/icon-50.webp",
+        "thumb": "assets/packs/brume/thumb-50.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-51",
+        "name": "Reddit",
+        "src": "assets/packs/brume/icon-51.webp",
+        "thumb": "assets/packs/brume/thumb-51.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-52",
+        "name": "Signal",
+        "src": "assets/packs/brume/icon-52.webp",
+        "thumb": "assets/packs/brume/thumb-52.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-53",
+        "name": "Snapchat",
+        "src": "assets/packs/brume/icon-53.webp",
+        "thumb": "assets/packs/brume/thumb-53.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-54",
+        "name": "Telegram",
+        "src": "assets/packs/brume/icon-54.webp",
+        "thumb": "assets/packs/brume/thumb-54.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-55",
+        "name": "Threads",
+        "src": "assets/packs/brume/icon-55.webp",
+        "thumb": "assets/packs/brume/thumb-55.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-56",
+        "name": "TikTok",
+        "src": "assets/packs/brume/icon-56.webp",
+        "thumb": "assets/packs/brume/thumb-56.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-57",
+        "name": "WhatsApp",
+        "src": "assets/packs/brume/icon-57.webp",
+        "thumb": "assets/packs/brume/thumb-57.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-58",
+        "name": "X",
+        "src": "assets/packs/brume/icon-58.webp",
+        "thumb": "assets/packs/brume/thumb-58.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-59",
+        "name": "Zoom",
+        "src": "assets/packs/brume/icon-59.webp",
+        "thumb": "assets/packs/brume/thumb-59.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-60",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/brume/icon-60.webp",
+        "thumb": "assets/packs/brume/thumb-60.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-61",
+        "name": "Audible",
+        "src": "assets/packs/brume/icon-61.webp",
+        "thumb": "assets/packs/brume/thumb-61.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-62",
+        "name": "Chrome",
+        "src": "assets/packs/brume/icon-62.webp",
+        "thumb": "assets/packs/brume/thumb-62.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-63",
+        "name": "Deezer",
+        "src": "assets/packs/brume/icon-63.webp",
+        "thumb": "assets/packs/brume/thumb-63.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-64",
+        "name": "Disney Plus",
+        "src": "assets/packs/brume/icon-64.webp",
+        "thumb": "assets/packs/brume/thumb-64.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-65",
+        "name": "Excel",
+        "src": "assets/packs/brume/icon-65.webp",
+        "thumb": "assets/packs/brume/thumb-65.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-66",
+        "name": "Google",
+        "src": "assets/packs/brume/icon-66.webp",
+        "thumb": "assets/packs/brume/thumb-66.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-67",
+        "name": "Google Docs",
+        "src": "assets/packs/brume/icon-67.webp",
+        "thumb": "assets/packs/brume/thumb-67.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-68",
+        "name": "Google Drive",
+        "src": "assets/packs/brume/icon-68.webp",
+        "thumb": "assets/packs/brume/thumb-68.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-69",
+        "name": "Google Sheets",
+        "src": "assets/packs/brume/icon-69.webp",
+        "thumb": "assets/packs/brume/thumb-69.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-70",
+        "name": "Kindle",
+        "src": "assets/packs/brume/icon-70.webp",
+        "thumb": "assets/packs/brume/thumb-70.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-71",
+        "name": "Netflix",
+        "src": "assets/packs/brume/icon-71.webp",
+        "thumb": "assets/packs/brume/thumb-71.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-72",
+        "name": "OneDrive",
+        "src": "assets/packs/brume/icon-72.webp",
+        "thumb": "assets/packs/brume/thumb-72.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-73",
+        "name": "PowerPoint",
+        "src": "assets/packs/brume/icon-73.webp",
+        "thumb": "assets/packs/brume/thumb-73.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-74",
+        "name": "Prime Video",
+        "src": "assets/packs/brume/icon-74.webp",
+        "thumb": "assets/packs/brume/thumb-74.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-75",
+        "name": "Shazam",
+        "src": "assets/packs/brume/icon-75.webp",
+        "thumb": "assets/packs/brume/thumb-75.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-76",
+        "name": "Spotify",
+        "src": "assets/packs/brume/icon-76.webp",
+        "thumb": "assets/packs/brume/thumb-76.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-77",
+        "name": "Twitch",
+        "src": "assets/packs/brume/icon-77.webp",
+        "thumb": "assets/packs/brume/thumb-77.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-78",
+        "name": "Word",
+        "src": "assets/packs/brume/icon-78.webp",
+        "thumb": "assets/packs/brume/thumb-78.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-79",
+        "name": "YouTube",
+        "src": "assets/packs/brume/icon-79.webp",
+        "thumb": "assets/packs/brume/thumb-79.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-80",
+        "name": "Adobe Scan",
+        "src": "assets/packs/brume/icon-80.webp",
+        "thumb": "assets/packs/brume/thumb-80.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-81",
+        "name": "Airbnb",
+        "src": "assets/packs/brume/icon-81.webp",
+        "thumb": "assets/packs/brume/thumb-81.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-82",
+        "name": "AliExpress",
+        "src": "assets/packs/brume/icon-82.webp",
+        "thumb": "assets/packs/brume/thumb-82.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-83",
+        "name": "Amazon",
+        "src": "assets/packs/brume/icon-83.webp",
+        "thumb": "assets/packs/brume/thumb-83.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-84",
+        "name": "Booking",
+        "src": "assets/packs/brume/icon-84.webp",
+        "thumb": "assets/packs/brume/thumb-84.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-85",
+        "name": "Canva",
+        "src": "assets/packs/brume/icon-85.webp",
+        "thumb": "assets/packs/brume/thumb-85.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-86",
+        "name": "CapCut",
+        "src": "assets/packs/brume/icon-86.webp",
+        "thumb": "assets/packs/brume/thumb-86.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-87",
+        "name": "Compte Ameli",
+        "src": "assets/packs/brume/icon-87.webp",
+        "thumb": "assets/packs/brume/thumb-87.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-88",
+        "name": "Doctolib",
+        "src": "assets/packs/brume/icon-88.webp",
+        "thumb": "assets/packs/brume/thumb-88.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-89",
+        "name": "Etsy",
+        "src": "assets/packs/brume/icon-89.webp",
+        "thumb": "assets/packs/brume/thumb-89.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-90",
+        "name": "Google Maps",
+        "src": "assets/packs/brume/icon-90.webp",
+        "thumb": "assets/packs/brume/thumb-90.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-91",
+        "name": "Google Photos",
+        "src": "assets/packs/brume/icon-91.webp",
+        "thumb": "assets/packs/brume/thumb-91.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-92",
+        "name": "Leboncoin",
+        "src": "assets/packs/brume/icon-92.webp",
+        "thumb": "assets/packs/brume/thumb-92.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-93",
+        "name": "PayPal",
+        "src": "assets/packs/brume/icon-93.webp",
+        "thumb": "assets/packs/brume/thumb-93.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-94",
+        "name": "Revolut",
+        "src": "assets/packs/brume/icon-94.webp",
+        "thumb": "assets/packs/brume/thumb-94.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-95",
+        "name": "SNCF Connect",
+        "src": "assets/packs/brume/icon-95.webp",
+        "thumb": "assets/packs/brume/thumb-95.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-96",
+        "name": "Temu",
+        "src": "assets/packs/brume/icon-96.webp",
+        "thumb": "assets/packs/brume/thumb-96.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-97",
+        "name": "Uber",
+        "src": "assets/packs/brume/icon-97.webp",
+        "thumb": "assets/packs/brume/thumb-97.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-98",
+        "name": "Vinted",
+        "src": "assets/packs/brume/icon-98.webp",
+        "thumb": "assets/packs/brume/thumb-98.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "brume-icon-99",
+        "name": "Waze",
+        "src": "assets/packs/brume/icon-99.webp",
+        "thumb": "assets/packs/brume/thumb-99.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "brume-icon-00",
+      "brume-icon-08",
+      "brume-icon-16",
+      "brume-icon-25",
+      "brume-icon-33",
+      "brume-icon-41",
+      "brume-icon-50",
+      "brume-icon-58",
+      "brume-icon-66",
+      "brume-icon-75",
+      "brume-icon-83",
+      "brume-icon-91"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_BRUME.zip",
+      "widgets": "Aucun widget identifié dans les fichiers reçus"
+    }
+  },
+  {
+    "id": "eclipse",
+    "slug": "eclipse",
+    "name": "Éclipse Chromatique",
+    "colors": {
+      "accent": "#ff9a52",
+      "base": "#171126"
+    },
+    "description": "Éclipse cosmique en duo chromatique, orange et bleu nuit.",
+    "cover": "assets/packs/eclipse/cover.webp",
+    "wallpapers": [
+      {
+        "id": "eclipse-cover",
+        "name": "Nuit cosmique",
+        "src": "assets/packs/eclipse/cover.webp",
+        "thumb": "assets/packs/eclipse/cover-thumb.webp",
+        "width": 941,
+        "height": 1672,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-01",
+        "name": "Éclipse",
+        "src": "assets/packs/eclipse/wallpapers/wall-01.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-01-thumb.webp",
+        "width": 940,
+        "height": 1672,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-02",
+        "name": "Obsidienne",
+        "src": "assets/packs/eclipse/wallpapers/wall-02.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-02-thumb.webp",
+        "width": 941,
+        "height": 1672,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-03",
+        "name": "Aurore",
+        "src": "assets/packs/eclipse/wallpapers/wall-03.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-03-thumb.webp",
+        "width": 941,
+        "height": 1672,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-04",
+        "name": "Nuit cosmique — écran allongé",
+        "src": "assets/packs/eclipse/wallpapers/wall-04.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-04-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-05",
+        "name": "Éclipse — écran allongé",
+        "src": "assets/packs/eclipse/wallpapers/wall-05.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-05-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-06",
+        "name": "Obsidienne — écran allongé",
+        "src": "assets/packs/eclipse/wallpapers/wall-06.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-06-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "eclipse-wall-07",
+        "name": "Aurore — écran allongé",
+        "src": "assets/packs/eclipse/wallpapers/wall-07.webp",
+        "thumb": "assets/packs/eclipse/wallpapers/wall-07-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      }
+    ],
+    "icons": [
+      {
+        "id": "eclipse-icon-00",
+        "name": "Téléphone",
+        "src": "assets/packs/eclipse/icon-00.webp",
+        "thumb": "assets/packs/eclipse/thumb-00.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-01",
+        "name": "Messages",
+        "src": "assets/packs/eclipse/icon-01.webp",
+        "thumb": "assets/packs/eclipse/thumb-01.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-02",
+        "name": "WhatsApp",
+        "src": "assets/packs/eclipse/icon-02.webp",
+        "thumb": "assets/packs/eclipse/thumb-02.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-03",
+        "name": "Contacts",
+        "src": "assets/packs/eclipse/icon-03.webp",
+        "thumb": "assets/packs/eclipse/thumb-03.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-04",
+        "name": "Mail",
+        "src": "assets/packs/eclipse/icon-04.webp",
+        "thumb": "assets/packs/eclipse/thumb-04.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-05",
+        "name": "Gmail",
+        "src": "assets/packs/eclipse/icon-05.webp",
+        "thumb": "assets/packs/eclipse/thumb-05.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-06",
+        "name": "Safari",
+        "src": "assets/packs/eclipse/icon-06.webp",
+        "thumb": "assets/packs/eclipse/thumb-06.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-07",
+        "name": "Chrome",
+        "src": "assets/packs/eclipse/icon-07.webp",
+        "thumb": "assets/packs/eclipse/thumb-07.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-08",
+        "name": "Appareil photo",
+        "src": "assets/packs/eclipse/icon-08.webp",
+        "thumb": "assets/packs/eclipse/thumb-08.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-09",
+        "name": "Photos",
+        "src": "assets/packs/eclipse/icon-09.webp",
+        "thumb": "assets/packs/eclipse/thumb-09.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-10",
+        "name": "Calendrier",
+        "src": "assets/packs/eclipse/icon-10.webp",
+        "thumb": "assets/packs/eclipse/thumb-10.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-11",
+        "name": "Horloge",
+        "src": "assets/packs/eclipse/icon-11.webp",
+        "thumb": "assets/packs/eclipse/thumb-11.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-12",
+        "name": "Météo",
+        "src": "assets/packs/eclipse/icon-12.webp",
+        "thumb": "assets/packs/eclipse/thumb-12.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-13",
+        "name": "Réglages",
+        "src": "assets/packs/eclipse/icon-13.webp",
+        "thumb": "assets/packs/eclipse/thumb-13.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-14",
+        "name": "App Store",
+        "src": "assets/packs/eclipse/icon-14.webp",
+        "thumb": "assets/packs/eclipse/thumb-14.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-15",
+        "name": "Fichiers",
+        "src": "assets/packs/eclipse/icon-15.webp",
+        "thumb": "assets/packs/eclipse/thumb-15.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-16",
+        "name": "Notes",
+        "src": "assets/packs/eclipse/icon-16.webp",
+        "thumb": "assets/packs/eclipse/thumb-16.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-17",
+        "name": "Rappels",
+        "src": "assets/packs/eclipse/icon-17.webp",
+        "thumb": "assets/packs/eclipse/thumb-17.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-18",
+        "name": "Calculatrice",
+        "src": "assets/packs/eclipse/icon-18.webp",
+        "thumb": "assets/packs/eclipse/thumb-18.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-19",
+        "name": "Wallet",
+        "src": "assets/packs/eclipse/icon-19.webp",
+        "thumb": "assets/packs/eclipse/thumb-19.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-20",
+        "name": "Plans",
+        "src": "assets/packs/eclipse/icon-20.webp",
+        "thumb": "assets/packs/eclipse/thumb-20.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-21",
+        "name": "Google Maps",
+        "src": "assets/packs/eclipse/icon-21.webp",
+        "thumb": "assets/packs/eclipse/thumb-21.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-22",
+        "name": "Waze",
+        "src": "assets/packs/eclipse/icon-22.webp",
+        "thumb": "assets/packs/eclipse/thumb-22.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-23",
+        "name": "Uber",
+        "src": "assets/packs/eclipse/icon-23.webp",
+        "thumb": "assets/packs/eclipse/thumb-23.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-24",
+        "name": "SNCF Connect",
+        "src": "assets/packs/eclipse/icon-24.webp",
+        "thumb": "assets/packs/eclipse/thumb-24.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-25",
+        "name": "Booking",
+        "src": "assets/packs/eclipse/icon-25.webp",
+        "thumb": "assets/packs/eclipse/thumb-25.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-26",
+        "name": "Airbnb",
+        "src": "assets/packs/eclipse/icon-26.webp",
+        "thumb": "assets/packs/eclipse/thumb-26.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-27",
+        "name": "Voyage",
+        "src": "assets/packs/eclipse/icon-27.webp",
+        "thumb": "assets/packs/eclipse/thumb-27.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-28",
+        "name": "Localiser",
+        "src": "assets/packs/eclipse/icon-28.webp",
+        "thumb": "assets/packs/eclipse/thumb-28.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-29",
+        "name": "Traduction",
+        "src": "assets/packs/eclipse/icon-29.webp",
+        "thumb": "assets/packs/eclipse/thumb-29.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-30",
+        "name": "YouTube",
+        "src": "assets/packs/eclipse/icon-30.webp",
+        "thumb": "assets/packs/eclipse/thumb-30.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-31",
+        "name": "Spotify",
+        "src": "assets/packs/eclipse/icon-31.webp",
+        "thumb": "assets/packs/eclipse/thumb-31.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-32",
+        "name": "Apple Music",
+        "src": "assets/packs/eclipse/icon-32.webp",
+        "thumb": "assets/packs/eclipse/thumb-32.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-33",
+        "name": "YouTube Music",
+        "src": "assets/packs/eclipse/icon-33.webp",
+        "thumb": "assets/packs/eclipse/thumb-33.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-34",
+        "name": "Netflix",
+        "src": "assets/packs/eclipse/icon-34.webp",
+        "thumb": "assets/packs/eclipse/thumb-34.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-35",
+        "name": "Prime Video",
+        "src": "assets/packs/eclipse/icon-35.webp",
+        "thumb": "assets/packs/eclipse/thumb-35.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-36",
+        "name": "Disney Plus",
+        "src": "assets/packs/eclipse/icon-36.webp",
+        "thumb": "assets/packs/eclipse/thumb-36.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-37",
+        "name": "Twitch",
+        "src": "assets/packs/eclipse/icon-37.webp",
+        "thumb": "assets/packs/eclipse/thumb-37.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-38",
+        "name": "Podcasts",
+        "src": "assets/packs/eclipse/icon-38.webp",
+        "thumb": "assets/packs/eclipse/thumb-38.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-39",
+        "name": "Shazam",
+        "src": "assets/packs/eclipse/icon-39.webp",
+        "thumb": "assets/packs/eclipse/thumb-39.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-40",
+        "name": "Google",
+        "src": "assets/packs/eclipse/icon-40.webp",
+        "thumb": "assets/packs/eclipse/thumb-40.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-41",
+        "name": "Google Drive",
+        "src": "assets/packs/eclipse/icon-41.webp",
+        "thumb": "assets/packs/eclipse/thumb-41.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-42",
+        "name": "Google Docs",
+        "src": "assets/packs/eclipse/icon-42.webp",
+        "thumb": "assets/packs/eclipse/thumb-42.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-43",
+        "name": "Google Sheets",
+        "src": "assets/packs/eclipse/icon-43.webp",
+        "thumb": "assets/packs/eclipse/thumb-43.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-44",
+        "name": "Google Meet",
+        "src": "assets/packs/eclipse/icon-44.webp",
+        "thumb": "assets/packs/eclipse/thumb-44.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-45",
+        "name": "Zoom",
+        "src": "assets/packs/eclipse/icon-45.webp",
+        "thumb": "assets/packs/eclipse/thumb-45.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-46",
+        "name": "Teams",
+        "src": "assets/packs/eclipse/icon-46.webp",
+        "thumb": "assets/packs/eclipse/thumb-46.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-47",
+        "name": "Word",
+        "src": "assets/packs/eclipse/icon-47.webp",
+        "thumb": "assets/packs/eclipse/thumb-47.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-48",
+        "name": "Excel",
+        "src": "assets/packs/eclipse/icon-48.webp",
+        "thumb": "assets/packs/eclipse/thumb-48.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-49",
+        "name": "PowerPoint",
+        "src": "assets/packs/eclipse/icon-49.webp",
+        "thumb": "assets/packs/eclipse/thumb-49.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-50",
+        "name": "Canva",
+        "src": "assets/packs/eclipse/icon-50.webp",
+        "thumb": "assets/packs/eclipse/thumb-50.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-51",
+        "name": "CapCut",
+        "src": "assets/packs/eclipse/icon-51.webp",
+        "thumb": "assets/packs/eclipse/thumb-51.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-52",
+        "name": "Pinterest",
+        "src": "assets/packs/eclipse/icon-52.webp",
+        "thumb": "assets/packs/eclipse/thumb-52.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-53",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/eclipse/icon-53.webp",
+        "thumb": "assets/packs/eclipse/thumb-53.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-54",
+        "name": "Scanner",
+        "src": "assets/packs/eclipse/icon-54.webp",
+        "thumb": "assets/packs/eclipse/thumb-54.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-55",
+        "name": "Vidéo",
+        "src": "assets/packs/eclipse/icon-55.webp",
+        "thumb": "assets/packs/eclipse/thumb-55.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-56",
+        "name": "Photo Galerie",
+        "src": "assets/packs/eclipse/icon-56.webp",
+        "thumb": "assets/packs/eclipse/thumb-56.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-57",
+        "name": "Musique",
+        "src": "assets/packs/eclipse/icon-57.webp",
+        "thumb": "assets/packs/eclipse/thumb-57.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-58",
+        "name": "Documents",
+        "src": "assets/packs/eclipse/icon-58.webp",
+        "thumb": "assets/packs/eclipse/thumb-58.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-59",
+        "name": "Téléchargements",
+        "src": "assets/packs/eclipse/icon-59.webp",
+        "thumb": "assets/packs/eclipse/thumb-59.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-60",
+        "name": "Amazon",
+        "src": "assets/packs/eclipse/icon-60.webp",
+        "thumb": "assets/packs/eclipse/thumb-60.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-61",
+        "name": "AliExpress",
+        "src": "assets/packs/eclipse/icon-61.webp",
+        "thumb": "assets/packs/eclipse/thumb-61.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-62",
+        "name": "Temu",
+        "src": "assets/packs/eclipse/icon-62.webp",
+        "thumb": "assets/packs/eclipse/thumb-62.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-63",
+        "name": "Etsy",
+        "src": "assets/packs/eclipse/icon-63.webp",
+        "thumb": "assets/packs/eclipse/thumb-63.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-64",
+        "name": "Vinted",
+        "src": "assets/packs/eclipse/icon-64.webp",
+        "thumb": "assets/packs/eclipse/thumb-64.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-65",
+        "name": "Leboncoin",
+        "src": "assets/packs/eclipse/icon-65.webp",
+        "thumb": "assets/packs/eclipse/thumb-65.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-66",
+        "name": "PayPal",
+        "src": "assets/packs/eclipse/icon-66.webp",
+        "thumb": "assets/packs/eclipse/thumb-66.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-67",
+        "name": "Revolut",
+        "src": "assets/packs/eclipse/icon-67.webp",
+        "thumb": "assets/packs/eclipse/thumb-67.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-68",
+        "name": "Banque",
+        "src": "assets/packs/eclipse/icon-68.webp",
+        "thumb": "assets/packs/eclipse/thumb-68.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-69",
+        "name": "Shopping",
+        "src": "assets/packs/eclipse/icon-69.webp",
+        "thumb": "assets/packs/eclipse/thumb-69.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-70",
+        "name": "ChatGPT",
+        "src": "assets/packs/eclipse/icon-70.webp",
+        "thumb": "assets/packs/eclipse/thumb-70.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-71",
+        "name": "Gemini",
+        "src": "assets/packs/eclipse/icon-71.webp",
+        "thumb": "assets/packs/eclipse/thumb-71.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-72",
+        "name": "Claude",
+        "src": "assets/packs/eclipse/icon-72.webp",
+        "thumb": "assets/packs/eclipse/thumb-72.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-73",
+        "name": "IA",
+        "src": "assets/packs/eclipse/icon-73.webp",
+        "thumb": "assets/packs/eclipse/thumb-73.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-74",
+        "name": "Outils",
+        "src": "assets/packs/eclipse/icon-74.webp",
+        "thumb": "assets/packs/eclipse/thumb-74.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-75",
+        "name": "Cloud",
+        "src": "assets/packs/eclipse/icon-75.webp",
+        "thumb": "assets/packs/eclipse/thumb-75.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-76",
+        "name": "Mots de passe",
+        "src": "assets/packs/eclipse/icon-76.webp",
+        "thumb": "assets/packs/eclipse/thumb-76.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-77",
+        "name": "Maison",
+        "src": "assets/packs/eclipse/icon-77.webp",
+        "thumb": "assets/packs/eclipse/thumb-77.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-78",
+        "name": "Santé",
+        "src": "assets/packs/eclipse/icon-78.webp",
+        "thumb": "assets/packs/eclipse/thumb-78.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-79",
+        "name": "Fitness",
+        "src": "assets/packs/eclipse/icon-79.webp",
+        "thumb": "assets/packs/eclipse/thumb-79.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-80",
+        "name": "Jeux",
+        "src": "assets/packs/eclipse/icon-80.webp",
+        "thumb": "assets/packs/eclipse/thumb-80.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-81",
+        "name": "Travail",
+        "src": "assets/packs/eclipse/icon-81.webp",
+        "thumb": "assets/packs/eclipse/thumb-81.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-82",
+        "name": "Dossier",
+        "src": "assets/packs/eclipse/icon-82.webp",
+        "thumb": "assets/packs/eclipse/thumb-82.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-83",
+        "name": "Favoris",
+        "src": "assets/packs/eclipse/icon-83.webp",
+        "thumb": "assets/packs/eclipse/thumb-83.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-84",
+        "name": "Archive",
+        "src": "assets/packs/eclipse/icon-84.webp",
+        "thumb": "assets/packs/eclipse/thumb-84.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-85",
+        "name": "Corbeille",
+        "src": "assets/packs/eclipse/icon-85.webp",
+        "thumb": "assets/packs/eclipse/thumb-85.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-86",
+        "name": "Maison",
+        "src": "assets/packs/eclipse/icon-86.webp",
+        "thumb": "assets/packs/eclipse/thumb-86.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-87",
+        "name": "Voyage",
+        "src": "assets/packs/eclipse/icon-87.webp",
+        "thumb": "assets/packs/eclipse/thumb-87.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-88",
+        "name": "Banque générique",
+        "src": "assets/packs/eclipse/icon-88.webp",
+        "thumb": "assets/packs/eclipse/thumb-88.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "eclipse-icon-89",
+        "name": "Réseau Internet",
+        "src": "assets/packs/eclipse/icon-89.webp",
+        "thumb": "assets/packs/eclipse/thumb-89.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "eclipse-icon-00",
+      "eclipse-icon-07",
+      "eclipse-icon-15",
+      "eclipse-icon-22",
+      "eclipse-icon-30",
+      "eclipse-icon-37",
+      "eclipse-icon-45",
+      "eclipse-icon-52",
+      "eclipse-icon-60",
+      "eclipse-icon-67",
+      "eclipse-icon-75",
+      "eclipse-icon-82"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_ECLIPSE_CHROMATIQUE.zip",
+      "widgets": "Aucun widget identifié dans les fichiers reçus"
+    }
+  },
+  {
+    "id": "elden",
+    "slug": "elden",
+    "name": "Elden",
+    "colors": {
+      "accent": "#d8b06b",
+      "base": "#1c1712"
+    },
+    "description": "Univers Elden Ring : ruines dorées, grâce et lumière ancienne.",
+    "cover": "assets/packs/elden/cover.webp",
+    "wallpapers": [
+      {
+        "id": "elden-cover",
+        "name": "Racines d’or",
+        "src": "assets/packs/elden/cover.webp",
+        "thumb": "assets/packs/elden/cover-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "elden-wall-01",
+        "name": "Pierre de grâce",
+        "src": "assets/packs/elden/wallpapers/wall-01.webp",
+        "thumb": "assets/packs/elden/wallpapers/wall-01-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "elden-wall-02",
+        "name": "Brume de l’entre-terre",
+        "src": "assets/packs/elden/wallpapers/wall-02.webp",
+        "thumb": "assets/packs/elden/wallpapers/wall-02-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "elden-wall-03",
+        "name": "Malenia, cuivre et papillons",
+        "src": "assets/packs/elden/wallpapers/wall-03.webp",
+        "thumb": "assets/packs/elden/wallpapers/wall-03-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      }
+    ],
+    "icons": [
+      {
+        "id": "elden-icon-00",
+        "name": "ChatGPT",
+        "src": "assets/packs/elden/icon-00.webp",
+        "thumb": "assets/packs/elden/thumb-00.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-01",
+        "name": "Discord",
+        "src": "assets/packs/elden/icon-01.webp",
+        "thumb": "assets/packs/elden/thumb-01.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-02",
+        "name": "Facebook",
+        "src": "assets/packs/elden/icon-02.webp",
+        "thumb": "assets/packs/elden/thumb-02.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-03",
+        "name": "Gemini",
+        "src": "assets/packs/elden/icon-03.webp",
+        "thumb": "assets/packs/elden/thumb-03.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-04",
+        "name": "Gmail",
+        "src": "assets/packs/elden/icon-04.webp",
+        "thumb": "assets/packs/elden/thumb-04.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-05",
+        "name": "Google Meet",
+        "src": "assets/packs/elden/icon-05.webp",
+        "thumb": "assets/packs/elden/thumb-05.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-06",
+        "name": "Instagram",
+        "src": "assets/packs/elden/icon-06.webp",
+        "thumb": "assets/packs/elden/thumb-06.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-07",
+        "name": "Messenger",
+        "src": "assets/packs/elden/icon-07.webp",
+        "thumb": "assets/packs/elden/thumb-07.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-08",
+        "name": "Microsoft Teams",
+        "src": "assets/packs/elden/icon-08.webp",
+        "thumb": "assets/packs/elden/thumb-08.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-09",
+        "name": "Outlook",
+        "src": "assets/packs/elden/icon-09.webp",
+        "thumb": "assets/packs/elden/thumb-09.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-10",
+        "name": "Pinterest",
+        "src": "assets/packs/elden/icon-10.webp",
+        "thumb": "assets/packs/elden/thumb-10.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-11",
+        "name": "Reddit",
+        "src": "assets/packs/elden/icon-11.webp",
+        "thumb": "assets/packs/elden/thumb-11.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-12",
+        "name": "Signal",
+        "src": "assets/packs/elden/icon-12.webp",
+        "thumb": "assets/packs/elden/thumb-12.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-13",
+        "name": "Snapchat",
+        "src": "assets/packs/elden/icon-13.webp",
+        "thumb": "assets/packs/elden/thumb-13.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-14",
+        "name": "Telegram",
+        "src": "assets/packs/elden/icon-14.webp",
+        "thumb": "assets/packs/elden/thumb-14.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-15",
+        "name": "Threads",
+        "src": "assets/packs/elden/icon-15.webp",
+        "thumb": "assets/packs/elden/thumb-15.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-16",
+        "name": "TikTok",
+        "src": "assets/packs/elden/icon-16.webp",
+        "thumb": "assets/packs/elden/thumb-16.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-17",
+        "name": "WhatsApp",
+        "src": "assets/packs/elden/icon-17.webp",
+        "thumb": "assets/packs/elden/thumb-17.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-18",
+        "name": "X",
+        "src": "assets/packs/elden/icon-18.webp",
+        "thumb": "assets/packs/elden/thumb-18.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-19",
+        "name": "Zoom",
+        "src": "assets/packs/elden/icon-19.webp",
+        "thumb": "assets/packs/elden/thumb-19.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-20",
+        "name": "Apple Games",
+        "src": "assets/packs/elden/icon-20.webp",
+        "thumb": "assets/packs/elden/thumb-20.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-21",
+        "name": "Apple Music",
+        "src": "assets/packs/elden/icon-21.webp",
+        "thumb": "assets/packs/elden/thumb-21.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-22",
+        "name": "Apple Store",
+        "src": "assets/packs/elden/icon-22.webp",
+        "thumb": "assets/packs/elden/thumb-22.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-23",
+        "name": "Apple TV",
+        "src": "assets/packs/elden/icon-23.webp",
+        "thumb": "assets/packs/elden/thumb-23.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-24",
+        "name": "Dictaphone",
+        "src": "assets/packs/elden/icon-24.webp",
+        "thumb": "assets/packs/elden/thumb-24.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-25",
+        "name": "Forme",
+        "src": "assets/packs/elden/icon-25.webp",
+        "thumb": "assets/packs/elden/thumb-25.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-26",
+        "name": "Journal",
+        "src": "assets/packs/elden/icon-26.webp",
+        "thumb": "assets/packs/elden/thumb-26.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-27",
+        "name": "Keynote",
+        "src": "assets/packs/elden/icon-27.webp",
+        "thumb": "assets/packs/elden/thumb-27.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-28",
+        "name": "Livres",
+        "src": "assets/packs/elden/icon-28.webp",
+        "thumb": "assets/packs/elden/thumb-28.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-29",
+        "name": "Maison",
+        "src": "assets/packs/elden/icon-29.webp",
+        "thumb": "assets/packs/elden/thumb-29.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-30",
+        "name": "Mesures",
+        "src": "assets/packs/elden/icon-30.webp",
+        "thumb": "assets/packs/elden/thumb-30.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-31",
+        "name": "Mots de passe",
+        "src": "assets/packs/elden/icon-31.webp",
+        "thumb": "assets/packs/elden/thumb-31.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-32",
+        "name": "Numbers",
+        "src": "assets/packs/elden/icon-32.webp",
+        "thumb": "assets/packs/elden/thumb-32.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-33",
+        "name": "Pages",
+        "src": "assets/packs/elden/icon-33.webp",
+        "thumb": "assets/packs/elden/thumb-33.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-34",
+        "name": "Podcasts",
+        "src": "assets/packs/elden/icon-34.webp",
+        "thumb": "assets/packs/elden/thumb-34.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-35",
+        "name": "Raccourcis",
+        "src": "assets/packs/elden/icon-35.webp",
+        "thumb": "assets/packs/elden/thumb-35.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-36",
+        "name": "Santé",
+        "src": "assets/packs/elden/icon-36.webp",
+        "thumb": "assets/packs/elden/thumb-36.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-37",
+        "name": "Traduire",
+        "src": "assets/packs/elden/icon-37.webp",
+        "thumb": "assets/packs/elden/thumb-37.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-38",
+        "name": "Watch",
+        "src": "assets/packs/elden/icon-38.webp",
+        "thumb": "assets/packs/elden/thumb-38.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-39",
+        "name": "iTunes Store",
+        "src": "assets/packs/elden/icon-39.webp",
+        "thumb": "assets/packs/elden/thumb-39.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-40",
+        "name": "App Store",
+        "src": "assets/packs/elden/icon-40.webp",
+        "thumb": "assets/packs/elden/thumb-40.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-41",
+        "name": "Appareil photo",
+        "src": "assets/packs/elden/icon-41.webp",
+        "thumb": "assets/packs/elden/thumb-41.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-42",
+        "name": "Calculatrice",
+        "src": "assets/packs/elden/icon-42.webp",
+        "thumb": "assets/packs/elden/thumb-42.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-43",
+        "name": "Calendrier",
+        "src": "assets/packs/elden/icon-43.webp",
+        "thumb": "assets/packs/elden/thumb-43.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-44",
+        "name": "Contacts",
+        "src": "assets/packs/elden/icon-44.webp",
+        "thumb": "assets/packs/elden/thumb-44.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-45",
+        "name": "FaceTime",
+        "src": "assets/packs/elden/icon-45.webp",
+        "thumb": "assets/packs/elden/thumb-45.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-46",
+        "name": "Fichiers",
+        "src": "assets/packs/elden/icon-46.webp",
+        "thumb": "assets/packs/elden/thumb-46.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-47",
+        "name": "Horloge",
+        "src": "assets/packs/elden/icon-47.webp",
+        "thumb": "assets/packs/elden/thumb-47.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-48",
+        "name": "Localiser",
+        "src": "assets/packs/elden/icon-48.webp",
+        "thumb": "assets/packs/elden/thumb-48.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-49",
+        "name": "Mail",
+        "src": "assets/packs/elden/icon-49.webp",
+        "thumb": "assets/packs/elden/thumb-49.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-50",
+        "name": "Messages",
+        "src": "assets/packs/elden/icon-50.webp",
+        "thumb": "assets/packs/elden/thumb-50.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-51",
+        "name": "Météo",
+        "src": "assets/packs/elden/icon-51.webp",
+        "thumb": "assets/packs/elden/thumb-51.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-52",
+        "name": "Notes",
+        "src": "assets/packs/elden/icon-52.webp",
+        "thumb": "assets/packs/elden/thumb-52.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-53",
+        "name": "Photos",
+        "src": "assets/packs/elden/icon-53.webp",
+        "thumb": "assets/packs/elden/thumb-53.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-54",
+        "name": "Plans",
+        "src": "assets/packs/elden/icon-54.webp",
+        "thumb": "assets/packs/elden/thumb-54.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-55",
+        "name": "Rappels",
+        "src": "assets/packs/elden/icon-55.webp",
+        "thumb": "assets/packs/elden/thumb-55.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-56",
+        "name": "Réglages",
+        "src": "assets/packs/elden/icon-56.webp",
+        "thumb": "assets/packs/elden/thumb-56.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-57",
+        "name": "Safari",
+        "src": "assets/packs/elden/icon-57.webp",
+        "thumb": "assets/packs/elden/thumb-57.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-58",
+        "name": "Téléphone",
+        "src": "assets/packs/elden/icon-58.webp",
+        "thumb": "assets/packs/elden/thumb-58.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-59",
+        "name": "Wallet",
+        "src": "assets/packs/elden/icon-59.webp",
+        "thumb": "assets/packs/elden/thumb-59.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-60",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/elden/icon-60.webp",
+        "thumb": "assets/packs/elden/thumb-60.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-61",
+        "name": "Audible",
+        "src": "assets/packs/elden/icon-61.webp",
+        "thumb": "assets/packs/elden/thumb-61.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-62",
+        "name": "Chrome",
+        "src": "assets/packs/elden/icon-62.webp",
+        "thumb": "assets/packs/elden/thumb-62.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-63",
+        "name": "Deezer",
+        "src": "assets/packs/elden/icon-63.webp",
+        "thumb": "assets/packs/elden/thumb-63.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-64",
+        "name": "Disney Plus",
+        "src": "assets/packs/elden/icon-64.webp",
+        "thumb": "assets/packs/elden/thumb-64.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-65",
+        "name": "Excel",
+        "src": "assets/packs/elden/icon-65.webp",
+        "thumb": "assets/packs/elden/thumb-65.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-66",
+        "name": "Google",
+        "src": "assets/packs/elden/icon-66.webp",
+        "thumb": "assets/packs/elden/thumb-66.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-67",
+        "name": "Google Docs",
+        "src": "assets/packs/elden/icon-67.webp",
+        "thumb": "assets/packs/elden/thumb-67.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-68",
+        "name": "Google Drive",
+        "src": "assets/packs/elden/icon-68.webp",
+        "thumb": "assets/packs/elden/thumb-68.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-69",
+        "name": "Google Sheets",
+        "src": "assets/packs/elden/icon-69.webp",
+        "thumb": "assets/packs/elden/thumb-69.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-70",
+        "name": "Kindle",
+        "src": "assets/packs/elden/icon-70.webp",
+        "thumb": "assets/packs/elden/thumb-70.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-71",
+        "name": "Netflix",
+        "src": "assets/packs/elden/icon-71.webp",
+        "thumb": "assets/packs/elden/thumb-71.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-72",
+        "name": "OneDrive",
+        "src": "assets/packs/elden/icon-72.webp",
+        "thumb": "assets/packs/elden/thumb-72.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-73",
+        "name": "PowerPoint",
+        "src": "assets/packs/elden/icon-73.webp",
+        "thumb": "assets/packs/elden/thumb-73.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-74",
+        "name": "Prime Video",
+        "src": "assets/packs/elden/icon-74.webp",
+        "thumb": "assets/packs/elden/thumb-74.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-75",
+        "name": "Shazam",
+        "src": "assets/packs/elden/icon-75.webp",
+        "thumb": "assets/packs/elden/thumb-75.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-76",
+        "name": "Spotify",
+        "src": "assets/packs/elden/icon-76.webp",
+        "thumb": "assets/packs/elden/thumb-76.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-77",
+        "name": "Twitch",
+        "src": "assets/packs/elden/icon-77.webp",
+        "thumb": "assets/packs/elden/thumb-77.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-78",
+        "name": "Word",
+        "src": "assets/packs/elden/icon-78.webp",
+        "thumb": "assets/packs/elden/thumb-78.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-79",
+        "name": "YouTube",
+        "src": "assets/packs/elden/icon-79.webp",
+        "thumb": "assets/packs/elden/thumb-79.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-80",
+        "name": "Adobe Scan",
+        "src": "assets/packs/elden/icon-80.webp",
+        "thumb": "assets/packs/elden/thumb-80.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-81",
+        "name": "Airbnb",
+        "src": "assets/packs/elden/icon-81.webp",
+        "thumb": "assets/packs/elden/thumb-81.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-82",
+        "name": "AliExpress",
+        "src": "assets/packs/elden/icon-82.webp",
+        "thumb": "assets/packs/elden/thumb-82.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-83",
+        "name": "Amazon",
+        "src": "assets/packs/elden/icon-83.webp",
+        "thumb": "assets/packs/elden/thumb-83.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-84",
+        "name": "Booking",
+        "src": "assets/packs/elden/icon-84.webp",
+        "thumb": "assets/packs/elden/thumb-84.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-85",
+        "name": "Canva",
+        "src": "assets/packs/elden/icon-85.webp",
+        "thumb": "assets/packs/elden/thumb-85.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-86",
+        "name": "CapCut",
+        "src": "assets/packs/elden/icon-86.webp",
+        "thumb": "assets/packs/elden/thumb-86.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-87",
+        "name": "Compte Ameli",
+        "src": "assets/packs/elden/icon-87.webp",
+        "thumb": "assets/packs/elden/thumb-87.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-88",
+        "name": "Doctolib",
+        "src": "assets/packs/elden/icon-88.webp",
+        "thumb": "assets/packs/elden/thumb-88.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-89",
+        "name": "Etsy",
+        "src": "assets/packs/elden/icon-89.webp",
+        "thumb": "assets/packs/elden/thumb-89.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-90",
+        "name": "Google Maps",
+        "src": "assets/packs/elden/icon-90.webp",
+        "thumb": "assets/packs/elden/thumb-90.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-91",
+        "name": "Google Photos",
+        "src": "assets/packs/elden/icon-91.webp",
+        "thumb": "assets/packs/elden/thumb-91.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-92",
+        "name": "Leboncoin",
+        "src": "assets/packs/elden/icon-92.webp",
+        "thumb": "assets/packs/elden/thumb-92.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-93",
+        "name": "PayPal",
+        "src": "assets/packs/elden/icon-93.webp",
+        "thumb": "assets/packs/elden/thumb-93.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-94",
+        "name": "Revolut",
+        "src": "assets/packs/elden/icon-94.webp",
+        "thumb": "assets/packs/elden/thumb-94.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-95",
+        "name": "SNCF Connect",
+        "src": "assets/packs/elden/icon-95.webp",
+        "thumb": "assets/packs/elden/thumb-95.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-96",
+        "name": "Temu",
+        "src": "assets/packs/elden/icon-96.webp",
+        "thumb": "assets/packs/elden/thumb-96.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-97",
+        "name": "Uber",
+        "src": "assets/packs/elden/icon-97.webp",
+        "thumb": "assets/packs/elden/thumb-97.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-98",
+        "name": "Vinted",
+        "src": "assets/packs/elden/icon-98.webp",
+        "thumb": "assets/packs/elden/thumb-98.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "elden-icon-99",
+        "name": "Waze",
+        "src": "assets/packs/elden/icon-99.webp",
+        "thumb": "assets/packs/elden/thumb-99.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "elden-icon-00",
+      "elden-icon-08",
+      "elden-icon-16",
+      "elden-icon-25",
+      "elden-icon-33",
+      "elden-icon-41",
+      "elden-icon-50",
+      "elden-icon-58",
+      "elden-icon-66",
+      "elden-icon-75",
+      "elden-icon-83",
+      "elden-icon-91"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_ELDEN.zip",
+      "widgets": "Aucun widget identifié dans les fichiers reçus"
+    },
+    "unlisted": true
+  },
+  {
+    "id": "galet",
+    "slug": "galet",
+    "name": "Galet",
+    "colors": {
+      "accent": "#b9c7cf",
+      "base": "#262a2c"
+    },
+    "description": "Palette minérale et naturelle : galets, argile et rivages apaisés.",
+    "cover": "assets/packs/galet/cover.webp",
+    "wallpapers": [
+      {
+        "id": "galet-cover",
+        "name": "Rivage bleu",
+        "src": "assets/packs/galet/cover.webp",
+        "thumb": "assets/packs/galet/cover-thumb.webp",
+        "width": 853,
+        "height": 1844,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "galet-wall-01",
+        "name": "Argile douce",
+        "src": "assets/packs/galet/wallpapers/wall-01.webp",
+        "thumb": "assets/packs/galet/wallpapers/wall-01-thumb.webp",
+        "width": 853,
+        "height": 1844,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "galet-wall-02",
+        "name": "Sauge minérale",
+        "src": "assets/packs/galet/wallpapers/wall-02.webp",
+        "thumb": "assets/packs/galet/wallpapers/wall-02-thumb.webp",
+        "width": 853,
+        "height": 1844,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "galet-wall-03",
+        "name": "Dunes de craie",
+        "src": "assets/packs/galet/wallpapers/wall-03.webp",
+        "thumb": "assets/packs/galet/wallpapers/wall-03-thumb.webp",
+        "width": 851,
+        "height": 1849,
+        "fit": "contain",
+        "tone": "light"
+      }
+    ],
+    "icons": [
+      {
+        "id": "galet-icon-00",
+        "name": "App Store",
+        "src": "assets/packs/galet/icon-00.webp",
+        "thumb": "assets/packs/galet/thumb-00.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-01",
+        "name": "Appareil photo",
+        "src": "assets/packs/galet/icon-01.webp",
+        "thumb": "assets/packs/galet/thumb-01.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-02",
+        "name": "Calculatrice",
+        "src": "assets/packs/galet/icon-02.webp",
+        "thumb": "assets/packs/galet/thumb-02.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-03",
+        "name": "Calendrier",
+        "src": "assets/packs/galet/icon-03.webp",
+        "thumb": "assets/packs/galet/thumb-03.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-04",
+        "name": "Contacts",
+        "src": "assets/packs/galet/icon-04.webp",
+        "thumb": "assets/packs/galet/thumb-04.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-05",
+        "name": "FaceTime",
+        "src": "assets/packs/galet/icon-05.webp",
+        "thumb": "assets/packs/galet/thumb-05.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-06",
+        "name": "Fichiers",
+        "src": "assets/packs/galet/icon-06.webp",
+        "thumb": "assets/packs/galet/thumb-06.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-07",
+        "name": "Horloge",
+        "src": "assets/packs/galet/icon-07.webp",
+        "thumb": "assets/packs/galet/thumb-07.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-08",
+        "name": "Localiser",
+        "src": "assets/packs/galet/icon-08.webp",
+        "thumb": "assets/packs/galet/thumb-08.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-09",
+        "name": "Mail",
+        "src": "assets/packs/galet/icon-09.webp",
+        "thumb": "assets/packs/galet/thumb-09.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-10",
+        "name": "Messages",
+        "src": "assets/packs/galet/icon-10.webp",
+        "thumb": "assets/packs/galet/thumb-10.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-11",
+        "name": "Météo",
+        "src": "assets/packs/galet/icon-11.webp",
+        "thumb": "assets/packs/galet/thumb-11.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-12",
+        "name": "Notes",
+        "src": "assets/packs/galet/icon-12.webp",
+        "thumb": "assets/packs/galet/thumb-12.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-13",
+        "name": "Photos",
+        "src": "assets/packs/galet/icon-13.webp",
+        "thumb": "assets/packs/galet/thumb-13.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-14",
+        "name": "Plans",
+        "src": "assets/packs/galet/icon-14.webp",
+        "thumb": "assets/packs/galet/thumb-14.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-15",
+        "name": "Rappels",
+        "src": "assets/packs/galet/icon-15.webp",
+        "thumb": "assets/packs/galet/thumb-15.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-16",
+        "name": "Réglages",
+        "src": "assets/packs/galet/icon-16.webp",
+        "thumb": "assets/packs/galet/thumb-16.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-17",
+        "name": "Safari",
+        "src": "assets/packs/galet/icon-17.webp",
+        "thumb": "assets/packs/galet/thumb-17.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-18",
+        "name": "Téléphone",
+        "src": "assets/packs/galet/icon-18.webp",
+        "thumb": "assets/packs/galet/thumb-18.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-19",
+        "name": "Wallet",
+        "src": "assets/packs/galet/icon-19.webp",
+        "thumb": "assets/packs/galet/thumb-19.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-20",
+        "name": "Apple Games",
+        "src": "assets/packs/galet/icon-20.webp",
+        "thumb": "assets/packs/galet/thumb-20.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-21",
+        "name": "Apple Music",
+        "src": "assets/packs/galet/icon-21.webp",
+        "thumb": "assets/packs/galet/thumb-21.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-22",
+        "name": "Apple Store",
+        "src": "assets/packs/galet/icon-22.webp",
+        "thumb": "assets/packs/galet/thumb-22.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-23",
+        "name": "Apple TV",
+        "src": "assets/packs/galet/icon-23.webp",
+        "thumb": "assets/packs/galet/thumb-23.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-24",
+        "name": "Dictaphone",
+        "src": "assets/packs/galet/icon-24.webp",
+        "thumb": "assets/packs/galet/thumb-24.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-25",
+        "name": "Forme",
+        "src": "assets/packs/galet/icon-25.webp",
+        "thumb": "assets/packs/galet/thumb-25.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-26",
+        "name": "Journal",
+        "src": "assets/packs/galet/icon-26.webp",
+        "thumb": "assets/packs/galet/thumb-26.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-27",
+        "name": "Keynote",
+        "src": "assets/packs/galet/icon-27.webp",
+        "thumb": "assets/packs/galet/thumb-27.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-28",
+        "name": "Livres",
+        "src": "assets/packs/galet/icon-28.webp",
+        "thumb": "assets/packs/galet/thumb-28.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-29",
+        "name": "Maison",
+        "src": "assets/packs/galet/icon-29.webp",
+        "thumb": "assets/packs/galet/thumb-29.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-30",
+        "name": "Mesures",
+        "src": "assets/packs/galet/icon-30.webp",
+        "thumb": "assets/packs/galet/thumb-30.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-31",
+        "name": "Mots de passe",
+        "src": "assets/packs/galet/icon-31.webp",
+        "thumb": "assets/packs/galet/thumb-31.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-32",
+        "name": "Numbers",
+        "src": "assets/packs/galet/icon-32.webp",
+        "thumb": "assets/packs/galet/thumb-32.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-33",
+        "name": "Pages",
+        "src": "assets/packs/galet/icon-33.webp",
+        "thumb": "assets/packs/galet/thumb-33.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-34",
+        "name": "Podcasts",
+        "src": "assets/packs/galet/icon-34.webp",
+        "thumb": "assets/packs/galet/thumb-34.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-35",
+        "name": "Raccourcis",
+        "src": "assets/packs/galet/icon-35.webp",
+        "thumb": "assets/packs/galet/thumb-35.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-36",
+        "name": "Santé",
+        "src": "assets/packs/galet/icon-36.webp",
+        "thumb": "assets/packs/galet/thumb-36.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-37",
+        "name": "Traduire",
+        "src": "assets/packs/galet/icon-37.webp",
+        "thumb": "assets/packs/galet/thumb-37.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-38",
+        "name": "Watch",
+        "src": "assets/packs/galet/icon-38.webp",
+        "thumb": "assets/packs/galet/thumb-38.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-39",
+        "name": "iTunes Store",
+        "src": "assets/packs/galet/icon-39.webp",
+        "thumb": "assets/packs/galet/thumb-39.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-40",
+        "name": "ChatGPT",
+        "src": "assets/packs/galet/icon-40.webp",
+        "thumb": "assets/packs/galet/thumb-40.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-41",
+        "name": "Discord",
+        "src": "assets/packs/galet/icon-41.webp",
+        "thumb": "assets/packs/galet/thumb-41.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-42",
+        "name": "Facebook",
+        "src": "assets/packs/galet/icon-42.webp",
+        "thumb": "assets/packs/galet/thumb-42.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-43",
+        "name": "Gemini",
+        "src": "assets/packs/galet/icon-43.webp",
+        "thumb": "assets/packs/galet/thumb-43.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-44",
+        "name": "Gmail",
+        "src": "assets/packs/galet/icon-44.webp",
+        "thumb": "assets/packs/galet/thumb-44.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-45",
+        "name": "Google Meet",
+        "src": "assets/packs/galet/icon-45.webp",
+        "thumb": "assets/packs/galet/thumb-45.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-46",
+        "name": "Instagram",
+        "src": "assets/packs/galet/icon-46.webp",
+        "thumb": "assets/packs/galet/thumb-46.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-47",
+        "name": "Messenger",
+        "src": "assets/packs/galet/icon-47.webp",
+        "thumb": "assets/packs/galet/thumb-47.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-48",
+        "name": "Microsoft Teams",
+        "src": "assets/packs/galet/icon-48.webp",
+        "thumb": "assets/packs/galet/thumb-48.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-49",
+        "name": "Outlook",
+        "src": "assets/packs/galet/icon-49.webp",
+        "thumb": "assets/packs/galet/thumb-49.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-50",
+        "name": "Pinterest",
+        "src": "assets/packs/galet/icon-50.webp",
+        "thumb": "assets/packs/galet/thumb-50.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-51",
+        "name": "Reddit",
+        "src": "assets/packs/galet/icon-51.webp",
+        "thumb": "assets/packs/galet/thumb-51.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-52",
+        "name": "Signal",
+        "src": "assets/packs/galet/icon-52.webp",
+        "thumb": "assets/packs/galet/thumb-52.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-53",
+        "name": "Snapchat",
+        "src": "assets/packs/galet/icon-53.webp",
+        "thumb": "assets/packs/galet/thumb-53.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-54",
+        "name": "Telegram",
+        "src": "assets/packs/galet/icon-54.webp",
+        "thumb": "assets/packs/galet/thumb-54.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-55",
+        "name": "Threads",
+        "src": "assets/packs/galet/icon-55.webp",
+        "thumb": "assets/packs/galet/thumb-55.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-56",
+        "name": "TikTok",
+        "src": "assets/packs/galet/icon-56.webp",
+        "thumb": "assets/packs/galet/thumb-56.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-57",
+        "name": "WhatsApp",
+        "src": "assets/packs/galet/icon-57.webp",
+        "thumb": "assets/packs/galet/thumb-57.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-58",
+        "name": "X",
+        "src": "assets/packs/galet/icon-58.webp",
+        "thumb": "assets/packs/galet/thumb-58.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-59",
+        "name": "Zoom",
+        "src": "assets/packs/galet/icon-59.webp",
+        "thumb": "assets/packs/galet/thumb-59.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-60",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/galet/icon-60.webp",
+        "thumb": "assets/packs/galet/thumb-60.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-61",
+        "name": "Audible",
+        "src": "assets/packs/galet/icon-61.webp",
+        "thumb": "assets/packs/galet/thumb-61.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-62",
+        "name": "Chrome",
+        "src": "assets/packs/galet/icon-62.webp",
+        "thumb": "assets/packs/galet/thumb-62.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-63",
+        "name": "Deezer",
+        "src": "assets/packs/galet/icon-63.webp",
+        "thumb": "assets/packs/galet/thumb-63.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-64",
+        "name": "Disney Plus",
+        "src": "assets/packs/galet/icon-64.webp",
+        "thumb": "assets/packs/galet/thumb-64.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-65",
+        "name": "Excel",
+        "src": "assets/packs/galet/icon-65.webp",
+        "thumb": "assets/packs/galet/thumb-65.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-66",
+        "name": "Google",
+        "src": "assets/packs/galet/icon-66.webp",
+        "thumb": "assets/packs/galet/thumb-66.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-67",
+        "name": "Google Docs",
+        "src": "assets/packs/galet/icon-67.webp",
+        "thumb": "assets/packs/galet/thumb-67.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-68",
+        "name": "Google Drive",
+        "src": "assets/packs/galet/icon-68.webp",
+        "thumb": "assets/packs/galet/thumb-68.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-69",
+        "name": "Google Sheets",
+        "src": "assets/packs/galet/icon-69.webp",
+        "thumb": "assets/packs/galet/thumb-69.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-70",
+        "name": "Kindle",
+        "src": "assets/packs/galet/icon-70.webp",
+        "thumb": "assets/packs/galet/thumb-70.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-71",
+        "name": "Netflix",
+        "src": "assets/packs/galet/icon-71.webp",
+        "thumb": "assets/packs/galet/thumb-71.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-72",
+        "name": "OneDrive",
+        "src": "assets/packs/galet/icon-72.webp",
+        "thumb": "assets/packs/galet/thumb-72.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-73",
+        "name": "PowerPoint",
+        "src": "assets/packs/galet/icon-73.webp",
+        "thumb": "assets/packs/galet/thumb-73.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-74",
+        "name": "Prime Video",
+        "src": "assets/packs/galet/icon-74.webp",
+        "thumb": "assets/packs/galet/thumb-74.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-75",
+        "name": "Shazam",
+        "src": "assets/packs/galet/icon-75.webp",
+        "thumb": "assets/packs/galet/thumb-75.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-76",
+        "name": "Spotify",
+        "src": "assets/packs/galet/icon-76.webp",
+        "thumb": "assets/packs/galet/thumb-76.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-77",
+        "name": "Twitch",
+        "src": "assets/packs/galet/icon-77.webp",
+        "thumb": "assets/packs/galet/thumb-77.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-78",
+        "name": "Word",
+        "src": "assets/packs/galet/icon-78.webp",
+        "thumb": "assets/packs/galet/thumb-78.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-79",
+        "name": "YouTube",
+        "src": "assets/packs/galet/icon-79.webp",
+        "thumb": "assets/packs/galet/thumb-79.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-80",
+        "name": "Adobe Scan",
+        "src": "assets/packs/galet/icon-80.webp",
+        "thumb": "assets/packs/galet/thumb-80.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-81",
+        "name": "Airbnb",
+        "src": "assets/packs/galet/icon-81.webp",
+        "thumb": "assets/packs/galet/thumb-81.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-82",
+        "name": "AliExpress",
+        "src": "assets/packs/galet/icon-82.webp",
+        "thumb": "assets/packs/galet/thumb-82.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-83",
+        "name": "Amazon",
+        "src": "assets/packs/galet/icon-83.webp",
+        "thumb": "assets/packs/galet/thumb-83.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-84",
+        "name": "Booking",
+        "src": "assets/packs/galet/icon-84.webp",
+        "thumb": "assets/packs/galet/thumb-84.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-85",
+        "name": "Canva",
+        "src": "assets/packs/galet/icon-85.webp",
+        "thumb": "assets/packs/galet/thumb-85.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-86",
+        "name": "CapCut",
+        "src": "assets/packs/galet/icon-86.webp",
+        "thumb": "assets/packs/galet/thumb-86.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-87",
+        "name": "Compte Ameli",
+        "src": "assets/packs/galet/icon-87.webp",
+        "thumb": "assets/packs/galet/thumb-87.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-88",
+        "name": "Doctolib",
+        "src": "assets/packs/galet/icon-88.webp",
+        "thumb": "assets/packs/galet/thumb-88.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-89",
+        "name": "Etsy",
+        "src": "assets/packs/galet/icon-89.webp",
+        "thumb": "assets/packs/galet/thumb-89.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-90",
+        "name": "Google Maps",
+        "src": "assets/packs/galet/icon-90.webp",
+        "thumb": "assets/packs/galet/thumb-90.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-91",
+        "name": "Google Photos",
+        "src": "assets/packs/galet/icon-91.webp",
+        "thumb": "assets/packs/galet/thumb-91.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-92",
+        "name": "Leboncoin",
+        "src": "assets/packs/galet/icon-92.webp",
+        "thumb": "assets/packs/galet/thumb-92.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-93",
+        "name": "PayPal",
+        "src": "assets/packs/galet/icon-93.webp",
+        "thumb": "assets/packs/galet/thumb-93.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-94",
+        "name": "Revolut",
+        "src": "assets/packs/galet/icon-94.webp",
+        "thumb": "assets/packs/galet/thumb-94.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-95",
+        "name": "SNCF Connect",
+        "src": "assets/packs/galet/icon-95.webp",
+        "thumb": "assets/packs/galet/thumb-95.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-96",
+        "name": "Temu",
+        "src": "assets/packs/galet/icon-96.webp",
+        "thumb": "assets/packs/galet/thumb-96.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-97",
+        "name": "Uber",
+        "src": "assets/packs/galet/icon-97.webp",
+        "thumb": "assets/packs/galet/thumb-97.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-98",
+        "name": "Vinted",
+        "src": "assets/packs/galet/icon-98.webp",
+        "thumb": "assets/packs/galet/thumb-98.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "galet-icon-99",
+        "name": "Waze",
+        "src": "assets/packs/galet/icon-99.webp",
+        "thumb": "assets/packs/galet/thumb-99.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "galet-icon-00",
+      "galet-icon-08",
+      "galet-icon-16",
+      "galet-icon-25",
+      "galet-icon-33",
+      "galet-icon-41",
+      "galet-icon-50",
+      "galet-icon-58",
+      "galet-icon-66",
+      "galet-icon-75",
+      "galet-icon-83",
+      "galet-icon-91"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_GALET.zip",
+      "widgets": "Aucun widget identifié dans les fichiers reçus"
+    }
+  },
+  {
+    "id": "jade",
+    "slug": "jade",
+    "name": "Jade Impérial",
+    "colors": {
+      "accent": "#4f9a7d",
+      "base": "#0f221c"
+    },
+    "description": "Univers impérial jade et champagne, éclat précieux et soyeux.",
+    "cover": "assets/packs/jade/cover.webp",
+    "wallpapers": [
+      {
+        "id": "jade-cover",
+        "name": "Jade profond",
+        "src": "assets/packs/jade/cover.webp",
+        "thumb": "assets/packs/jade/cover-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "dark"
+      },
+      {
+        "id": "jade-wall-01",
+        "name": "Écrin de jade",
+        "src": "assets/packs/jade/wallpapers/wall-01.webp",
+        "thumb": "assets/packs/jade/wallpapers/wall-01-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "jade-wall-02",
+        "name": "Soie champagne",
+        "src": "assets/packs/jade/wallpapers/wall-02.webp",
+        "thumb": "assets/packs/jade/wallpapers/wall-02-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "light"
+      },
+      {
+        "id": "jade-wall-03",
+        "name": "Ivoire satiné",
+        "src": "assets/packs/jade/wallpapers/wall-03.webp",
+        "thumb": "assets/packs/jade/wallpapers/wall-03-thumb.webp",
+        "width": 841,
+        "height": 1870,
+        "fit": "contain",
+        "tone": "light"
+      }
+    ],
+    "icons": [
+      {
+        "id": "jade-icon-00",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/jade/icon-00.webp",
+        "thumb": "assets/packs/jade/thumb-00.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-01",
+        "name": "Adobe Scan",
+        "src": "assets/packs/jade/icon-01.webp",
+        "thumb": "assets/packs/jade/thumb-01.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-02",
+        "name": "Airbnb",
+        "src": "assets/packs/jade/icon-02.webp",
+        "thumb": "assets/packs/jade/thumb-02.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-03",
+        "name": "AliExpress",
+        "src": "assets/packs/jade/icon-03.webp",
+        "thumb": "assets/packs/jade/thumb-03.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-04",
+        "name": "Amazon",
+        "src": "assets/packs/jade/icon-04.webp",
+        "thumb": "assets/packs/jade/thumb-04.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-05",
+        "name": "App Store",
+        "src": "assets/packs/jade/icon-05.webp",
+        "thumb": "assets/packs/jade/thumb-05.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-06",
+        "name": "Appareil photo",
+        "src": "assets/packs/jade/icon-06.webp",
+        "thumb": "assets/packs/jade/thumb-06.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-07",
+        "name": "Apple Games",
+        "src": "assets/packs/jade/icon-07.webp",
+        "thumb": "assets/packs/jade/thumb-07.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-08",
+        "name": "Apple Music",
+        "src": "assets/packs/jade/icon-08.webp",
+        "thumb": "assets/packs/jade/thumb-08.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-09",
+        "name": "Apple Store",
+        "src": "assets/packs/jade/icon-09.webp",
+        "thumb": "assets/packs/jade/thumb-09.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-10",
+        "name": "Apple TV",
+        "src": "assets/packs/jade/icon-10.webp",
+        "thumb": "assets/packs/jade/thumb-10.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-11",
+        "name": "Audible",
+        "src": "assets/packs/jade/icon-11.webp",
+        "thumb": "assets/packs/jade/thumb-11.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-12",
+        "name": "Booking",
+        "src": "assets/packs/jade/icon-12.webp",
+        "thumb": "assets/packs/jade/thumb-12.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-13",
+        "name": "Calculatrice",
+        "src": "assets/packs/jade/icon-13.webp",
+        "thumb": "assets/packs/jade/thumb-13.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-14",
+        "name": "Calendrier",
+        "src": "assets/packs/jade/icon-14.webp",
+        "thumb": "assets/packs/jade/thumb-14.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-15",
+        "name": "Canva",
+        "src": "assets/packs/jade/icon-15.webp",
+        "thumb": "assets/packs/jade/thumb-15.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-16",
+        "name": "CapCut",
+        "src": "assets/packs/jade/icon-16.webp",
+        "thumb": "assets/packs/jade/thumb-16.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-17",
+        "name": "ChatGPT",
+        "src": "assets/packs/jade/icon-17.webp",
+        "thumb": "assets/packs/jade/thumb-17.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-18",
+        "name": "Chrome",
+        "src": "assets/packs/jade/icon-18.webp",
+        "thumb": "assets/packs/jade/thumb-18.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-19",
+        "name": "Compte Ameli",
+        "src": "assets/packs/jade/icon-19.webp",
+        "thumb": "assets/packs/jade/thumb-19.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-20",
+        "name": "Contacts",
+        "src": "assets/packs/jade/icon-20.webp",
+        "thumb": "assets/packs/jade/thumb-20.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-21",
+        "name": "Deezer",
+        "src": "assets/packs/jade/icon-21.webp",
+        "thumb": "assets/packs/jade/thumb-21.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-22",
+        "name": "Dictaphone",
+        "src": "assets/packs/jade/icon-22.webp",
+        "thumb": "assets/packs/jade/thumb-22.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-23",
+        "name": "Discord",
+        "src": "assets/packs/jade/icon-23.webp",
+        "thumb": "assets/packs/jade/thumb-23.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-24",
+        "name": "Disney Plus",
+        "src": "assets/packs/jade/icon-24.webp",
+        "thumb": "assets/packs/jade/thumb-24.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-25",
+        "name": "Doctolib",
+        "src": "assets/packs/jade/icon-25.webp",
+        "thumb": "assets/packs/jade/thumb-25.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-26",
+        "name": "Etsy",
+        "src": "assets/packs/jade/icon-26.webp",
+        "thumb": "assets/packs/jade/thumb-26.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-27",
+        "name": "Excel",
+        "src": "assets/packs/jade/icon-27.webp",
+        "thumb": "assets/packs/jade/thumb-27.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-28",
+        "name": "FaceTime",
+        "src": "assets/packs/jade/icon-28.webp",
+        "thumb": "assets/packs/jade/thumb-28.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-29",
+        "name": "Facebook",
+        "src": "assets/packs/jade/icon-29.webp",
+        "thumb": "assets/packs/jade/thumb-29.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-30",
+        "name": "Fichiers",
+        "src": "assets/packs/jade/icon-30.webp",
+        "thumb": "assets/packs/jade/thumb-30.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-31",
+        "name": "Forme",
+        "src": "assets/packs/jade/icon-31.webp",
+        "thumb": "assets/packs/jade/thumb-31.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-32",
+        "name": "Gemini",
+        "src": "assets/packs/jade/icon-32.webp",
+        "thumb": "assets/packs/jade/thumb-32.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-33",
+        "name": "Gmail",
+        "src": "assets/packs/jade/icon-33.webp",
+        "thumb": "assets/packs/jade/thumb-33.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-34",
+        "name": "Google",
+        "src": "assets/packs/jade/icon-34.webp",
+        "thumb": "assets/packs/jade/thumb-34.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-35",
+        "name": "Google Docs",
+        "src": "assets/packs/jade/icon-35.webp",
+        "thumb": "assets/packs/jade/thumb-35.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-36",
+        "name": "Google Drive",
+        "src": "assets/packs/jade/icon-36.webp",
+        "thumb": "assets/packs/jade/thumb-36.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-37",
+        "name": "Google Maps",
+        "src": "assets/packs/jade/icon-37.webp",
+        "thumb": "assets/packs/jade/thumb-37.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-38",
+        "name": "Google Meet",
+        "src": "assets/packs/jade/icon-38.webp",
+        "thumb": "assets/packs/jade/thumb-38.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-39",
+        "name": "Google Photos",
+        "src": "assets/packs/jade/icon-39.webp",
+        "thumb": "assets/packs/jade/thumb-39.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-40",
+        "name": "Google Sheets",
+        "src": "assets/packs/jade/icon-40.webp",
+        "thumb": "assets/packs/jade/thumb-40.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-41",
+        "name": "Horloge",
+        "src": "assets/packs/jade/icon-41.webp",
+        "thumb": "assets/packs/jade/thumb-41.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-42",
+        "name": "Instagram",
+        "src": "assets/packs/jade/icon-42.webp",
+        "thumb": "assets/packs/jade/thumb-42.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-43",
+        "name": "Journal",
+        "src": "assets/packs/jade/icon-43.webp",
+        "thumb": "assets/packs/jade/thumb-43.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-44",
+        "name": "Keynote",
+        "src": "assets/packs/jade/icon-44.webp",
+        "thumb": "assets/packs/jade/thumb-44.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-45",
+        "name": "Kindle",
+        "src": "assets/packs/jade/icon-45.webp",
+        "thumb": "assets/packs/jade/thumb-45.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-46",
+        "name": "Leboncoin",
+        "src": "assets/packs/jade/icon-46.webp",
+        "thumb": "assets/packs/jade/thumb-46.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-47",
+        "name": "Livres",
+        "src": "assets/packs/jade/icon-47.webp",
+        "thumb": "assets/packs/jade/thumb-47.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-48",
+        "name": "Localiser",
+        "src": "assets/packs/jade/icon-48.webp",
+        "thumb": "assets/packs/jade/thumb-48.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-49",
+        "name": "Mail",
+        "src": "assets/packs/jade/icon-49.webp",
+        "thumb": "assets/packs/jade/thumb-49.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-50",
+        "name": "Maison",
+        "src": "assets/packs/jade/icon-50.webp",
+        "thumb": "assets/packs/jade/thumb-50.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-51",
+        "name": "Messages",
+        "src": "assets/packs/jade/icon-51.webp",
+        "thumb": "assets/packs/jade/thumb-51.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-52",
+        "name": "Messenger",
+        "src": "assets/packs/jade/icon-52.webp",
+        "thumb": "assets/packs/jade/thumb-52.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-53",
+        "name": "Mesures",
+        "src": "assets/packs/jade/icon-53.webp",
+        "thumb": "assets/packs/jade/thumb-53.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-54",
+        "name": "Météo",
+        "src": "assets/packs/jade/icon-54.webp",
+        "thumb": "assets/packs/jade/thumb-54.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-55",
+        "name": "Microsoft Teams",
+        "src": "assets/packs/jade/icon-55.webp",
+        "thumb": "assets/packs/jade/thumb-55.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-56",
+        "name": "Mots de passe",
+        "src": "assets/packs/jade/icon-56.webp",
+        "thumb": "assets/packs/jade/thumb-56.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-57",
+        "name": "Netflix",
+        "src": "assets/packs/jade/icon-57.webp",
+        "thumb": "assets/packs/jade/thumb-57.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-58",
+        "name": "Notes",
+        "src": "assets/packs/jade/icon-58.webp",
+        "thumb": "assets/packs/jade/thumb-58.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-59",
+        "name": "Numbers",
+        "src": "assets/packs/jade/icon-59.webp",
+        "thumb": "assets/packs/jade/thumb-59.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-60",
+        "name": "OneDrive",
+        "src": "assets/packs/jade/icon-60.webp",
+        "thumb": "assets/packs/jade/thumb-60.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-61",
+        "name": "Outlook",
+        "src": "assets/packs/jade/icon-61.webp",
+        "thumb": "assets/packs/jade/thumb-61.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-62",
+        "name": "Pages",
+        "src": "assets/packs/jade/icon-62.webp",
+        "thumb": "assets/packs/jade/thumb-62.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-63",
+        "name": "PayPal",
+        "src": "assets/packs/jade/icon-63.webp",
+        "thumb": "assets/packs/jade/thumb-63.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-64",
+        "name": "Photos",
+        "src": "assets/packs/jade/icon-64.webp",
+        "thumb": "assets/packs/jade/thumb-64.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-65",
+        "name": "Pinterest",
+        "src": "assets/packs/jade/icon-65.webp",
+        "thumb": "assets/packs/jade/thumb-65.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-66",
+        "name": "Plans",
+        "src": "assets/packs/jade/icon-66.webp",
+        "thumb": "assets/packs/jade/thumb-66.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-67",
+        "name": "Podcasts",
+        "src": "assets/packs/jade/icon-67.webp",
+        "thumb": "assets/packs/jade/thumb-67.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-68",
+        "name": "PowerPoint",
+        "src": "assets/packs/jade/icon-68.webp",
+        "thumb": "assets/packs/jade/thumb-68.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-69",
+        "name": "Prime Video",
+        "src": "assets/packs/jade/icon-69.webp",
+        "thumb": "assets/packs/jade/thumb-69.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-70",
+        "name": "Raccourcis",
+        "src": "assets/packs/jade/icon-70.webp",
+        "thumb": "assets/packs/jade/thumb-70.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-71",
+        "name": "Rappels",
+        "src": "assets/packs/jade/icon-71.webp",
+        "thumb": "assets/packs/jade/thumb-71.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-72",
+        "name": "Reddit",
+        "src": "assets/packs/jade/icon-72.webp",
+        "thumb": "assets/packs/jade/thumb-72.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-73",
+        "name": "Réglages",
+        "src": "assets/packs/jade/icon-73.webp",
+        "thumb": "assets/packs/jade/thumb-73.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-74",
+        "name": "Revolut",
+        "src": "assets/packs/jade/icon-74.webp",
+        "thumb": "assets/packs/jade/thumb-74.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-75",
+        "name": "SNCF Connect",
+        "src": "assets/packs/jade/icon-75.webp",
+        "thumb": "assets/packs/jade/thumb-75.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-76",
+        "name": "Safari",
+        "src": "assets/packs/jade/icon-76.webp",
+        "thumb": "assets/packs/jade/thumb-76.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-77",
+        "name": "Santé",
+        "src": "assets/packs/jade/icon-77.webp",
+        "thumb": "assets/packs/jade/thumb-77.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-78",
+        "name": "Shazam",
+        "src": "assets/packs/jade/icon-78.webp",
+        "thumb": "assets/packs/jade/thumb-78.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-79",
+        "name": "Signal",
+        "src": "assets/packs/jade/icon-79.webp",
+        "thumb": "assets/packs/jade/thumb-79.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-80",
+        "name": "Snapchat",
+        "src": "assets/packs/jade/icon-80.webp",
+        "thumb": "assets/packs/jade/thumb-80.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-81",
+        "name": "Spotify",
+        "src": "assets/packs/jade/icon-81.webp",
+        "thumb": "assets/packs/jade/thumb-81.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-82",
+        "name": "Telegram",
+        "src": "assets/packs/jade/icon-82.webp",
+        "thumb": "assets/packs/jade/thumb-82.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-83",
+        "name": "Téléphone",
+        "src": "assets/packs/jade/icon-83.webp",
+        "thumb": "assets/packs/jade/thumb-83.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-84",
+        "name": "Temu",
+        "src": "assets/packs/jade/icon-84.webp",
+        "thumb": "assets/packs/jade/thumb-84.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-85",
+        "name": "Threads",
+        "src": "assets/packs/jade/icon-85.webp",
+        "thumb": "assets/packs/jade/thumb-85.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-86",
+        "name": "TikTok",
+        "src": "assets/packs/jade/icon-86.webp",
+        "thumb": "assets/packs/jade/thumb-86.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-87",
+        "name": "Traduire",
+        "src": "assets/packs/jade/icon-87.webp",
+        "thumb": "assets/packs/jade/thumb-87.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-88",
+        "name": "Twitch",
+        "src": "assets/packs/jade/icon-88.webp",
+        "thumb": "assets/packs/jade/thumb-88.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-89",
+        "name": "Uber",
+        "src": "assets/packs/jade/icon-89.webp",
+        "thumb": "assets/packs/jade/thumb-89.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-90",
+        "name": "Vinted",
+        "src": "assets/packs/jade/icon-90.webp",
+        "thumb": "assets/packs/jade/thumb-90.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-91",
+        "name": "Wallet",
+        "src": "assets/packs/jade/icon-91.webp",
+        "thumb": "assets/packs/jade/thumb-91.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-92",
+        "name": "Watch",
+        "src": "assets/packs/jade/icon-92.webp",
+        "thumb": "assets/packs/jade/thumb-92.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-93",
+        "name": "Waze",
+        "src": "assets/packs/jade/icon-93.webp",
+        "thumb": "assets/packs/jade/thumb-93.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-94",
+        "name": "WhatsApp",
+        "src": "assets/packs/jade/icon-94.webp",
+        "thumb": "assets/packs/jade/thumb-94.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-95",
+        "name": "Word",
+        "src": "assets/packs/jade/icon-95.webp",
+        "thumb": "assets/packs/jade/thumb-95.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-96",
+        "name": "X",
+        "src": "assets/packs/jade/icon-96.webp",
+        "thumb": "assets/packs/jade/thumb-96.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-97",
+        "name": "YouTube",
+        "src": "assets/packs/jade/icon-97.webp",
+        "thumb": "assets/packs/jade/thumb-97.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-98",
+        "name": "Zoom",
+        "src": "assets/packs/jade/icon-98.webp",
+        "thumb": "assets/packs/jade/thumb-98.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-99",
+        "name": "iTunes Store",
+        "src": "assets/packs/jade/icon-99.webp",
+        "thumb": "assets/packs/jade/thumb-99.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "jade-icon-00",
+      "jade-icon-08",
+      "jade-icon-16",
+      "jade-icon-25",
+      "jade-icon-33",
+      "jade-icon-41",
+      "jade-icon-50",
+      "jade-icon-58",
+      "jade-icon-66",
+      "jade-icon-75",
+      "jade-icon-83",
+      "jade-icon-91"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_JADE_IMPERIAL.zip",
+      "widgets": "Aucun widget identifié dans les fichiers reçus"
+    }
   }
 ];

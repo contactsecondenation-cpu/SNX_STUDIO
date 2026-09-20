@@ -7,7 +7,14 @@ body[data-route="collections"] #page-backdrop::after{background:radial-gradient(
 @media(prefers-reduced-motion:no-preference){body[data-route="collections"] #page-backdrop{animation:driftBackdrop 30s ease-in-out infinite alternate}}
 @keyframes driftBackdrop{from{transform:scale(1.08) translate(0,0)}to{transform:scale(1.14) translate(-1%,-1%)}}
 #shell,#announcer{position:relative;z-index:1}
+@media(prefers-reduced-motion:no-preference){
+ ::view-transition-old(root){animation:snxFadeOut .26s ease both}
+ ::view-transition-new(root){animation:snxFadeIn .32s ease both}
+}
+@keyframes snxFadeOut{to{opacity:0;transform:scale(.99)}}
+@keyframes snxFadeIn{from{opacity:0;transform:scale(1.008)}}
 @media(max-width:700px){#page-backdrop{background-image:url("../assets/scene/home-portrait.webp")}}
+body:not([data-route="home"]) #app-header{padding-top:env(safe-area-inset-top,0px)}
 .header-inner{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;max-width:1800px;margin:auto}
 .header-actions{display:flex;align-items:center;gap:12px}
 .mine-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#c3ccd7;min-height:40px;padding:8px 18px;border:1px solid #ffffff2c;border-radius:100px;background:#ffffff05;transition:border-color .2s,color .2s,background .2s}

@@ -25,17 +25,23 @@ export function boot(){
    else dialogs.close(true);
    return;
   }
-  const previous=key.split("/");key=nextKey;dialogs.close(true);scope?.abort();scope=new AbortController();ctx.signal=scope.signal;
-  store.set({theme:next.theme});
-  const view=modules[next.route](ctx);root.replaceChildren(view);
-  document.body.dataset.route=next.route;
-  document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#0b1730");
-  header.replaceChildren();
-  if(next.route!=="home")header.append(node(`<div class="header-inner"><button class="brand" data-nav="home" aria-label="SNX Studio — Accueil">SNX <span>Studio</span></button><div class="header-actions">${next.route==="studio"?'<button class="back-button" data-nav="collections">← Collections</button>':""}<button class="mine-link${next.route==="mine"?" active":""}" data-nav="mine" aria-current="${next.route==="mine"?"page":"false"}">★ Pour moi</button></div></div>`));
-  document.title=next.route==="studio"?ctx.theme().name+" — SNX Studio":"SNX Studio — "+(titles[next.route]||"Accueil");
-  window.scrollTo?.(0,0);
-  let focus=previous[0]==="studio"&&next.route==="collections"?view.querySelector(`[data-theme="${previous[1]}"]`):view.querySelector("h1");
-  if(focus){if(focus.tagName==="H1")focus.tabIndex=-1;focus.focus({preventScroll:true});}
+  const previous=key.split("/");key=nextKey;
+  function apply(){
+   dialogs.close(true);scope?.abort();scope=new AbortController();ctx.signal=scope.signal;
+   store.set({theme:next.theme});
+   const view=modules[next.route](ctx);root.replaceChildren(view);
+   document.body.dataset.route=next.route;
+   document.documentElement.style.setProperty("--page-tint",next.route==="studio"?ctx.theme().colors.base:"#0b1730");
+   header.replaceChildren();
+   if(next.route!=="home")header.append(node(`<div class="header-inner"><button class="brand" data-nav="home" aria-label="SNX Studio — Accueil">SNX <span>Studio</span></button><div class="header-actions">${next.route==="studio"?'<button class="back-button" data-nav="collections">← Collections</button>':""}</div></div>`));
+   document.title=next.route==="studio"?ctx.theme().name+" — SNX Studio":"SNX Studio — "+(titles[next.route]||"Accueil");
+   window.scrollTo?.(0,0);
+   let focus=previous[0]==="studio"&&next.route==="collections"?view.querySelector(`[data-theme="${previous[1]}"]`):view.querySelector("h1");
+   if(focus){if(focus.tagName==="H1")focus.tabIndex=-1;focus.focus({preventScroll:true});}
+  }
+  const reduceMotion=window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  if(document.startViewTransition&&!reduceMotion)document.startViewTransition(apply);
+  else apply();
   if(history.state?.snxPurchase&&next.route==="studio")dialogs.checkout();
  }
  const router=createRouter(render);
