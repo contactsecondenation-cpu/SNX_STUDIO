@@ -1,16 +1,18 @@
 {
   "type": "jsdom integration, not rendering",
-  "executedAt": "2026-09-15T00:09:46.828Z",
-  "passed": 60,
-  "failed": 0,
+  "executedAt": "2026-09-26T06:32:48.460Z",
+  "passed": 56,
+  "failed": 4,
   "results": [
     {
       "name": "Home: one Enter button, gradient brand text",
-      "status": "PASS"
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n2 !== 1\n"
     },
     {
       "name": "Collections: nine cards, no repeated cat, no buttons inside cards",
-      "status": "PASS"
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n13 !== 9\n"
     },
     {
       "name": "galaxy: three categories and own assets",
@@ -202,11 +204,13 @@
     },
     {
       "name": "Purchase drawer remains in Studio and payment cannot be simulated",
-      "status": "PASS"
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(d.querySelector('.pay-button').disabled)\n"
     },
     {
       "name": "Email editing, Ctrl+A, validation and no email persistence",
-      "status": "PASS"
+      "status": "FAIL",
+      "error": "Cannot set properties of null (setting 'value')"
     },
     {
       "name": "Escape closes purchase and returns focus",

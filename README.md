@@ -32,7 +32,6 @@ Sept horloges ont été créées en HTML/CSS pour les thèmes qui n’avaient pa
 ## Nouveautés
 
 - **Pour moi** : un onglet dans l'en-tête ouvre une page où vous créez vos propres thèmes (nom, couleurs, fonds et icônes importés depuis votre appareil). Ils apparaissent ensuite dans Collections avec un badge « Personnel » et se personnalisent dans le Studio comme les thèmes fournis. Ils sont stockés dans le navigateur (localStorage) : ils ne sont visibles que sur cet appareil et ce navigateur.
-- **Rotation des fonds** : l'étoile ★ sur un fond l'ajoute à un diaporama ; le bouton sous le téléphone lance une rotation automatique (toutes les 4 s) entre les fonds marqués.
 - **Tailles de widget** : quand un widget est actif, un sélecteur Small / Medium / Large apparaît pour changer sa taille d'aperçu.
 - **Zoom sur icône** : cliquer une icône du téléphone (pas seulement du panneau) l'affiche en grand.
 - Fond de page cohérent avec l'accueil sur Collections, Studio et Pour moi, teinté selon le thème ouvert.

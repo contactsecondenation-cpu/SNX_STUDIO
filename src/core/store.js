@@ -9,7 +9,6 @@ export function createStore(){
    iconSlots:Array.from({length:12},(_,i)=>t.icons.some(x=>x.id===p.iconSlots?.[i])?p.iconSlots[i]:defaults[i%defaults.length]),
    widget:activeWidget?activeWidget.id:null,
    widgetSize:["small","medium","large"].includes(p.widgetSize)?p.widgetSize:(activeWidget?.format||"medium"),
-   favoriteWallpapers:Array.isArray(p.favoriteWallpapers)?p.favoriteWallpapers.filter(id=>t.wallpapers.some(w=>w.id===id)):[],
    selectedSlot:Number.isInteger(p.selectedSlot)&&p.selectedSlot>=0&&p.selectedSlot<12?p.selectedSlot:0});
  }
  return {get,set(patch){if(getThemesById()[patch.theme])theme=patch.theme;preferences[theme]={...get(),...patch};const s=get();preferences[theme]={...s};try{localStorage.setItem("snx.studio.v7",JSON.stringify(preferences));}catch{}return s;}};
