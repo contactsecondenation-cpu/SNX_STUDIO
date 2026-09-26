@@ -10993,6 +10993,14 @@ export const themes = [
         "thumb": "assets/packs/jade/thumb-139.webp",
         "width": 1254,
         "height": 1254
+      },
+      {
+        "id": "jade-icon-140",
+        "name": "Claude",
+        "src": "assets/packs/jade/icon-140.webp",
+        "thumb": "assets/packs/jade/thumb-140.webp",
+        "width": 1254,
+        "height": 1254
       }
     ],
     "widgets": [],
