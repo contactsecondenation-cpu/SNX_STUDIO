@@ -44,7 +44,7 @@ body{
 .stage-backdrop .glow{position:absolute;left:8%;top:50%;transform:translateY(-50%);width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#2a5943 0%,transparent 70%);opacity:.55}
 .stage-backdrop .brand-mark{position:absolute;left:8%;top:50%;transform:translateY(-50%);width:clamp(260px,30vw,460px);height:auto;opacity:.94;filter:drop-shadow(0 20px 50px #000a)}
 
-#book-container{position:relative;z-index:2;filter:drop-shadow(0 50px 90px #000000a0);width:100%;height:100%;touch-action:none;user-select:none;overflow:hidden;border-radius:8px}
+#book-container{position:relative;z-index:2;filter:drop-shadow(0 50px 90px #000000a0);width:100%;height:100%;touch-action:pan-y;user-select:none;overflow:hidden;border-radius:8px}
 .page{background:linear-gradient(155deg,#faf5ea,#f0e6d2);color:var(--ink);overflow:hidden}
 .page-content{height:100%;display:flex;flex-direction:column;padding:clamp(22px,3.4vw,46px) clamp(22px,3.2vw,42px) clamp(18px,2.6vw,30px);position:relative}
 img{-webkit-user-drag:none;user-drag:none}
@@ -136,6 +136,8 @@ img{-webkit-user-drag:none;user-drag:none}
   .arrow-btn.prev{left:-4px}.arrow-btn.next{right:-4px}
   .click-zone{width:18px}
   .stage-backdrop{display:none}
+  .page{overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .page-content{padding-bottom:calc(clamp(18px,2.6vw,30px) + 26px)}
 }
 @media(prefers-reduced-motion:reduce){.arrow-btn{transition:none}.phone-mock .screen img.wall{transition:none}}
 
