@@ -9932,7 +9932,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-07",
-        "name": "Apple Games",
+        "name": "Xbox",
         "src": "assets/packs/jade/icon-07.webp",
         "thumb": "assets/packs/jade/thumb-07.webp",
         "width": 1254,
@@ -10692,7 +10692,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-102",
-        "name": "Restauration",
+        "name": "Uber Eats",
         "src": "assets/packs/jade/icon-102.webp",
         "thumb": "assets/packs/jade/thumb-102.webp",
         "width": 1254,
@@ -10700,7 +10700,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-103",
-        "name": "Lecture",
+        "name": "Google Play Store",
         "src": "assets/packs/jade/icon-103.webp",
         "thumb": "assets/packs/jade/thumb-103.webp",
         "width": 1254,
@@ -10756,7 +10756,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-110",
-        "name": "Ruban",
+        "name": "Copilot",
         "src": "assets/packs/jade/icon-110.webp",
         "thumb": "assets/packs/jade/thumb-110.webp",
         "width": 1254,
@@ -10788,7 +10788,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-114",
-        "name": "Blason royal",
+        "name": "Royal Match",
         "src": "assets/packs/jade/icon-114.webp",
         "thumb": "assets/packs/jade/thumb-114.webp",
         "width": 1254,
@@ -10828,7 +10828,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-119",
-        "name": "Emblème",
+        "name": "PUBG Mobile",
         "src": "assets/packs/jade/icon-119.webp",
         "thumb": "assets/packs/jade/thumb-119.webp",
         "width": 1254,
@@ -10836,7 +10836,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-120",
-        "name": "Calendrier",
+        "name": "Google Calendar",
         "src": "assets/packs/jade/icon-120.webp",
         "thumb": "assets/packs/jade/thumb-120.webp",
         "width": 1254,
@@ -10916,7 +10916,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-130",
-        "name": "Bourse",
+        "name": "Apple Stocks",
         "src": "assets/packs/jade/icon-130.webp",
         "thumb": "assets/packs/jade/thumb-130.webp",
         "width": 1254,
@@ -10956,7 +10956,7 @@ export const themes = [
       },
       {
         "id": "jade-icon-135",
-        "name": "Signal réseau",
+        "name": "Signal",
         "src": "assets/packs/jade/icon-135.webp",
         "thumb": "assets/packs/jade/thumb-135.webp",
         "width": 1254,
