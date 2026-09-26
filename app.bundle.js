@@ -11009,7 +11009,7 @@ Object.assign(exports,{mount});
 "src/views/studio.js":(require,exports)=>{
 const {widgetHTML,refreshClocks} = require("src/components/widget.js");
 const {node,escapeHTML,bind} = require("src/core/dom.js");
-const {phoneHTML} = require("src/components/phone.js");
+const {phoneHTML,crossfadeWallpaper} = require("src/components/phone.js");
 const {formats} = require("src/data/catalog.js");
 function mount(ctx){
  const t=ctx.theme();let category="wallpapers";
@@ -11021,19 +11021,20 @@ function mount(ctx){
  const clockTimer=setInterval(()=>refreshClocks(el),1000);
  ctx.signal.addEventListener("abort",()=>{observer?.disconnect();clearInterval(clockTimer);},{once:true});
  function updatePhone(){el.querySelector(".phone").replaceWith(node(phoneHTML(ctx.store.get(),category)));}
- function panel(){const s=ctx.store.get(),p=el.querySelector("#asset-panel");p.setAttribute("aria-labelledby","tab-"+category);
+ function panel(){const s=ctx.store.get(),p=el.querySelector("#asset-panel");p.setAttribute("aria-labelledby","tab-"+category);p.classList.add("panel-swap");
   if(category==="wallpapers")p.innerHTML=`<div class="asset-panel-heading"><h2>Choisissez votre fond</h2><p>Touchez un fond pour l’appliquer instantanément.</p></div><div class="wallpaper-grid">${t.wallpapers.map(w=>`<div class="wallpaper-card"><button data-action="wallpaper" data-wallpaper="${w.id}" aria-pressed="${w.id===s.wallpaper}"><img src="${w.thumb||w.src}" alt="${escapeHTML(w.name)}" draggable="false" data-protected loading="lazy" decoding="async"><span>${escapeHTML(w.name)}</span></button></div>`).join("")}</div>`;
   if(category==="icons")p.innerHTML=`<div class="asset-panel-heading"><h2>Choisissez vos icônes</h2><p>Touchez une icône pour la voir en grand, puis appliquez-la à l’emplacement ${s.selectedSlot+1}.</p></div><div class="icon-grid">${t.icons.map(i=>`<button data-action="icon" data-icon="${i.id}" aria-label="Agrandir ${escapeHTML(i.name)}" aria-pressed="${s.iconSlots[s.selectedSlot]===i.id}" title="${escapeHTML(i.name)}"><img src="${i.thumb||i.src}" alt="${escapeHTML(i.name)}" draggable="false" loading="lazy"></button>`).join("")}</div>`;
   if(category==="widgets"){
    const activeWidget=t.widgets.find(w=>w.id===s.widget);
    p.innerHTML=`<div class="asset-panel-heading"><h2>Widgets du thème</h2></div>${t.widgets.length?`<p class="widget-note">${t.widgets.some(w=>w.kind==="web-clock")?"Horloge créée pour cet univers, active dans cet aperçu web. Version installable à venir.":"Visuels fournis ou extraits des captures. Heure et météo fixes ; fichiers installables à venir."} Touchez à nouveau pour retirer.</p><div class="widget-grid">${t.widgets.map(w=>`<button data-action="widget" data-widget="${w.id}" aria-pressed="${w.id===s.widget}">${widgetHTML(w,t,false,w.id===s.widget?s.widgetSize:w.format)}<span>${escapeHTML(w.name)}</span></button>`).join("")}</div>${activeWidget?`<div class="widget-size-picker"><span>Taille de l’aperçu</span><div class="size-row">${formats.map(f=>`<button type="button" class="size-btn" data-action="widget-size" data-size="${f.id}" aria-pressed="${s.widgetSize===f.id}">${f.name}</button>`).join("")}</div></div>`:""}`:'<div class="empty-widgets"><span class="empty-widget-shape" aria-hidden="true"></span><p>Les widgets de cet univers<br>arrivent prochainement.</p><small>Aucun widget fourni dans ce pack pour le moment.</small></div>'}`;
   }
+  requestAnimationFrame(()=>p.classList.remove("panel-swap"));
  }
  function chooseCategory(id,focus=false){category=id;el.querySelectorAll('[role="tab"]').forEach(b=>{const selected=b.dataset.category===id;b.setAttribute("aria-selected",String(selected));b.tabIndex=selected?0:-1;if(selected&&focus)b.focus();});updatePhone();panel();}
  bind(el,ctx.signal,(action,b)=>{
   if(action==="category")chooseCategory(b.dataset.category);
   if(action==="slot"){const slot=Number(b.dataset.slot);const s=ctx.store.get();const currentIcon=t.icons.find(i=>i.id===s.iconSlots[slot]);ctx.store.set({selectedSlot:slot});chooseCategory("icons");el.querySelector(`[data-slot="${slot}"]`).focus({preventScroll:true});if(currentIcon)ctx.dialogs.iconPreview(currentIcon,()=>{});}
-  if(action==="wallpaper"){ctx.store.set({wallpaper:b.dataset.wallpaper});updatePhone();el.querySelectorAll(".wallpaper-grid [data-action=wallpaper]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));ctx.announce("Fond appliqué.");}
+  if(action==="wallpaper"){ctx.store.set({wallpaper:b.dataset.wallpaper});crossfadeWallpaper(el.querySelector(".phone-screen"),t.wallpapers.find(w=>w.id===b.dataset.wallpaper));el.querySelectorAll(".wallpaper-grid [data-action=wallpaper]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));ctx.announce("Fond appliqué.");}
   if(action==="icon"){const icon=t.icons.find(i=>i.id===b.dataset.icon);ctx.dialogs.iconPreview(icon,()=>{const s=ctx.store.get(),slots=[...s.iconSlots];slots[s.selectedSlot]=icon.id;ctx.store.set({iconSlots:slots});updatePhone();el.querySelectorAll('.icon-grid button').forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.icon===icon.id)));ctx.announce("Icône appliquée à l’emplacement "+(s.selectedSlot+1)+".");});}
   if(action==="widget"){const s=ctx.store.get();const turningOn=s.widget!==b.dataset.widget;const w=t.widgets.find(w=>w.id===b.dataset.widget);ctx.store.set({widget:turningOn?b.dataset.widget:null,widgetSize:turningOn?w.format:s.widgetSize});updatePhone();panel();ctx.announce("Aperçu du widget mis à jour.");}
   if(action==="widget-size"){ctx.store.set({widgetSize:b.dataset.size});updatePhone();panel();ctx.announce("Taille du widget mise à jour.");}
@@ -11060,13 +11061,24 @@ Object.assign(exports,{widgetHTML,refreshClocks});
 const {widgetHTML} = require("src/components/widget.js");
 const {escapeHTML} = require("src/core/dom.js");
 const {getThemesById} = require("src/data/catalog.js");
+/** Crossfades the phone's wallpaper image in place instead of re-rendering the whole phone. */
+function crossfadeWallpaper(screen,wall){
+ const old=screen.querySelector(".phone-wallpaper");
+ screen.dataset.wallpaperTone=wall?.tone||"dark";screen.dataset.wallpaper=wall?.id||"";
+ if(!wall){old?.remove();return;}
+ const next=document.createElement("img");
+ next.className="phone-wallpaper wallpaper-enter";next.src=wall.src;next.alt="Fond "+wall.name;next.draggable=false;
+ if(old)old.insertAdjacentElement("afterend",next);else screen.prepend(next);
+ requestAnimationFrame(()=>requestAnimationFrame(()=>next.classList.remove("wallpaper-enter")));
+ if(old){old.addEventListener("transitionend",()=>old.remove(),{once:true});setTimeout(()=>old.remove(),400);}
+}
 function phoneHTML(state,category="wallpapers"){
  const t=getThemesById()[state.theme],wall=t.wallpapers.find(w=>w.id===state.wallpaper),widget=t.widgets.find(w=>w.id===state.widget);
  const widgetLarge=widget&&state.widgetSize==="large";
  return `<div class="phone" aria-label="Aperçu ${escapeHTML(t.name)}"><div class="phone-screen" data-wallpaper-tone="${wall?.tone||"dark"}" data-wallpaper="${wall?.id||""}" style="--theme-base:${t.colors.base}">${wall?`<img class="phone-wallpaper" src="${wall.src}" alt="Fond ${escapeHTML(wall.name)}" data-protected draggable="false">`:""}<div class="phone-status"><span>9:41</span><span aria-hidden="true">••• ▰</span></div><div class="island" aria-hidden="true"></div><div class="phone-clock"><span>${escapeHTML(t.name)}</span><strong>9:41</strong></div>${widget?widgetHTML(widget,t,true,state.widgetSize):""}<div class="phone-icons">${state.iconSlots.slice(0,widget?(widgetLarge?4:8):12).map((id,slot)=>{const i=t.icons.find(i=>i.id===id);return `<button data-action="slot" data-slot="${slot}" aria-label="Emplacement ${slot+1} : ${escapeHTML(i.name)}" aria-pressed="${category==="icons"&&state.selectedSlot===slot}" ${category!=="icons"?'tabindex="-1"':""}><img src="${i.thumb}" alt="" draggable="false"><span>${escapeHTML(i.name)}</span></button>`;}).join("")}</div><div class="phone-dock">${state.iconSlots.slice(8).map(id=>{const i=t.icons.find(i=>i.id===id);return `<img src="${i.thumb}" alt="${escapeHTML(i.name)}" draggable="false">`;}).join("")}</div><div class="home-indicator" aria-hidden="true"></div></div></div>`;
 }
 
-Object.assign(exports,{phoneHTML});
+Object.assign(exports,{crossfadeWallpaper,phoneHTML});
 },
 "src/views/mine.js":(require,exports)=>{
 const {node,escapeHTML,bind} = require("src/core/dom.js");

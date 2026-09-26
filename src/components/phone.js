@@ -1,6 +1,17 @@
 import {widgetHTML} from "./widget.js";
 import {escapeHTML} from "../core/dom.js";
 import {getThemesById} from "../data/catalog.js";
+/** Crossfades the phone's wallpaper image in place instead of re-rendering the whole phone. */
+export function crossfadeWallpaper(screen,wall){
+ const old=screen.querySelector(".phone-wallpaper");
+ screen.dataset.wallpaperTone=wall?.tone||"dark";screen.dataset.wallpaper=wall?.id||"";
+ if(!wall){old?.remove();return;}
+ const next=document.createElement("img");
+ next.className="phone-wallpaper wallpaper-enter";next.src=wall.src;next.alt="Fond "+wall.name;next.draggable=false;
+ if(old)old.insertAdjacentElement("afterend",next);else screen.prepend(next);
+ requestAnimationFrame(()=>requestAnimationFrame(()=>next.classList.remove("wallpaper-enter")));
+ if(old){old.addEventListener("transitionend",()=>old.remove(),{once:true});setTimeout(()=>old.remove(),400);}
+}
 export function phoneHTML(state,category="wallpapers"){
  const t=getThemesById()[state.theme],wall=t.wallpapers.find(w=>w.id===state.wallpaper),widget=t.widgets.find(w=>w.id===state.widget);
  const widgetLarge=widget&&state.widgetSize==="large";
