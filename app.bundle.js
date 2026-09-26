@@ -10089,7 +10089,7 @@ const themes = [
       },
       {
         "id": "jade-icon-07",
-        "name": "Apple Games",
+        "name": "Xbox",
         "src": "assets/packs/jade/icon-07.webp",
         "thumb": "assets/packs/jade/thumb-07.webp",
         "width": 1254,
@@ -10830,6 +10830,334 @@ const themes = [
         "thumb": "assets/packs/jade/thumb-99.webp",
         "width": 1254,
         "height": 1254
+      },
+      {
+        "id": "jade-icon-100",
+        "name": "Perplexity",
+        "src": "assets/packs/jade/icon-100.webp",
+        "thumb": "assets/packs/jade/thumb-100.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-101",
+        "name": "Duolingo",
+        "src": "assets/packs/jade/icon-101.webp",
+        "thumb": "assets/packs/jade/thumb-101.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-102",
+        "name": "Uber Eats",
+        "src": "assets/packs/jade/icon-102.webp",
+        "thumb": "assets/packs/jade/thumb-102.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-103",
+        "name": "Google Play Store",
+        "src": "assets/packs/jade/icon-103.webp",
+        "thumb": "assets/packs/jade/thumb-103.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-104",
+        "name": "Candy Crush Saga",
+        "src": "assets/packs/jade/icon-104.webp",
+        "thumb": "assets/packs/jade/thumb-104.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-105",
+        "name": "Monopoly",
+        "src": "assets/packs/jade/icon-105.webp",
+        "thumb": "assets/packs/jade/thumb-105.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-106",
+        "name": "Wild Rift",
+        "src": "assets/packs/jade/icon-106.webp",
+        "thumb": "assets/packs/jade/thumb-106.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-107",
+        "name": "Notion",
+        "src": "assets/packs/jade/icon-107.webp",
+        "thumb": "assets/packs/jade/thumb-107.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-108",
+        "name": "Dropbox",
+        "src": "assets/packs/jade/icon-108.webp",
+        "thumb": "assets/packs/jade/thumb-108.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-109",
+        "name": "OneNote",
+        "src": "assets/packs/jade/icon-109.webp",
+        "thumb": "assets/packs/jade/thumb-109.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-110",
+        "name": "Copilot",
+        "src": "assets/packs/jade/icon-110.webp",
+        "thumb": "assets/packs/jade/thumb-110.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-111",
+        "name": "Revolut",
+        "src": "assets/packs/jade/icon-111.webp",
+        "thumb": "assets/packs/jade/thumb-111.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-112",
+        "name": "Tinder",
+        "src": "assets/packs/jade/icon-112.webp",
+        "thumb": "assets/packs/jade/thumb-112.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-113",
+        "name": "Bolt",
+        "src": "assets/packs/jade/icon-113.webp",
+        "thumb": "assets/packs/jade/thumb-113.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-114",
+        "name": "Royal Match",
+        "src": "assets/packs/jade/icon-114.webp",
+        "thumb": "assets/packs/jade/thumb-114.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-115",
+        "name": "PayPal",
+        "src": "assets/packs/jade/icon-115.webp",
+        "thumb": "assets/packs/jade/thumb-115.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-116",
+        "name": "Wild Rift",
+        "src": "assets/packs/jade/icon-116.webp",
+        "thumb": "assets/packs/jade/thumb-116.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-117",
+        "name": "PUBG Mobile",
+        "src": "assets/packs/jade/icon-117.webp",
+        "thumb": "assets/packs/jade/thumb-117.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-118",
+        "name": "Subway Surfers",
+        "src": "assets/packs/jade/icon-118.webp",
+        "thumb": "assets/packs/jade/thumb-118.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-119",
+        "name": "PUBG Mobile",
+        "src": "assets/packs/jade/icon-119.webp",
+        "thumb": "assets/packs/jade/thumb-119.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-120",
+        "name": "Google Calendar",
+        "src": "assets/packs/jade/icon-120.webp",
+        "thumb": "assets/packs/jade/thumb-120.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-121",
+        "name": "DeepSeek",
+        "src": "assets/packs/jade/icon-121.webp",
+        "thumb": "assets/packs/jade/thumb-121.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-122",
+        "name": "Minecraft",
+        "src": "assets/packs/jade/icon-122.webp",
+        "thumb": "assets/packs/jade/thumb-122.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-123",
+        "name": "Clash of Clans",
+        "src": "assets/packs/jade/icon-123.webp",
+        "thumb": "assets/packs/jade/thumb-123.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-124",
+        "name": "Pokémon GO",
+        "src": "assets/packs/jade/icon-124.webp",
+        "thumb": "assets/packs/jade/thumb-124.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-125",
+        "name": "Deezer",
+        "src": "assets/packs/jade/icon-125.webp",
+        "thumb": "assets/packs/jade/thumb-125.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-126",
+        "name": "LinkedIn",
+        "src": "assets/packs/jade/icon-126.webp",
+        "thumb": "assets/packs/jade/thumb-126.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-127",
+        "name": "Disney+",
+        "src": "assets/packs/jade/icon-127.webp",
+        "thumb": "assets/packs/jade/thumb-127.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-128",
+        "name": "Roblox",
+        "src": "assets/packs/jade/icon-128.webp",
+        "thumb": "assets/packs/jade/thumb-128.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-129",
+        "name": "Google Play",
+        "src": "assets/packs/jade/icon-129.webp",
+        "thumb": "assets/packs/jade/thumb-129.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-130",
+        "name": "Apple Stocks",
+        "src": "assets/packs/jade/icon-130.webp",
+        "thumb": "assets/packs/jade/thumb-130.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-131",
+        "name": "Clash Royale",
+        "src": "assets/packs/jade/icon-131.webp",
+        "thumb": "assets/packs/jade/thumb-131.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-132",
+        "name": "Among Us",
+        "src": "assets/packs/jade/icon-132.webp",
+        "thumb": "assets/packs/jade/thumb-132.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-133",
+        "name": "Wild Rift",
+        "src": "assets/packs/jade/icon-133.webp",
+        "thumb": "assets/packs/jade/thumb-133.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-134",
+        "name": "Adobe Lightroom",
+        "src": "assets/packs/jade/icon-134.webp",
+        "thumb": "assets/packs/jade/thumb-134.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-135",
+        "name": "Signal",
+        "src": "assets/packs/jade/icon-135.webp",
+        "thumb": "assets/packs/jade/thumb-135.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-136",
+        "name": "Brawl Stars",
+        "src": "assets/packs/jade/icon-136.webp",
+        "thumb": "assets/packs/jade/thumb-136.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-137",
+        "name": "Steam",
+        "src": "assets/packs/jade/icon-137.webp",
+        "thumb": "assets/packs/jade/thumb-137.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-138",
+        "name": "Le Chat (Mistral AI)",
+        "src": "assets/packs/jade/icon-138.webp",
+        "thumb": "assets/packs/jade/thumb-138.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-139",
+        "name": "Slack",
+        "src": "assets/packs/jade/icon-139.webp",
+        "thumb": "assets/packs/jade/thumb-139.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-icon-140",
+        "name": "Claude",
+        "src": "assets/packs/jade/icon-140.webp",
+        "thumb": "assets/packs/jade/thumb-140.webp",
+        "width": 1254,
+        "height": 1254
       }
     ],
     "widgets": [],
@@ -11014,7 +11342,7 @@ const {formats} = require("src/data/catalog.js");
 function mount(ctx){
  const t=ctx.theme();let category="wallpapers";
  const types=[{id:"wallpapers",title:"Fonds d’écran",items:t.wallpapers},{id:"icons",title:"Icônes",items:t.icons},{id:"widgets",title:"Widgets",items:t.widgets}];
- const el=node(`<section class="studio-view" data-view="studio" style="--accent:${t.colors.accent};--theme-base:${t.colors.base}"><div class="studio-heading"><div><p class="eyebrow">Votre studio</p><h1>${escapeHTML(t.name)}</h1></div><button class="primary obtain" data-action="purchase">Obtenir le pack</button></div><div class="studio-workspace"><div class="category-cards" role="tablist" aria-label="Personnaliser le téléphone">${types.map((c,n)=>`<button id="tab-${c.id}" class="category-card" data-action="category" data-category="${c.id}" role="tab" aria-controls="asset-panel" aria-selected="${n===0}" tabindex="${n===0?0:-1}"><div class="category-art" aria-hidden="true">${c.items.slice(0,c.id==="wallpapers"?2:3).map(i=>`<img src="${i.thumb||i.src}" alt="" draggable="false">`).join("")}${!c.items.length?'<span class="empty-widget-shape"></span>':""}</div><span class="category-label"><strong>${c.title}</strong><small>${c.items.length?c.items.length+(c.id==="widgets"?" à essayer":(c.items.length>1?" disponibles":" disponible")):"À venir"}</small></span></button>`).join("")}</div><div class="phone-stage"><div class="phone-frame">${phoneHTML(ctx.store.get(),category)}</div><p class="phone-caption">Votre composition</p></div><section id="asset-panel" class="asset-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-wallpapers"></section></div></section>`);
+ const el=node(`<section class="studio-view" data-view="studio" style="--accent:${t.colors.accent};--theme-base:${t.colors.base}"><div class="studio-heading"><div><p class="eyebrow">Votre studio</p><h1>${escapeHTML(t.name)}</h1></div><div class="studio-heading-actions">${t.id==="jade"?`<a class="ghost-btn book-link" href="book-jade.html">Voir en livre</a>`:""}<button class="primary obtain" data-action="purchase">Obtenir le pack</button></div></div><div class="studio-workspace"><div class="category-cards" role="tablist" aria-label="Personnaliser le téléphone">${types.map((c,n)=>`<button id="tab-${c.id}" class="category-card" data-action="category" data-category="${c.id}" role="tab" aria-controls="asset-panel" aria-selected="${n===0}" tabindex="${n===0?0:-1}"><div class="category-art" aria-hidden="true">${c.items.slice(0,c.id==="wallpapers"?2:3).map(i=>`<img src="${i.thumb||i.src}" alt="" draggable="false">`).join("")}${!c.items.length?'<span class="empty-widget-shape"></span>':""}</div><span class="category-label"><strong>${c.title}</strong><small>${c.items.length?c.items.length+(c.id==="widgets"?" à essayer":(c.items.length>1?" disponibles":" disponible")):"À venir"}</small></span></button>`).join("")}</div><div class="phone-stage"><div class="phone-frame">${phoneHTML(ctx.store.get(),category)}</div><p class="phone-caption">Votre composition</p></div><section id="asset-panel" class="asset-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-wallpapers"></section></div></section>`);
  function sizePhone(){const stage=el.querySelector(".phone-stage"),frame=el.querySelector(".phone-frame");const width=Math.min(300,stage.clientWidth-10,Math.max(200,stage.clientHeight-74)*268/550);frame.style.width=width+"px";frame.style.height=(width*550/268)+"px";frame.style.setProperty("--phone-scale",width/268);}
  let observer=null;
  if(typeof ResizeObserver!=="undefined"){observer=new ResizeObserver(sizePhone);observer.observe(el.querySelector(".phone-stage"));}

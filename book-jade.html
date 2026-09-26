@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1712">
+<meta name="description" content="Jade Impérial — feuilletez la collection SNX Studio en livre animé.">
+<title>Jade Impérial — le livre · SNX Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Base StPageFlip layout engine styles (required by the library itself) */
+.stf__parent{position:relative;display:block;box-sizing:border-box;transform:translateZ(0);touch-action:pan-y}
+.sft__wrapper{position:relative;width:100%;box-sizing:border-box}
+.stf__parent canvas{position:absolute;width:100%;height:100%;left:0;top:0}
+.stf__block{position:absolute;width:100%;height:100%;box-sizing:border-box;perspective:2000px}
+.stf__item{display:none;position:absolute;transform-style:preserve-3d}
+.stf__outerShadow,.stf__innerShadow,.stf__hardShadow,.stf__hardInnerShadow{position:absolute;left:0;top:0}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:
+    radial-gradient(ellipse 1400px 1000px at 50% 22%, #16352b, #0a1712 68%),
+    #070f0c;
+  color:var(--champagne);
+  font-family:'IBM Plex Sans',system-ui,sans-serif;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:100%;
+  padding:34px 16px;
+  overflow-x:hidden;
+  user-select:none;-webkit-user-select:none;
+}
+:root{
+  --ivory:#f4ead9; --jade:#0f221c; --jade-2:#173a2d; --gold:#c9a76a; --champagne:#e7d9bd;
+  --ink:#1c2b24; --muted:#5d6f66;
+}
+
+/* ===== Stage : le livre occupe une grosse partie de l'écran ===== */
+.stage{position:relative;width:min(1640px,97vw);height:min(93vh,1080px);min-height:460px;display:flex;align-items:center;justify-content:center}
+
+/* Décor derrière le livre (comble le vide à gauche quand la couverture est seule) */
+.stage-backdrop{position:absolute;inset:0;z-index:0;display:flex;align-items:center;justify-content:flex-start;pointer-events:none;overflow:hidden;border-radius:8px}
+.stage-backdrop .glow{position:absolute;left:8%;top:50%;transform:translateY(-50%);width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#2a5943 0%,transparent 70%);opacity:.55}
+.stage-backdrop .brand-mark{position:absolute;left:8%;top:50%;transform:translateY(-50%);width:clamp(260px,30vw,460px);height:auto;opacity:.94;filter:drop-shadow(0 20px 50px #000a)}
+
+#book-container{position:relative;z-index:2;filter:drop-shadow(0 50px 90px #000000a0);width:100%;height:100%;touch-action:none;user-select:none;overflow:hidden;border-radius:8px}
+.page{background:linear-gradient(155deg,#faf5ea,#f0e6d2);color:var(--ink);overflow:hidden}
+.page-content{height:100%;display:flex;flex-direction:column;padding:clamp(22px,3.4vw,46px) clamp(22px,3.2vw,42px) clamp(18px,2.6vw,30px);position:relative}
+img{-webkit-user-drag:none;user-drag:none}
+
+/* Covers */
+.cover{
+  background:
+    radial-gradient(ellipse at 30% 0%, #245d45, transparent 60%),
+    linear-gradient(155deg,var(--jade-2) 0%,var(--jade) 55%,#081712 100%);
+  color:var(--ivory);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;position:relative;
+}
+.cover::before{content:"";position:absolute;inset:14px;border:1px solid #c9a76a55;border-radius:2px;pointer-events:none}
+.cover .mark{position:absolute;top:13%;left:50%;transform:translateX(-50%);font-size:15px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin:0;white-space:nowrap}
+.cover h2{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(34px,5.2vw,58px);margin:0 0 12px;letter-spacing:.01em}
+.cover .sub{font-size:13px;color:var(--champagne);opacity:.85;font-style:italic;margin-bottom:0}
+.cover .divider{width:52px;height:1px;background:var(--gold);margin:32px 0}
+.back-cover .stat-row{display:flex;gap:30px;margin:26px 0 34px}
+.back-cover .stat{text-align:center}
+.back-cover .stat b{display:block;font-family:'Playfair Display',serif;font-size:32px;color:var(--gold);font-weight:600}
+.back-cover .stat span{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--champagne);opacity:.8}
+.cta{position:relative;z-index:10;font-family:'IBM Plex Sans';font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--jade);background:var(--gold);padding:14px 30px;border-radius:100px;font-weight:600;text-decoration:none;display:inline-block;border:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+.cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px #c9a76a55}
+
+/* Page "Merci" */
+.thanks-page .mark{font-size:20px;letter-spacing:.3em;margin:0 0 34px;font-weight:600}
+.thanks-page .thanks-title{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(26px,3.6vw,36px);margin:0 0 16px}
+.thanks-page .thanks-text{font-size:13px;line-height:1.8;color:var(--champagne);opacity:.9;max-width:36ch}
+.thanks-page .leaf{width:clamp(90px,11vw,130px);height:auto;margin-bottom:28px}
+
+/* Inner pages */
+.page-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.page-title{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(18px,2.2vw,25px);margin:0 0 6px;color:var(--jade)}
+.page-note{font-size:11.5px;color:var(--muted);margin:0 0 20px;line-height:1.5;max-width:46ch}
+.page-num{position:absolute;bottom:16px;right:24px;font-size:9.5px;color:var(--muted);letter-spacing:.08em}
+
+/* --- Page "Votre téléphone" : le mockup vit DANS le livre --- */
+.phone-page .page-content{justify-content:flex-start;align-items:center;padding-top:clamp(20px,2.6vw,30px)}
+.phone-page .page-head{align-self:flex-start;margin-bottom:0;flex:0 0 auto}
+.phone-page .phone-wrap{flex:1;display:flex;align-items:center;justify-content:center;width:100%}
+.phone-mock{position:relative;width:clamp(190px,24vw,300px);height:calc(clamp(190px,24vw,300px) * 2.05);padding:8px;border-radius:38px;background:linear-gradient(140deg,#8d9aa6,#2c3644 30%,#0b0f14);box-shadow:0 30px 70px #0008,inset 0 0 0 1px #ffffff55}
+.phone-mock .screen{position:relative;width:100%;height:100%;border-radius:26px;overflow:hidden;border:1.5px solid #05090e;background:linear-gradient(150deg,#173a2d,#080f1b)}
+.phone-mock .screen img.wall{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .3s ease}
+.phone-mock .screen img.wall.wall-enter{opacity:0}
+.phone-mock .island{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:34%;height:8px;border-radius:20px;background:#010305;z-index:2}
+.phone-mock .status{position:relative;z-index:2;display:flex;justify-content:space-between;padding:8px 12px 0;font-size:7px;font-weight:600;color:#fff;text-shadow:0 1px 5px #000}
+.phone-mock .clock{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;margin:16px 0 10px;color:#fff;text-shadow:0 1px 10px #000}
+.phone-mock .clock span{font-size:7px;letter-spacing:.08em}
+.phone-mock .clock strong{font-size:22px;font-weight:300;line-height:1.15}
+.phone-mock .icons{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:8px 3px;padding:0 8px;margin-top:clamp(26px,4vw,44px)}
+.phone-mock .icons img{width:100%;aspect-ratio:1;object-fit:contain;border-radius:6px;box-shadow:0 2px 5px #0003}
+.phone-mock .dock{position:absolute;left:8px;right:8px;bottom:10px;z-index:2;display:flex;justify-content:space-around;gap:4px;border:1px solid #ffffff20;border-radius:12px;background:#cadbf329;backdrop-filter:blur(10px);padding:6px}
+.phone-mock .dock img{width:20px;height:20px;object-fit:contain;border-radius:5px}
+
+.wall-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:clamp(12px,1.8vw,22px);flex:1}
+.wall-card{position:relative;z-index:10;border-radius:12px;overflow:hidden;background:#0f221c;box-shadow:0 6px 18px #0003;cursor:pointer;border:2px solid transparent;padding:0;text-align:left;font:inherit;color:inherit;transition:border-color .15s ease,transform .15s ease}
+.wall-card:hover{transform:translateY(-2px)}
+.wall-card[aria-pressed="true"]{border-color:var(--gold)}
+.wall-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.wall-card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:56%;background:linear-gradient(to top,#0009,transparent);pointer-events:none}
+.wall-card span{position:absolute;left:12px;bottom:10px;z-index:1;font-size:12px;color:#fff;font-weight:500;text-shadow:0 2px 8px #000a}
+.wall-hint{font-size:9.5px;color:var(--muted);opacity:.8;margin-top:10px}
+
+.icon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.6vw,18px);flex:1;align-content:start}
+.icon-grid--full{grid-template-rows:repeat(5,auto);gap:clamp(16px,2.2vw,28px);align-content:center;height:100%}
+.icon-cell{display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center}
+.icon-cell img{width:clamp(44px,6vw,74px);height:clamp(44px,6vw,74px);object-fit:contain;border-radius:12px;box-shadow:0 4px 12px #0004;pointer-events:none}
+.icon-cell span{font-size:11px;color:var(--ink);line-height:1.3}
+
+/* ===== Navigation : plus de glisser, uniquement du clic ===== */
+.click-zone{position:absolute;top:0;bottom:0;width:clamp(14px,1.6vw,30px);cursor:pointer;z-index:5;background:transparent}
+.click-zone.left{left:0}
+.click-zone.right{right:0}
+.click-zone:hover{background:linear-gradient(90deg,#00000012,transparent)}
+.click-zone.right:hover{background:linear-gradient(270deg,#00000012,transparent)}
+
+.arrow-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid #c9a76a55;background:#0e1e18d0;backdrop-filter:blur(6px);color:var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:12;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.arrow-btn:hover{background:#173a2d;transform:translateY(-50%) scale(1.08)}
+.arrow-btn:active{transform:translateY(-50%) scale(.96)}
+.arrow-btn.prev{left:clamp(-8px,-2vw,6px)}
+.arrow-btn.next{right:clamp(-8px,-2vw,6px)}
+.arrow-btn svg{width:20px;height:20px}
+.arrow-btn[disabled]{opacity:.25;pointer-events:none}
+
+@media(max-width:760px){
+  .stage{height:min(80vh,660px)}
+  .arrow-btn{width:42px;height:42px}
+  .arrow-btn.prev{left:-4px}.arrow-btn.next{right:-4px}
+  .click-zone{width:18px}
+  .stage-backdrop{display:none}
+}
+@media(prefers-reduced-motion:reduce){.arrow-btn{transition:none}.phone-mock .screen img.wall{transition:none}}
+
+.back-link{position:fixed;top:18px;left:18px;z-index:50;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:12px;letter-spacing:.05em;color:var(--champagne);opacity:.75;text-decoration:none;background:#0e1e18b0;backdrop-filter:blur(6px);padding:8px 16px;border-radius:100px;border:1px solid #c9a76a3d;transition:opacity .15s ease}
+.back-link:hover{opacity:1}
+</style>
+
+<a class="back-link" href="index.html#studio/jade">&larr; Retour au Studio</a>
+<div class="stage">
+  <div class="stage-backdrop" aria-hidden="true">
+    <div class="glow"></div>
+    <img class="brand-mark" src="assets/site/snx-mark.webp" alt="">
+  </div>
+
+  <button class="arrow-btn prev" data-nav="prev" aria-label="Page précédente" disabled>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button class="arrow-btn next" data-nav="next" aria-label="Page suivante">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="click-zone left" data-nav="prev"></div>
+  <div class="click-zone right" data-nav="next"></div>
+
+  <div id="book-container">
+    <div class="page cover" data-density="hard">
+      <div class="page-content" style="justify-content:center;align-items:center">
+        <span class="mark">SNX Studio</span>
+        <h2>Jade Impérial</h2>
+        <div class="divider"></div>
+        <p class="sub">Une collection à composer, page après page</p>
+      </div>
+    </div>
+
+    <div class="page phone-page">
+      <div class="page-content">
+        <div class="page-head">
+          <p class="page-eyebrow">Chapitre 1</p>
+          <h3 class="page-title">Votre téléphone</h3>
+        </div>
+        <div class="phone-wrap">
+        <div class="phone-mock">
+          <div class="screen">
+            <img class="wall" src="assets/packs/jade/cover.webp" alt="">
+            <div class="island"></div>
+            <div class="status"><span>9:41</span><span>••• ▰</span></div>
+            <div class="clock"><span>Jade Impérial</span><strong>9:41</strong></div>
+            <div class="icons">
+              <img src="assets/packs/jade/thumb-00.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-01.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-02.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-03.webp" alt="" draggable="false">
+              <img src="assets/packs/jade/thumb-04.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-05.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-06.webp" alt="" draggable="false"><img src="assets/packs/jade/thumb-07.webp" alt="" draggable="false">
+            </div>
+            <div class="dock">
+              <img src="assets/packs/jade/thumb-83.webp" alt="" draggable="false" title="Téléphone">
+              <img src="assets/packs/jade/thumb-51.webp" alt="" draggable="false" title="Messages">
+              <img src="assets/packs/jade/thumb-08.webp" alt="" draggable="false" title="Apple Music">
+              <img src="assets/packs/jade/thumb-73.webp" alt="" draggable="false" title="Réglages">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 2</p>
+        <h3 class="page-title">Fonds d'écran</h3>
+        <div class="wall-grid">
+          <button class="wall-card" type="button" data-wall="assets/packs/jade/cover.webp" aria-pressed="true"><img src="assets/packs/jade/cover.webp" alt="Jade profond" draggable="false"><span>Jade profond</span></button>
+          <button class="wall-card" type="button" data-wall="assets/packs/jade/wallpapers/wall-01.webp" aria-pressed="false"><img src="assets/packs/jade/wallpapers/wall-01.webp" alt="Écrin de jade" draggable="false"><span>Écrin de jade</span></button>
+          <button class="wall-card" type="button" data-wall="assets/packs/jade/wallpapers/wall-02.webp" aria-pressed="false"><img src="assets/packs/jade/wallpapers/wall-02.webp" alt="Soie champagne" draggable="false"><span>Soie champagne</span></button>
+          <button class="wall-card" type="button" data-wall="assets/packs/jade/wallpapers/wall-03.webp" aria-pressed="false"><img src="assets/packs/jade/wallpapers/wall-03.webp" alt="Ivoire satiné" draggable="false"><span>Ivoire satiné</span></button>
+        </div>
+        <span class="page-num">03</span>
+      </div>
+    </div>
+
+<div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 1/10</p>
+        <h3 class="page-title">Réseaux &amp; messagerie</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-42.webp" alt=""><span>Instagram</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-29.webp" alt=""><span>Facebook</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-52.webp" alt=""><span>Messenger</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-94.webp" alt=""><span>WhatsApp</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-82.webp" alt=""><span>Telegram</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-79.webp" alt=""><span>Signal</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-23.webp" alt=""><span>Discord</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-80.webp" alt=""><span>Snapchat</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-86.webp" alt=""><span>TikTok</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-85.webp" alt=""><span>Threads</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-96.webp" alt=""><span>X</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-72.webp" alt=""><span>Reddit</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-65.webp" alt=""><span>Pinterest</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-51.webp" alt=""><span>Messages</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-28.webp" alt=""><span>FaceTime</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-88.webp" alt=""><span>Twitch</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-83.webp" alt=""><span>Téléphone</span></div></div>
+        <span class="page-num">04</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 2/10</p>
+        <h3 class="page-title">Musique, vidéo &amp; lecture</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-08.webp" alt=""><span>Apple Music</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-81.webp" alt=""><span>Spotify</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-21.webp" alt=""><span>Deezer</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-67.webp" alt=""><span>Podcasts</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-78.webp" alt=""><span>Shazam</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-57.webp" alt=""><span>Netflix</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-24.webp" alt=""><span>Disney Plus</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-69.webp" alt=""><span>Prime Video</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-97.webp" alt=""><span>YouTube</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-10.webp" alt=""><span>Apple TV</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-99.webp" alt=""><span>iTunes Store</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-45.webp" alt=""><span>Kindle</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-47.webp" alt=""><span>Livres</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-11.webp" alt=""><span>Audible</span></div></div>
+        <span class="page-num">05</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 3/10</p>
+        <h3 class="page-title">Achats, voyages &amp; argent</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-04.webp" alt=""><span>Amazon</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-03.webp" alt=""><span>AliExpress</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-26.webp" alt=""><span>Etsy</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-46.webp" alt=""><span>Leboncoin</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-84.webp" alt=""><span>Temu</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-90.webp" alt=""><span>Vinted</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-63.webp" alt=""><span>PayPal</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-91.webp" alt=""><span>Wallet</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-74.webp" alt=""><span>Revolut</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-12.webp" alt=""><span>Booking</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-75.webp" alt=""><span>SNCF Connect</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-89.webp" alt=""><span>Uber</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-93.webp" alt=""><span>Waze</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-37.webp" alt=""><span>Google Maps</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-66.webp" alt=""><span>Plans</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-48.webp" alt=""><span>Localiser</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-02.webp" alt=""><span>Airbnb</span></div></div>
+        <span class="page-num">06</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 4/10</p>
+        <h3 class="page-title">Bureautique &amp; organisation</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-27.webp" alt=""><span>Excel</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-95.webp" alt=""><span>Word</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-68.webp" alt=""><span>PowerPoint</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-35.webp" alt=""><span>Google Docs</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-40.webp" alt=""><span>Google Sheets</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-59.webp" alt=""><span>Numbers</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-62.webp" alt=""><span>Pages</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-44.webp" alt=""><span>Keynote</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-36.webp" alt=""><span>Google Drive</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-60.webp" alt=""><span>OneDrive</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-58.webp" alt=""><span>Notes</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-43.webp" alt=""><span>Journal</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-14.webp" alt=""><span>Calendrier</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-71.webp" alt=""><span>Rappels</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-13.webp" alt=""><span>Calculatrice</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-30.webp" alt=""><span>Fichiers</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-87.webp" alt=""><span>Traduire</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-70.webp" alt=""><span>Raccourcis</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-00.webp" alt=""><span>Adobe Acrobat</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-01.webp" alt=""><span>Adobe Scan</span></div></div>
+        <span class="page-num">07</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 5/10</p>
+        <h3 class="page-title">Mail, visio &amp; Google</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-33.webp" alt=""><span>Gmail</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-34.webp" alt=""><span>Google</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-38.webp" alt=""><span>Google Meet</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-39.webp" alt=""><span>Google Photos</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-61.webp" alt=""><span>Outlook</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-49.webp" alt=""><span>Mail</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-55.webp" alt=""><span>Microsoft Teams</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-98.webp" alt=""><span>Zoom</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-20.webp" alt=""><span>Contacts</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-18.webp" alt=""><span>Chrome</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-76.webp" alt=""><span>Safari</span></div></div>
+        <span class="page-num">08</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 6/10</p>
+        <h3 class="page-title">Réglages, santé &amp; quotidien</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-73.webp" alt=""><span>Réglages</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-41.webp" alt=""><span>Horloge</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-54.webp" alt=""><span>Météo</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-77.webp" alt=""><span>Santé</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-53.webp" alt=""><span>Mesures</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-56.webp" alt=""><span>Mots de passe</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-92.webp" alt=""><span>Watch</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-22.webp" alt=""><span>Dictaphone</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-19.webp" alt=""><span>Compte Ameli</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-25.webp" alt=""><span>Doctolib</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-31.webp" alt=""><span>Forme</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-50.webp" alt=""><span>Maison</span></div></div>
+        <span class="page-num">09</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 7/10</p>
+        <h3 class="page-title">Créativité &amp; IA</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-15.webp" alt=""><span>Canva</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-16.webp" alt=""><span>CapCut</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-17.webp" alt=""><span>ChatGPT</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-32.webp" alt=""><span>Gemini</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-100.webp" alt=""><span>Perplexity</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-107.webp" alt=""><span>Notion</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-108.webp" alt=""><span>Dropbox</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-109.webp" alt=""><span>OneNote</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-110.webp" alt=""><span>Copilot</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-121.webp" alt=""><span>DeepSeek</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-134.webp" alt=""><span>Adobe Lightroom</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-138.webp" alt=""><span>Le Chat (Mistral AI)</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-140.webp" alt=""><span>Claude</span></div></div>
+        <span class="page-num">10</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 8/10</p>
+        <h3 class="page-title">App Store &amp; extras</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-05.webp" alt=""><span>App Store</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-09.webp" alt=""><span>Apple Store</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-07.webp" alt=""><span>Xbox</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-06.webp" alt=""><span>Appareil photo</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-64.webp" alt=""><span>Photos</span></div></div>
+        <span class="page-num">11</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 9/10</p>
+        <h3 class="page-title">Jeux &amp; compétition</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-104.webp" alt=""><span>Candy Crush Saga</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-105.webp" alt=""><span>Monopoly</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-106.webp" alt=""><span>Wild Rift</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-116.webp" alt=""><span>Wild Rift</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-117.webp" alt=""><span>PUBG Mobile</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-118.webp" alt=""><span>Subway Surfers</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-122.webp" alt=""><span>Minecraft</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-123.webp" alt=""><span>Clash of Clans</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-124.webp" alt=""><span>Pokémon GO</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-128.webp" alt=""><span>Roblox</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-129.webp" alt=""><span>Google Play</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-131.webp" alt=""><span>Clash Royale</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-132.webp" alt=""><span>Among Us</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-133.webp" alt=""><span>Wild Rift</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-136.webp" alt=""><span>Brawl Stars</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-137.webp" alt=""><span>Steam</span></div></div>
+        <span class="page-num">12</span>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page-content">
+        <p class="page-eyebrow">Chapitre 3 · 10/10</p>
+        <h3 class="page-title">Style de vie &amp; réseaux</h3>
+        <div class="icon-grid icon-grid--full"><div class="icon-cell"><img src="assets/packs/jade/thumb-101.webp" alt=""><span>Duolingo</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-102.webp" alt=""><span>Uber Eats</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-103.webp" alt=""><span>Google Play Store</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-111.webp" alt=""><span>Revolut</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-112.webp" alt=""><span>Tinder</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-113.webp" alt=""><span>Bolt</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-114.webp" alt=""><span>Royal Match</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-115.webp" alt=""><span>PayPal</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-119.webp" alt=""><span>PUBG Mobile</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-120.webp" alt=""><span>Google Calendar</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-125.webp" alt=""><span>Deezer</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-126.webp" alt=""><span>LinkedIn</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-127.webp" alt=""><span>Disney+</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-130.webp" alt=""><span>Apple Stocks</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-135.webp" alt=""><span>Signal</span></div><div class="icon-cell"><img src="assets/packs/jade/thumb-139.webp" alt=""><span>Slack</span></div></div>
+        <span class="page-num">13</span>
+      </div>
+    </div>
+
+    <div class="page back-cover cover" data-density="hard">
+      <div class="page-content" style="justify-content:center;align-items:center">
+        <span class="mark">Jade Impérial</span>
+        <div class="stat-row">
+          <div class="stat"><b>141</b><span>Icônes</span></div>
+          <div class="stat"><b>4</b><span>Fonds</span></div>
+        </div>
+        <a class="cta" id="cta-buy" href="https://www.etsy.com/shop/SoftGlowIcons" target="_blank" rel="noopener">Obtenir le pack</a>
+      </div>
+    </div>
+
+    <div class="page back-cover cover thanks-page" data-density="hard">
+      <div class="page-content" style="justify-content:center;align-items:center">
+        <svg class="leaf" viewBox="0 0 120 160" fill="none">
+          <defs><linearGradient id="ballGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#173a2d"/><stop offset="48%" stop-color="#2a5943"/><stop offset="52%" stop-color="#f4ead9"/><stop offset="100%" stop-color="#e7d9bd"/></linearGradient></defs>
+          <path d="M60 6 C24 28 10 62 10 80 C10 98 24 132 60 154 C96 132 110 98 110 80 C110 62 96 28 60 6 Z" fill="url(#ballGrad)" stroke="#c9a76a" stroke-width="3"/>
+          <path d="M60 6 L60 154" stroke="#c9a76a" stroke-width="1.5" opacity=".7"/>
+          <path d="M22 55 L98 105 M22 105 L98 55" stroke="#c9a76a" stroke-width="1" opacity=".5"/>
+        </svg>
+        <span class="mark">Merci</span>
+        <h2 class="thanks-title">Bienvenue dans l'univers Jade Impérial</h2>
+        <p class="thanks-text">Merci pour votre confiance. Nous espérons que ce thème vous accompagnera avec plaisir, jour après jour.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script>
+(function(){
+  function boot(){
+    var isNarrow = window.innerWidth < 760;
+    var pf = new St.PageFlip(document.getElementById('book-container'), {
+      width: 640, height: 920,
+      size: 'stretch',
+      minWidth: 280, maxWidth: 1550,
+      minHeight: 420, maxHeight: 1020,
+      showCover: true,
+      usePortrait: isNarrow,
+      maxShadowOpacity: 0.55,
+      flippingTime: 700,
+      useMouseEvents: false,
+      mobileScrollSupport: false
+    });
+    pf.loadFromHTML(document.querySelectorAll('#book-container .page'));
+
+    var prevBtn = document.querySelector('[data-nav="prev"].arrow-btn');
+    var nextBtn = document.querySelector('[data-nav="next"].arrow-btn');
+
+    function go(dir){
+      if(dir === 'next') pf.flipNext('top'); else pf.flipPrev('top');
+    }
+    document.querySelectorAll('.arrow-btn[data-nav], .click-zone[data-nav]').forEach(function(elm){
+      elm.addEventListener('click', function(){ go(elm.dataset.nav); });
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowRight') go('next');
+      if(e.key === 'ArrowLeft') go('prev');
+    });
+
+    function refreshArrows(){
+      var idx = pf.getCurrentPageIndex();
+      var count = pf.getPageCount();
+      prevBtn.disabled = idx <= 0;
+      nextBtn.disabled = idx >= count - 1;
+    }
+    pf.on('flip', refreshArrows);
+    pf.on('changeState', refreshArrows);
+    refreshArrows();
+
+    // Bloquer le clic droit / menu contextuel partout dans le livre (pas de "enregistrer l'image")
+    document.querySelector('.stage').addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+    // Appliquer un fond d'écran sur le mockup du téléphone SANS tourner la page
+    var wallImg = document.querySelector('.phone-mock .screen img.wall');
+    document.querySelectorAll('.wall-card').forEach(function(card){
+      card.addEventListener('click', function(e){
+        e.stopPropagation();
+        var src = card.dataset.wall;
+        if(wallImg.getAttribute('src') === src) return;
+        wallImg.classList.add('wall-enter');
+        requestAnimationFrame(function(){
+          wallImg.src = src;
+          requestAnimationFrame(function(){ wallImg.classList.remove('wall-enter'); });
+        });
+        document.querySelectorAll('.wall-card').forEach(function(c){ c.setAttribute('aria-pressed', String(c === card)); });
+      });
+    });
+
+    // "Obtenir le pack" : ouvre le vrai lien Etsy ET tourne la page sur le remerciement
+    var cta = document.getElementById('cta-buy');
+    if(cta){
+      cta.addEventListener('click', function(){
+        setTimeout(function(){ pf.flipNext('top'); }, 50);
+      });
+    }
+  }
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(boot); } else { boot(); }
+})();
+</script>
