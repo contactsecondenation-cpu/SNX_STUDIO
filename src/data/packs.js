@@ -7225,8 +7225,8 @@ export const themes = [
       "brume-icon-83",
       "brume-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_BRUME.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"
@@ -9814,8 +9814,8 @@ export const themes = [
       "galet-icon-83",
       "galet-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_GALET.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"
@@ -10690,8 +10690,8 @@ export const themes = [
       "jade-icon-83",
       "jade-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_JADE_IMPERIAL.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"

@@ -147,10 +147,10 @@ const money=n=>new Intl.NumberFormat("fr-FR",{style:"currency",currency:"EUR"}).
 const formats=[{id:"small",name:"Small"},{id:"medium",name:"Medium"},{id:"large",name:"Large"}];
 const commerce={
  mode:"demo",
- contactEmail:"[votre-email@exemple.fr]",
- etsyUrl:"[lien de votre boutique Etsy]",
- legalOwner:"[Votre nom / activité]",
- legalAddress:"[Ville, France]"
+ contactEmail:"jphkkrysv@gmail.com",
+ etsyUrl:"https://www.etsy.com/shop/SoftGlowIcons",
+ legalOwner:"SnX-StuDiO KIM",
+ legalAddress:"Montpellier, France"
 };
 
 Object.assign(exports,{refreshThemes,getThemes,getThemesById,routes,money,formats,commerce});
@@ -7383,8 +7383,8 @@ const themes = [
       "brume-icon-83",
       "brume-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_BRUME.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"
@@ -9972,8 +9972,8 @@ const themes = [
       "galet-icon-83",
       "galet-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_GALET.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"
@@ -10848,8 +10848,8 @@ const themes = [
       "jade-icon-83",
       "jade-icon-91"
     ],
-    "price": null,
-    "availability": "preview",
+    "price": 14.99,
+    "availability": "available",
     "metadata": {
       "originalArchive": "SNX_JADE_IMPERIAL.zip",
       "widgets": "Aucun widget identifié dans les fichiers reçus"

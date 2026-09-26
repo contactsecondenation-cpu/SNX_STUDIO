@@ -10,8 +10,8 @@ export const money=n=>new Intl.NumberFormat("fr-FR",{style:"currency",currency:"
 export const formats=[{id:"small",name:"Small"},{id:"medium",name:"Medium"},{id:"large",name:"Large"}];
 export const commerce={
  mode:"demo",
- contactEmail:"[votre-email@exemple.fr]",
- etsyUrl:"[lien de votre boutique Etsy]",
- legalOwner:"[Votre nom / activité]",
- legalAddress:"[Ville, France]"
+ contactEmail:"jphkkrysv@gmail.com",
+ etsyUrl:"https://www.etsy.com/shop/SoftGlowIcons",
+ legalOwner:"SnX-StuDiO KIM",
+ legalAddress:"Montpellier, France"
 };
