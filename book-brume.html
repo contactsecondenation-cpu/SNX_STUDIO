@@ -44,6 +44,8 @@ body{
 .back-link:hover{opacity:1}
 
 #book-container{position:relative;z-index:2;filter:drop-shadow(0 50px 90px #000000a0);width:100%;height:100%;touch-action:pan-y;user-select:none;overflow:hidden;border-radius:8px}
+#book-container::before{content:"";position:absolute;inset:0;background:var(--jade);z-index:0;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .12s ease}
+#book-container.flipping-cover::before{opacity:1}
 .page{background:linear-gradient(155deg,#faf5ea,#f0e6d2);color:var(--ink);overflow:hidden}
 .page-content{height:100%;display:flex;flex-direction:column;padding:clamp(22px,3.4vw,46px) clamp(22px,3.2vw,42px) clamp(18px,2.6vw,30px);position:relative}
 img{-webkit-user-drag:none;user-drag:none}
@@ -311,7 +313,10 @@ img{-webkit-user-drag:none;user-drag:none}
     var prevBtn = document.querySelector('[data-nav="prev"].arrow-btn');
     var nextBtn = document.querySelector('[data-nav="next"].arrow-btn');
 
+    var bookEl = document.getElementById('book-container');
     function go(dir){
+      var idx = pf.getCurrentPageIndex();
+      if((dir === 'next' && idx === 0) || (dir === 'prev' && idx === 1)) bookEl.classList.add('flipping-cover');
       if(dir === 'next') pf.flipNext('top'); else pf.flipPrev('top');
     }
     document.querySelectorAll('.arrow-btn[data-nav], .click-zone[data-nav]').forEach(function(elm){
@@ -329,7 +334,7 @@ img{-webkit-user-drag:none;user-drag:none}
       nextBtn.disabled = idx >= count - 1;
     }
     pf.on('flip', refreshArrows);
-    pf.on('changeState', refreshArrows);
+    pf.on('changeState', function(e){ refreshArrows(); if(e.data === 'read') bookEl.classList.remove('flipping-cover'); });
     refreshArrows();
 
     document.querySelector('.stage').addEventListener('contextmenu', function(e){ e.preventDefault(); });
