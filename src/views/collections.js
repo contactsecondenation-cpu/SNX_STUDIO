@@ -1,7 +1,7 @@
 import {node,escapeHTML} from "../core/dom.js";
 import {getThemes} from "../data/catalog.js";
 const DEFAULT_TINT="#241a30";
-const BOOK_URLS={jade:"book-jade.html"};
+const BOOK_URLS={jade:"book-jade.html",brume:"book-brume.html",galet:"book-galet.html"};
 export function mount(ctx){
  const themes=getThemes().filter(t=>!t.unlisted);
  const totalIcons=themes.reduce((n,t)=>n+t.icons.length,0);
