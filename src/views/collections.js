@@ -2,7 +2,7 @@ import {node,escapeHTML} from "../core/dom.js";
 import {getThemes} from "../data/catalog.js";
 const DEFAULT_TINT="#241a30";
 const BOOK_URLS={jade:"book-jade.html",brume:"book-brume.html",galet:"book-galet.html"};
-const PREMIUM_IDS=["jade","saphir","amethyste"];
+const PREMIUM_IDS=["jade-premium","saphir","amethyste"];
 export function mount(ctx){
  const themes=getThemes().filter(t=>!t.unlisted);
  const premium=PREMIUM_IDS.map(id=>themes.find(t=>t.id===id)).filter(Boolean);

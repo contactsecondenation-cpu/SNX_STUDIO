@@ -137,7 +137,7 @@ Object.assign(exports,{createStore});
 const {themes: packs} = require("src/data/packs.js");
 const {premiumPacks} = require("src/data/premiumPacks.js");
 const {loadCustomThemes} = require("src/data/customThemes.js");
-function build(){const custom=loadCustomThemes();const list=[...premiumPacks,...packs,...custom];return {list,byId:Object.fromEntries(list.map(t=>[t.id,t]))};}
+function build(){const custom=loadCustomThemes();const classic=packs.map(t=>t.id==="jade"?{...t,name:"Jade — Classique"}:t);const list=[...premiumPacks,...classic,...custom];return {list,byId:Object.fromEntries(list.map(t=>[t.id,t]))};}
 let cache=build();
 function refreshThemes(){cache=build();return cache.list;}
 function getThemes(){return cache.list;}
@@ -11190,6 +11190,1282 @@ Object.assign(exports,{themes});
 "src/data/premiumPacks.js":(require,exports)=>{
 const premiumPacks = [
   {
+    "id": "jade-premium",
+    "slug": "jade-premium",
+    "name": "Jade Impérial",
+    "colors": {
+      "accent": "#91c7a9",
+      "base": "#0f3025"
+    },
+    "description": "Jade précieux, ivoire et champagne. La signature impériale.",
+    "cover": "assets/packs/jade-premium/wallpaper-2-thumb.webp",
+    "wallpapers": [
+      {
+        "id": "jade-premium-wallpaper-1",
+        "name": "Ivoire satiné",
+        "src": "assets/packs/jade-premium/wallpaper-1.webp",
+        "thumb": "assets/packs/jade-premium/wallpaper-1-thumb.webp",
+        "width": 1320,
+        "height": 2868,
+        "fit": "cover",
+        "tone": "light"
+      },
+      {
+        "id": "jade-premium-wallpaper-2",
+        "name": "Jade profond",
+        "src": "assets/packs/jade-premium/wallpaper-2.webp",
+        "thumb": "assets/packs/jade-premium/wallpaper-2-thumb.webp",
+        "width": 1320,
+        "height": 2868,
+        "fit": "cover",
+        "tone": "dark"
+      },
+      {
+        "id": "jade-premium-wallpaper-3",
+        "name": "Soie champagne",
+        "src": "assets/packs/jade-premium/wallpaper-3.webp",
+        "thumb": "assets/packs/jade-premium/wallpaper-3-thumb.webp",
+        "width": 1320,
+        "height": 2868,
+        "fit": "cover",
+        "tone": "light"
+      },
+      {
+        "id": "jade-premium-wallpaper-4",
+        "name": "Écrin de jade",
+        "src": "assets/packs/jade-premium/wallpaper-4.webp",
+        "thumb": "assets/packs/jade-premium/wallpaper-4-thumb.webp",
+        "width": 1320,
+        "height": 2868,
+        "fit": "cover",
+        "tone": "light"
+      }
+    ],
+    "icons": [
+      {
+        "id": "jade-premium-Telephone",
+        "name": "Téléphone",
+        "src": "assets/packs/jade-premium/Telephone.webp",
+        "thumb": "assets/packs/jade-premium/Telephone-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Messages",
+        "name": "Messages",
+        "src": "assets/packs/jade-premium/Messages.webp",
+        "thumb": "assets/packs/jade-premium/Messages-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Contacts",
+        "name": "Contacts",
+        "src": "assets/packs/jade-premium/Contacts.webp",
+        "thumb": "assets/packs/jade-premium/Contacts-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-FaceTime",
+        "name": "FaceTime",
+        "src": "assets/packs/jade-premium/FaceTime.webp",
+        "thumb": "assets/packs/jade-premium/FaceTime-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Mail",
+        "name": "Mail",
+        "src": "assets/packs/jade-premium/Mail.webp",
+        "thumb": "assets/packs/jade-premium/Mail-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Safari",
+        "name": "Safari",
+        "src": "assets/packs/jade-premium/Safari.webp",
+        "thumb": "assets/packs/jade-premium/Safari-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Appareil_photo",
+        "name": "Appareil photo",
+        "src": "assets/packs/jade-premium/Appareil_photo.webp",
+        "thumb": "assets/packs/jade-premium/Appareil_photo-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Photos",
+        "name": "Photos",
+        "src": "assets/packs/jade-premium/Photos.webp",
+        "thumb": "assets/packs/jade-premium/Photos-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Calendrier",
+        "name": "Calendrier",
+        "src": "assets/packs/jade-premium/Calendrier.webp",
+        "thumb": "assets/packs/jade-premium/Calendrier-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Horloge",
+        "name": "Horloge",
+        "src": "assets/packs/jade-premium/Horloge.webp",
+        "thumb": "assets/packs/jade-premium/Horloge-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Meteo",
+        "name": "Météo",
+        "src": "assets/packs/jade-premium/Meteo.webp",
+        "thumb": "assets/packs/jade-premium/Meteo-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Reglages",
+        "name": "Réglages",
+        "src": "assets/packs/jade-premium/Reglages.webp",
+        "thumb": "assets/packs/jade-premium/Reglages-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-App_Store",
+        "name": "App Store",
+        "src": "assets/packs/jade-premium/App_Store.webp",
+        "thumb": "assets/packs/jade-premium/App_Store-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Fichiers",
+        "name": "Fichiers",
+        "src": "assets/packs/jade-premium/Fichiers.webp",
+        "thumb": "assets/packs/jade-premium/Fichiers-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Notes",
+        "name": "Notes",
+        "src": "assets/packs/jade-premium/Notes.webp",
+        "thumb": "assets/packs/jade-premium/Notes-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Rappels",
+        "name": "Rappels",
+        "src": "assets/packs/jade-premium/Rappels.webp",
+        "thumb": "assets/packs/jade-premium/Rappels-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Calculatrice",
+        "name": "Calculatrice",
+        "src": "assets/packs/jade-premium/Calculatrice.webp",
+        "thumb": "assets/packs/jade-premium/Calculatrice-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Wallet",
+        "name": "Wallet",
+        "src": "assets/packs/jade-premium/Wallet.webp",
+        "thumb": "assets/packs/jade-premium/Wallet-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Plans",
+        "name": "Plans",
+        "src": "assets/packs/jade-premium/Plans.webp",
+        "thumb": "assets/packs/jade-premium/Plans-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Localiser",
+        "name": "Localiser",
+        "src": "assets/packs/jade-premium/Localiser.webp",
+        "thumb": "assets/packs/jade-premium/Localiser-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Raccourcis",
+        "name": "Raccourcis",
+        "src": "assets/packs/jade-premium/Raccourcis.webp",
+        "thumb": "assets/packs/jade-premium/Raccourcis-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Mots_de_passe",
+        "name": "Mots de passe",
+        "src": "assets/packs/jade-premium/Mots_de_passe.webp",
+        "thumb": "assets/packs/jade-premium/Mots_de_passe-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Sante",
+        "name": "Santé",
+        "src": "assets/packs/jade-premium/Sante.webp",
+        "thumb": "assets/packs/jade-premium/Sante-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Forme",
+        "name": "Forme",
+        "src": "assets/packs/jade-premium/Forme.webp",
+        "thumb": "assets/packs/jade-premium/Forme-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Maison",
+        "name": "Maison",
+        "src": "assets/packs/jade-premium/Maison.webp",
+        "thumb": "assets/packs/jade-premium/Maison-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Watch",
+        "name": "Watch",
+        "src": "assets/packs/jade-premium/Watch.webp",
+        "thumb": "assets/packs/jade-premium/Watch-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Dictaphone",
+        "name": "Dictaphone",
+        "src": "assets/packs/jade-premium/Dictaphone.webp",
+        "thumb": "assets/packs/jade-premium/Dictaphone-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Traduire",
+        "name": "Traduire",
+        "src": "assets/packs/jade-premium/Traduire.webp",
+        "thumb": "assets/packs/jade-premium/Traduire-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Mesures",
+        "name": "Mesures",
+        "src": "assets/packs/jade-premium/Mesures.webp",
+        "thumb": "assets/packs/jade-premium/Mesures-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_Games",
+        "name": "Apple Games",
+        "src": "assets/packs/jade-premium/Apple_Games.webp",
+        "thumb": "assets/packs/jade-premium/Apple_Games-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_Music",
+        "name": "Apple Music",
+        "src": "assets/packs/jade-premium/Apple_Music.webp",
+        "thumb": "assets/packs/jade-premium/Apple_Music-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Podcasts",
+        "name": "Podcasts",
+        "src": "assets/packs/jade-premium/Podcasts.webp",
+        "thumb": "assets/packs/jade-premium/Podcasts-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_TV",
+        "name": "Apple TV",
+        "src": "assets/packs/jade-premium/Apple_TV.webp",
+        "thumb": "assets/packs/jade-premium/Apple_TV-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Livres",
+        "name": "Livres",
+        "src": "assets/packs/jade-premium/Livres.webp",
+        "thumb": "assets/packs/jade-premium/Livres-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-iTunes_Store",
+        "name": "iTunes Store",
+        "src": "assets/packs/jade-premium/iTunes_Store.webp",
+        "thumb": "assets/packs/jade-premium/iTunes_Store-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_Store",
+        "name": "Apple Store",
+        "src": "assets/packs/jade-premium/Apple_Store.webp",
+        "thumb": "assets/packs/jade-premium/Apple_Store-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Pages",
+        "name": "Pages",
+        "src": "assets/packs/jade-premium/Pages.webp",
+        "thumb": "assets/packs/jade-premium/Pages-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Numbers",
+        "name": "Numbers",
+        "src": "assets/packs/jade-premium/Numbers.webp",
+        "thumb": "assets/packs/jade-premium/Numbers-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Keynote",
+        "name": "Keynote",
+        "src": "assets/packs/jade-premium/Keynote.webp",
+        "thumb": "assets/packs/jade-premium/Keynote-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Journal",
+        "name": "Journal",
+        "src": "assets/packs/jade-premium/Journal.webp",
+        "thumb": "assets/packs/jade-premium/Journal-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-WhatsApp",
+        "name": "WhatsApp",
+        "src": "assets/packs/jade-premium/WhatsApp.webp",
+        "thumb": "assets/packs/jade-premium/WhatsApp-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Gmail",
+        "name": "Gmail",
+        "src": "assets/packs/jade-premium/Gmail.webp",
+        "thumb": "assets/packs/jade-premium/Gmail-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Outlook",
+        "name": "Outlook",
+        "src": "assets/packs/jade-premium/Outlook.webp",
+        "thumb": "assets/packs/jade-premium/Outlook-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Telegram",
+        "name": "Telegram",
+        "src": "assets/packs/jade-premium/Telegram.webp",
+        "thumb": "assets/packs/jade-premium/Telegram-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Signal",
+        "name": "Signal",
+        "src": "assets/packs/jade-premium/Signal.webp",
+        "thumb": "assets/packs/jade-premium/Signal-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Messenger",
+        "name": "Messenger",
+        "src": "assets/packs/jade-premium/Messenger.webp",
+        "thumb": "assets/packs/jade-premium/Messenger-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Discord",
+        "name": "Discord",
+        "src": "assets/packs/jade-premium/Discord.webp",
+        "thumb": "assets/packs/jade-premium/Discord-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Zoom",
+        "name": "Zoom",
+        "src": "assets/packs/jade-premium/Zoom.webp",
+        "thumb": "assets/packs/jade-premium/Zoom-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Microsoft_Teams",
+        "name": "Microsoft Teams",
+        "src": "assets/packs/jade-premium/Microsoft_Teams.webp",
+        "thumb": "assets/packs/jade-premium/Microsoft_Teams-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Meet",
+        "name": "Google Meet",
+        "src": "assets/packs/jade-premium/Google_Meet.webp",
+        "thumb": "assets/packs/jade-premium/Google_Meet-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Instagram",
+        "name": "Instagram",
+        "src": "assets/packs/jade-premium/Instagram.webp",
+        "thumb": "assets/packs/jade-premium/Instagram-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Facebook",
+        "name": "Facebook",
+        "src": "assets/packs/jade-premium/Facebook.webp",
+        "thumb": "assets/packs/jade-premium/Facebook-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Snapchat",
+        "name": "Snapchat",
+        "src": "assets/packs/jade-premium/Snapchat.webp",
+        "thumb": "assets/packs/jade-premium/Snapchat-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-TikTok",
+        "name": "TikTok",
+        "src": "assets/packs/jade-premium/TikTok.webp",
+        "thumb": "assets/packs/jade-premium/TikTok-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-X",
+        "name": "X",
+        "src": "assets/packs/jade-premium/X.webp",
+        "thumb": "assets/packs/jade-premium/X-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Threads",
+        "name": "Threads",
+        "src": "assets/packs/jade-premium/Threads.webp",
+        "thumb": "assets/packs/jade-premium/Threads-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Reddit",
+        "name": "Reddit",
+        "src": "assets/packs/jade-premium/Reddit.webp",
+        "thumb": "assets/packs/jade-premium/Reddit-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Pinterest",
+        "name": "Pinterest",
+        "src": "assets/packs/jade-premium/Pinterest.webp",
+        "thumb": "assets/packs/jade-premium/Pinterest-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-ChatGPT",
+        "name": "ChatGPT",
+        "src": "assets/packs/jade-premium/ChatGPT.webp",
+        "thumb": "assets/packs/jade-premium/ChatGPT-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Gemini",
+        "name": "Gemini",
+        "src": "assets/packs/jade-premium/Gemini.webp",
+        "thumb": "assets/packs/jade-premium/Gemini-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-YouTube",
+        "name": "YouTube",
+        "src": "assets/packs/jade-premium/YouTube.webp",
+        "thumb": "assets/packs/jade-premium/YouTube-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Spotify",
+        "name": "Spotify",
+        "src": "assets/packs/jade-premium/Spotify.webp",
+        "thumb": "assets/packs/jade-premium/Spotify-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Deezer",
+        "name": "Deezer",
+        "src": "assets/packs/jade-premium/Deezer.webp",
+        "thumb": "assets/packs/jade-premium/Deezer-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Shazam",
+        "name": "Shazam",
+        "src": "assets/packs/jade-premium/Shazam.webp",
+        "thumb": "assets/packs/jade-premium/Shazam-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Netflix",
+        "name": "Netflix",
+        "src": "assets/packs/jade-premium/Netflix.webp",
+        "thumb": "assets/packs/jade-premium/Netflix-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Prime_Video",
+        "name": "Prime Video",
+        "src": "assets/packs/jade-premium/Prime_Video.webp",
+        "thumb": "assets/packs/jade-premium/Prime_Video-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Disney_Plus",
+        "name": "Disney Plus",
+        "src": "assets/packs/jade-premium/Disney_Plus.webp",
+        "thumb": "assets/packs/jade-premium/Disney_Plus-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Twitch",
+        "name": "Twitch",
+        "src": "assets/packs/jade-premium/Twitch.webp",
+        "thumb": "assets/packs/jade-premium/Twitch-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Kindle",
+        "name": "Kindle",
+        "src": "assets/packs/jade-premium/Kindle.webp",
+        "thumb": "assets/packs/jade-premium/Kindle-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Audible",
+        "name": "Audible",
+        "src": "assets/packs/jade-premium/Audible.webp",
+        "thumb": "assets/packs/jade-premium/Audible-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google",
+        "name": "Google",
+        "src": "assets/packs/jade-premium/Google.webp",
+        "thumb": "assets/packs/jade-premium/Google-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Chrome",
+        "name": "Chrome",
+        "src": "assets/packs/jade-premium/Chrome.webp",
+        "thumb": "assets/packs/jade-premium/Chrome-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Drive",
+        "name": "Google Drive",
+        "src": "assets/packs/jade-premium/Google_Drive.webp",
+        "thumb": "assets/packs/jade-premium/Google_Drive-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Docs",
+        "name": "Google Docs",
+        "src": "assets/packs/jade-premium/Google_Docs.webp",
+        "thumb": "assets/packs/jade-premium/Google_Docs-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Sheets",
+        "name": "Google Sheets",
+        "src": "assets/packs/jade-premium/Google_Sheets.webp",
+        "thumb": "assets/packs/jade-premium/Google_Sheets-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-OneDrive",
+        "name": "OneDrive",
+        "src": "assets/packs/jade-premium/OneDrive.webp",
+        "thumb": "assets/packs/jade-premium/OneDrive-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Word",
+        "name": "Word",
+        "src": "assets/packs/jade-premium/Word.webp",
+        "thumb": "assets/packs/jade-premium/Word-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Excel",
+        "name": "Excel",
+        "src": "assets/packs/jade-premium/Excel.webp",
+        "thumb": "assets/packs/jade-premium/Excel-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-PowerPoint",
+        "name": "PowerPoint",
+        "src": "assets/packs/jade-premium/PowerPoint.webp",
+        "thumb": "assets/packs/jade-premium/PowerPoint-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Adobe_Acrobat",
+        "name": "Adobe Acrobat",
+        "src": "assets/packs/jade-premium/Adobe_Acrobat.webp",
+        "thumb": "assets/packs/jade-premium/Adobe_Acrobat-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Maps",
+        "name": "Google Maps",
+        "src": "assets/packs/jade-premium/Google_Maps.webp",
+        "thumb": "assets/packs/jade-premium/Google_Maps-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Waze",
+        "name": "Waze",
+        "src": "assets/packs/jade-premium/Waze.webp",
+        "thumb": "assets/packs/jade-premium/Waze-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Uber",
+        "name": "Uber",
+        "src": "assets/packs/jade-premium/Uber.webp",
+        "thumb": "assets/packs/jade-premium/Uber-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-SNCF_Connect",
+        "name": "SNCF Connect",
+        "src": "assets/packs/jade-premium/SNCF_Connect.webp",
+        "thumb": "assets/packs/jade-premium/SNCF_Connect-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Booking",
+        "name": "Booking",
+        "src": "assets/packs/jade-premium/Booking.webp",
+        "thumb": "assets/packs/jade-premium/Booking-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Airbnb",
+        "name": "Airbnb",
+        "src": "assets/packs/jade-premium/Airbnb.webp",
+        "thumb": "assets/packs/jade-premium/Airbnb-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Doctolib",
+        "name": "Doctolib",
+        "src": "assets/packs/jade-premium/Doctolib.webp",
+        "thumb": "assets/packs/jade-premium/Doctolib-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Compte_ameli",
+        "name": "Compte ameli",
+        "src": "assets/packs/jade-premium/Compte_ameli.webp",
+        "thumb": "assets/packs/jade-premium/Compte_ameli-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-PayPal",
+        "name": "PayPal",
+        "src": "assets/packs/jade-premium/PayPal.webp",
+        "thumb": "assets/packs/jade-premium/PayPal-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Revolut",
+        "name": "Revolut",
+        "src": "assets/packs/jade-premium/Revolut.webp",
+        "thumb": "assets/packs/jade-premium/Revolut-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Amazon",
+        "name": "Amazon",
+        "src": "assets/packs/jade-premium/Amazon.webp",
+        "thumb": "assets/packs/jade-premium/Amazon-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-AliExpress",
+        "name": "AliExpress",
+        "src": "assets/packs/jade-premium/AliExpress.webp",
+        "thumb": "assets/packs/jade-premium/AliExpress-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Temu",
+        "name": "Temu",
+        "src": "assets/packs/jade-premium/Temu.webp",
+        "thumb": "assets/packs/jade-premium/Temu-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Etsy",
+        "name": "Etsy",
+        "src": "assets/packs/jade-premium/Etsy.webp",
+        "thumb": "assets/packs/jade-premium/Etsy-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Vinted",
+        "name": "Vinted",
+        "src": "assets/packs/jade-premium/Vinted.webp",
+        "thumb": "assets/packs/jade-premium/Vinted-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Leboncoin",
+        "name": "Leboncoin",
+        "src": "assets/packs/jade-premium/Leboncoin.webp",
+        "thumb": "assets/packs/jade-premium/Leboncoin-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Canva",
+        "name": "Canva",
+        "src": "assets/packs/jade-premium/Canva.webp",
+        "thumb": "assets/packs/jade-premium/Canva-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-CapCut",
+        "name": "CapCut",
+        "src": "assets/packs/jade-premium/CapCut.webp",
+        "thumb": "assets/packs/jade-premium/CapCut-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Photos",
+        "name": "Google Photos",
+        "src": "assets/packs/jade-premium/Google_Photos.webp",
+        "thumb": "assets/packs/jade-premium/Google_Photos-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Adobe_Scan",
+        "name": "Adobe Scan",
+        "src": "assets/packs/jade-premium/Adobe_Scan.webp",
+        "thumb": "assets/packs/jade-premium/Adobe_Scan-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-8_Ball_Pool",
+        "name": "8 Ball Pool",
+        "src": "assets/packs/jade-premium/8_Ball_Pool.webp",
+        "thumb": "assets/packs/jade-premium/8_Ball_Pool-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Among_Us",
+        "name": "Among Us",
+        "src": "assets/packs/jade-premium/Among_Us.webp",
+        "thumb": "assets/packs/jade-premium/Among_Us-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_News",
+        "name": "Apple News",
+        "src": "assets/packs/jade-premium/Apple_News.webp",
+        "thumb": "assets/packs/jade-premium/Apple_News-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Apple_Stocks",
+        "name": "Apple Stocks",
+        "src": "assets/packs/jade-premium/Apple_Stocks.webp",
+        "thumb": "assets/packs/jade-premium/Apple_Stocks-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Bitwarden",
+        "name": "Bitwarden",
+        "src": "assets/packs/jade-premium/Bitwarden.webp",
+        "thumb": "assets/packs/jade-premium/Bitwarden-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Brawl_Stars",
+        "name": "Brawl Stars",
+        "src": "assets/packs/jade-premium/Brawl_Stars.webp",
+        "thumb": "assets/packs/jade-premium/Brawl_Stars-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Call_of_Duty_Mobile",
+        "name": "Call of Duty Mobile",
+        "src": "assets/packs/jade-premium/Call_of_Duty_Mobile.webp",
+        "thumb": "assets/packs/jade-premium/Call_of_Duty_Mobile-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Candy_Crush_Saga",
+        "name": "Candy Crush Saga",
+        "src": "assets/packs/jade-premium/Candy_Crush_Saga.webp",
+        "thumb": "assets/packs/jade-premium/Candy_Crush_Saga-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Clash_Royale",
+        "name": "Clash Royale",
+        "src": "assets/packs/jade-premium/Clash_Royale.webp",
+        "thumb": "assets/packs/jade-premium/Clash_Royale-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Clash_of_Clans",
+        "name": "Clash of Clans",
+        "src": "assets/packs/jade-premium/Clash_of_Clans.webp",
+        "thumb": "assets/packs/jade-premium/Clash_of_Clans-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Claude",
+        "name": "Claude",
+        "src": "assets/packs/jade-premium/Claude.webp",
+        "thumb": "assets/packs/jade-premium/Claude-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-DeepSeek",
+        "name": "DeepSeek",
+        "src": "assets/packs/jade-premium/DeepSeek.webp",
+        "thumb": "assets/packs/jade-premium/DeepSeek-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Deliveroo",
+        "name": "Deliveroo",
+        "src": "assets/packs/jade-premium/Deliveroo.webp",
+        "thumb": "assets/packs/jade-premium/Deliveroo-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Dropbox",
+        "name": "Dropbox",
+        "src": "assets/packs/jade-premium/Dropbox.webp",
+        "thumb": "assets/packs/jade-premium/Dropbox-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Duolingo",
+        "name": "Duolingo",
+        "src": "assets/packs/jade-premium/Duolingo.webp",
+        "thumb": "assets/packs/jade-premium/Duolingo-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Firefox",
+        "name": "Firefox",
+        "src": "assets/packs/jade-premium/Firefox.webp",
+        "thumb": "assets/packs/jade-premium/Firefox-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Fortnite",
+        "name": "Fortnite",
+        "src": "assets/packs/jade-premium/Fortnite.webp",
+        "thumb": "assets/packs/jade-premium/Fortnite-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Free_Fire",
+        "name": "Free Fire",
+        "src": "assets/packs/jade-premium/Free_Fire.webp",
+        "thumb": "assets/packs/jade-premium/Free_Fire-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Genshin_Impact",
+        "name": "Genshin Impact",
+        "src": "assets/packs/jade-premium/Genshin_Impact.webp",
+        "thumb": "assets/packs/jade-premium/Genshin_Impact-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Calendar",
+        "name": "Google Calendar",
+        "src": "assets/packs/jade-premium/Google_Calendar.webp",
+        "thumb": "assets/packs/jade-premium/Google_Calendar-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Keep",
+        "name": "Google Keep",
+        "src": "assets/packs/jade-premium/Google_Keep.webp",
+        "thumb": "assets/packs/jade-premium/Google_Keep-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Google_Play_Store",
+        "name": "Google Play Store",
+        "src": "assets/packs/jade-premium/Google_Play_Store.webp",
+        "thumb": "assets/packs/jade-premium/Google_Play_Store-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Grok",
+        "name": "Grok",
+        "src": "assets/packs/jade-premium/Grok.webp",
+        "thumb": "assets/packs/jade-premium/Grok-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Lightroom",
+        "name": "Lightroom",
+        "src": "assets/packs/jade-premium/Lightroom.webp",
+        "thumb": "assets/packs/jade-premium/Lightroom-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-LinkedIn",
+        "name": "LinkedIn",
+        "src": "assets/packs/jade-premium/LinkedIn.webp",
+        "thumb": "assets/packs/jade-premium/LinkedIn-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Max",
+        "name": "Max",
+        "src": "assets/packs/jade-premium/Max.webp",
+        "thumb": "assets/packs/jade-premium/Max-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-McDonalds",
+        "name": "McDonalds",
+        "src": "assets/packs/jade-premium/McDonalds.webp",
+        "thumb": "assets/packs/jade-premium/McDonalds-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Meta_AI",
+        "name": "Meta AI",
+        "src": "assets/packs/jade-premium/Meta_AI.webp",
+        "thumb": "assets/packs/jade-premium/Meta_AI-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Microsoft_Copilot",
+        "name": "Microsoft Copilot",
+        "src": "assets/packs/jade-premium/Microsoft_Copilot.webp",
+        "thumb": "assets/packs/jade-premium/Microsoft_Copilot-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Microsoft_OneNote",
+        "name": "Microsoft OneNote",
+        "src": "assets/packs/jade-premium/Microsoft_OneNote.webp",
+        "thumb": "assets/packs/jade-premium/Microsoft_OneNote-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Minecraft",
+        "name": "Minecraft",
+        "src": "assets/packs/jade-premium/Minecraft.webp",
+        "thumb": "assets/packs/jade-premium/Minecraft-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Mistral",
+        "name": "Mistral",
+        "src": "assets/packs/jade-premium/Mistral.webp",
+        "thumb": "assets/packs/jade-premium/Mistral-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Mobile_Legends_Bang_Bang",
+        "name": "Mobile Legends Bang Bang",
+        "src": "assets/packs/jade-premium/Mobile_Legends_Bang_Bang.webp",
+        "thumb": "assets/packs/jade-premium/Mobile_Legends_Bang_Bang-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Monopoly_GO",
+        "name": "Monopoly GO",
+        "src": "assets/packs/jade-premium/Monopoly_GO.webp",
+        "thumb": "assets/packs/jade-premium/Monopoly_GO-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Notion",
+        "name": "Notion",
+        "src": "assets/packs/jade-premium/Notion.webp",
+        "thumb": "assets/packs/jade-premium/Notion-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-PUBG_Mobile",
+        "name": "PUBG Mobile",
+        "src": "assets/packs/jade-premium/PUBG_Mobile.webp",
+        "thumb": "assets/packs/jade-premium/PUBG_Mobile-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Paramount_Plus",
+        "name": "Paramount Plus",
+        "src": "assets/packs/jade-premium/Paramount_Plus.webp",
+        "thumb": "assets/packs/jade-premium/Paramount_Plus-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Perplexity",
+        "name": "Perplexity",
+        "src": "assets/packs/jade-premium/Perplexity.webp",
+        "thumb": "assets/packs/jade-premium/Perplexity-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Pokemon_GO",
+        "name": "Pokemon GO",
+        "src": "assets/packs/jade-premium/Pokemon_GO.webp",
+        "thumb": "assets/packs/jade-premium/Pokemon_GO-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Roblox",
+        "name": "Roblox",
+        "src": "assets/packs/jade-premium/Roblox.webp",
+        "thumb": "assets/packs/jade-premium/Roblox-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Royal_Match",
+        "name": "Royal Match",
+        "src": "assets/packs/jade-premium/Royal_Match.webp",
+        "thumb": "assets/packs/jade-premium/Royal_Match-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Slack",
+        "name": "Slack",
+        "src": "assets/packs/jade-premium/Slack.webp",
+        "thumb": "assets/packs/jade-premium/Slack-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Steam",
+        "name": "Steam",
+        "src": "assets/packs/jade-premium/Steam.webp",
+        "thumb": "assets/packs/jade-premium/Steam-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Subway_Surfers",
+        "name": "Subway Surfers",
+        "src": "assets/packs/jade-premium/Subway_Surfers.webp",
+        "thumb": "assets/packs/jade-premium/Subway_Surfers-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Todoist",
+        "name": "Todoist",
+        "src": "assets/packs/jade-premium/Todoist.webp",
+        "thumb": "assets/packs/jade-premium/Todoist-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Trello",
+        "name": "Trello",
+        "src": "assets/packs/jade-premium/Trello.webp",
+        "thumb": "assets/packs/jade-premium/Trello-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Uber_Eats",
+        "name": "Uber Eats",
+        "src": "assets/packs/jade-premium/Uber_Eats.webp",
+        "thumb": "assets/packs/jade-premium/Uber_Eats-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-Wild_Rift",
+        "name": "Wild Rift",
+        "src": "assets/packs/jade-premium/Wild_Rift.webp",
+        "thumb": "assets/packs/jade-premium/Wild_Rift-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-YouTube_Music",
+        "name": "YouTube Music",
+        "src": "assets/packs/jade-premium/YouTube_Music.webp",
+        "thumb": "assets/packs/jade-premium/YouTube_Music-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "jade-premium-eBay",
+        "name": "eBay",
+        "src": "assets/packs/jade-premium/eBay.webp",
+        "thumb": "assets/packs/jade-premium/eBay-thumb.webp",
+        "width": 1254,
+        "height": 1254
+      }
+    ],
+    "widgets": [],
+    "defaultIcons": [
+      "jade-premium-Telephone",
+      "jade-premium-Messages",
+      "jade-premium-Appareil_photo",
+      "jade-premium-Photos",
+      "jade-premium-Calendrier",
+      "jade-premium-Horloge",
+      "jade-premium-Meteo",
+      "jade-premium-Reglages",
+      "jade-premium-Safari",
+      "jade-premium-Mail",
+      "jade-premium-Apple_Music",
+      "jade-premium-WhatsApp"
+    ],
+    "price": null,
+    "availability": "preview",
+    "metadata": {
+      "originalArchive": "SNX_JADE_IMPERIAL — 8 lots de 150 icônes",
+      "widgets": "Aucun widget fourni"
+    }
+  },
+  {
     "id": "saphir",
     "slug": "saphir",
     "name": "Saphir & Perle",
@@ -13877,7 +15153,7 @@ const {node,escapeHTML} = require("src/core/dom.js");
 const {getThemes} = require("src/data/catalog.js");
 const DEFAULT_TINT="#241a30";
 const BOOK_URLS={jade:"book-jade.html",brume:"book-brume.html",galet:"book-galet.html"};
-const PREMIUM_IDS=["jade","saphir","amethyste"];
+const PREMIUM_IDS=["jade-premium","saphir","amethyste"];
 function mount(ctx){
  const themes=getThemes().filter(t=>!t.unlisted);
  const premium=PREMIUM_IDS.map(id=>themes.find(t=>t.id===id)).filter(Boolean);

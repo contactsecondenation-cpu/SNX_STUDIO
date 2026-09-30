@@ -61,4 +61,8 @@ with ZipFile(SOURCE) as outer:
                     walls.append({"id": f"{slug}-wallpaper-{i+1}", "name": WALL_NAMES[slug][i], "src": path, "thumb": thumb, "width": width, "height": height, "fit": "cover", "tone": "light" if i in (0, 2) else "dark"})
                 themes.append({"id": slug, "slug": slug, "name": name, "colors": {"accent": accent, "base": base}, "description": description, "cover": walls[1]["thumb"], "wallpapers": walls, "icons": icons, "widgets": [], "defaultIcons": [f"{slug}-{n}" for n in DEFAULTS], "price": None, "availability": "preview", "isNew": True, "metadata": {"originalArchive": Path(entry).name, "widgets": "Aucun widget fourni"}})
                 print(f"Imported {name}: {len(icons)} icons, {len(walls)} wallpapers", flush=True)
-(ROOT / "src/data/premiumPacks.js").write_text("export const premiumPacks = " + json.dumps(themes, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
+catalog_path = ROOT / "src/data/premiumPacks.js"
+if catalog_path.exists():
+    previous = json.loads(catalog_path.read_text(encoding="utf-8").split(" = ", 1)[1].rstrip(";\n"))
+    themes = [t for t in previous if t["id"] not in {n[0] for n in PACKS}] + themes
+catalog_path.write_text("export const premiumPacks = " + json.dumps(themes, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
