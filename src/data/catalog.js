@@ -1,6 +1,7 @@
 import {themes as packs} from "./packs.js";
+import {premiumPacks} from "./premiumPacks.js";
 import {loadCustomThemes} from "./customThemes.js";
-function build(){const custom=loadCustomThemes();const list=[...packs,...custom];return {list,byId:Object.fromEntries(list.map(t=>[t.id,t]))};}
+function build(){const custom=loadCustomThemes();const list=[...premiumPacks,...packs,...custom];return {list,byId:Object.fromEntries(list.map(t=>[t.id,t]))};}
 let cache=build();
 export function refreshThemes(){cache=build();return cache.list;}
 export function getThemes(){return cache.list;}

@@ -146,3 +146,15 @@
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){.collection-tile{animation:none;transition:none}.tile-cover{transition:none}.tile-icon-badge img{animation:none;opacity:0}.tile-icon-badge img:first-child{opacity:1}html{scroll-behavior:auto}}
 @media(max-width:700px){.collection-tile{height:190px}.tile-icon-badge{width:36px;height:36px;top:8px;right:8px}.tile-caption strong{font-size:15px}}
+
+/* Premium ++ brings the three gemstone collections together. */
+.collection-section-heading{margin:0 0 20px;color:#eee9e3}
+.collection-section-heading h2{font-size:clamp(25px,3vw,36px);font-weight:400;margin:8px 0}
+.collection-section-heading>p:last-child:not(.eyebrow){font-size:13px;color:#c7bfe0;line-height:1.6}
+.premium-collection{margin-bottom:46px}
+.premium-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.premium-grid .collection-tile{height:320px}
+.premium-grid .tile-icon-badge{display:flex;gap:6px;width:auto;height:auto;padding:5px;background:#0b131f88;overflow:visible;border-radius:15px;backdrop-filter:blur(8px)}
+.premium-grid .tile-icon-badge img{position:static;inset:auto;width:48px;height:48px;opacity:1;animation:none;border-radius:10px}
+.premium-grid .tile-caption strong{font-size:20px}
+@media(max-width:700px){.premium-grid{grid-template-columns:1fr;gap:14px}.premium-grid .collection-tile{height:260px}.collection-section-heading>p:last-child:not(.eyebrow){font-size:12px}}

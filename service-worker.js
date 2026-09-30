@@ -1,4 +1,4 @@
-const CACHE = "snx-studio-shell-v1";
+const CACHE = "snx-studio-shell-v2-premium";
 const SHELL = [
   "index.html",
   "app.bundle.js",
